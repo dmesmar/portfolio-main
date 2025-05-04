@@ -18,7 +18,7 @@ const nextConfig = {
     svgr: false,
   },
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio-main' : '',
+  basePath: '',
 };
 
 const plugins = [
