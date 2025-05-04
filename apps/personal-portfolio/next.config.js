@@ -18,6 +18,7 @@ const nextConfig = {
     svgr: false,
   },
   output: 'export',
+  basePath: '/portfolio-main',
 };
 
 const plugins = [
