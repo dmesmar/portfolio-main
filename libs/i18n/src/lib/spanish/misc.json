@@ -1,0 +1,28 @@
+{
+    "langs": {
+      "en": "Inglés",
+      "ca": "Catalán",
+      "es": "Español"
+    },
+    "flag": "/assets/flags/flages.png",
+    "menus": {
+      "home":"Home",
+      "bio":"Biografia",
+      "portfolio":"Portfolio",
+      "blog":"Blog",
+      "contact":"Contacto",
+      "certificates":"Certificaciones",
+      "links":"Enlaces",
+      "cv": "CV",
+      "offerings":"Habilidades",
+      "insights":"Credenciales"
+    },
+    "tbd": {
+      "title":"Página en construcción",
+      "subtitle": "Disculpa por las molestias"
+    },
+    "lookmy": "Mira mi ",
+    "intro1":"BIENVENIDO A MI ",
+    "intro2":"PORTFOLIO"
+  }
+  

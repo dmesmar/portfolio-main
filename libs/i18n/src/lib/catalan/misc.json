@@ -1,0 +1,28 @@
+{
+    "langs": {
+      "en": "Anglès",
+      "ca": "Català",
+      "es": "Espanyol"
+    },
+    "flag": "/assets/flags/flagca.png",
+    "menus": {
+      "home":"Home",
+      "bio":"Biografia",
+      "portfolio":"Portfoli",
+      "blog":"Blog",
+      "contact":"Contacte",
+      "certificates":"Certificacions",
+      "links":"Enllaços",
+      "cv": "CV",
+      "offerings":"Oferiments",
+      "insights":"Credencials"
+    },
+    "tbd": {
+      "title":"Pàgina en construcció",
+      "subtitle": "Disculpa les molèsties"
+    },
+    "lookmy": "Mira el meu ",
+    "intro1":"BENVINGUT AL MEU ",
+    "intro2":"PORTFOLI"
+  }
+  

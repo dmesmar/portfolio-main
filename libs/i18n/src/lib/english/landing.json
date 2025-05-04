@@ -1,0 +1,117 @@
+{
+  "bio": {
+    "heading": "Darío Mesas Martí",
+    "caption": "AI Engineer",
+    "description": "Short description",
+    "descriptionExtended": "Long description",
+    "location": "📍Valencia",
+    "media": "/assets/profilelg.jpg",
+    "button": {
+      "link": "/bio",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    }
+  },
+  "credentials": {
+    "heading": "Certifications",
+    "caption": "A little bit of me",
+    "media": "/assets/credentials.png",
+    "button": {
+      "link": "/credentials",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    }
+  },
+  "cv": {
+    "heading": "Portfolio",
+    "caption": "CV",
+    "media": "/assets/portfolio.png",
+    "button": {
+      "link": "/portfolio",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    }
+  },
+  "blog": {
+    "caption": "Explore blog",
+    "heading": "Blog",
+    "media": "/assets/blog.png",
+    "button": {
+      "link": "/posts",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    }
+  },
+  "offerings": {
+    "heading": "Offerings",
+    "caption": "Explore offerings",
+    "link": "/offerings",
+    "icons": [
+      "iconoir-pc-firewall",
+      "iconoir-terminal",
+      "iconoir-terminal-tag",
+      "iconoir-code",
+      "iconoir-pc-warning"
+    ],
+    "button": {
+      "link": "/offerings",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    }
+  },
+  "profiles": {
+    "heading": "Profiles",
+    "caption": "Let's connect!",
+    "media": null,
+    "button": {
+      "link": "/contact",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    },
+    "profiles": [
+      {
+        "link": "https://github.com/dmesmar",
+        "icon": "iconoir-github"
+      },
+      {
+        "link": "www.linkedin.com/in/dario-mesas-marti/",
+        "icon": "iconoir-linkedin"
+      }
+    ]
+  },
+  "facts": {
+    "quickFacts": [
+      {
+        "count": "2+",
+        "label": "YEARS OF <br /> EXPERIENCE"
+      },
+      {
+        "count": "0",
+        "label": "TOTAL <br /> PROJECTS"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Let's collaborate <span>together </span><br /> See my <span>CV</span>",
+    "media": "/assets/icons/icon2.png",
+    "button": {
+      "link": "/cv",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    }
+  }
+}

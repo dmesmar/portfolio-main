@@ -1,0 +1,100 @@
+{
+  "bio": {
+    "media": "/assets/profilelg.jpg",
+    "details": {
+      "heading": "Bio",
+      "name": "Darío Mesas Martí",
+      "description": "Hello! This description is not done yet."
+    }
+  },
+  "experience": {
+    "heading": "Experience",
+    "experience": [
+      {
+        "date": "July 2024 - Present",
+        "title": "Fullstack Developer",
+        "company": "Sopra Steria"
+      },
+      {
+        "date": "January 2024 - July 2024",
+        "title": "Technical Engineer",
+        "company": "Atos"
+      },
+      {
+        "date": "July 2023 - November 2023",
+        "title": "Support and Implementation Analyst",
+        "company": "Indra"
+      },
+      {
+        "date": "June 2022 - May 2023",
+        "title": "Software Developer",
+        "company": "Edinn - Industria 4.0"
+      }
+    ]
+  },
+  "education": {
+    "heading": "Education",
+    "education": [
+      {
+        "date": "2025 - 2026",
+        "degree": "Master in Artificial Intelligence",
+        "university": "Universitat Internacional de València (VIU)"
+      },
+      {
+        "date": "2023 - 2025",
+        "degree": "Master in Bioinformatics and Biostatistics",
+        "university": "Universitat Oberta de Catalunya (UOC)"
+      },
+      {
+        "date": "2019 - 2023",
+        "degree": "Computer Science Degree",
+        "university": "Universitat Politècnica de València (UPV)"
+      }
+    ]
+  },
+  "profiles": {
+    "heading": "Profiles",
+    "caption": "Let's connect!",
+    "media": null,
+    "button": {
+      "link": "/contact",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    },
+    "profiles": [
+      {
+        "link": "https://github.com/dmesmar",
+        "icon": "iconoir-github"
+      },
+      {
+        "link": "https://www.linkedin.com/in/dario-mesas-marti/",
+        "icon": "iconoir-linkedin"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "<br/><span>Let's collab!</span>",
+    "media": "/assets/icons/icon2.png",
+    "button": {
+      "link": "/contact",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    }
+  },
+  "credentials": {
+    "heading": "Qualifications",
+    "caption": "A little bit of me",
+    "media": "/assets/signature.png",
+    "button": {
+      "link": "/credentials",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    }
+  }
+}

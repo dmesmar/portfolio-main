@@ -1,0 +1,80 @@
+{
+  "heading": "Oferiments",
+  "navbar": {
+    "heading": null,
+    "entries": [
+      {
+        "icon": "iconoir-terminal-tag",
+        "text": "Python Development",
+        "topics": [
+          "Machine learning",
+          "Data Analysis",
+          "Automation"
+        ]
+      },
+      {
+        "icon": "iconoir-terminal-tag",
+        "text": "TODO",
+        "topics": [
+          "TODO",
+          "TODO",
+          "TODO"
+        ]
+      }
+    ]
+  },
+  "offerings": [
+    {
+      "title": "Python Development",
+      "description": [
+        "- <b>Web Development</b>: Developing robust web applications and websites using Python frameworks like Django and Flask.",
+        "- <b>Data Analysis</b>: Utilizing Python libraries such as Pandas and NumPy for in-depth data analysis and visualization.",
+        "- <b>Automation</b>: Writing Python scripts to automate repetitive tasks and processes, increasing productivity and accuracy."
+      ]
+    },
+    {
+      "title": "TODO",
+      "description": [
+        "- <b>TODO</b>: TODO.",
+        "- <b>TODO</b>: TODO.",
+        "- <b>TODO</b>: TODO."
+      ]
+    }
+  ],
+  "profiles": {
+    "heading": "Perfils",
+    "caption": "Conectem!",
+    "media": null,
+    "button": {
+      "link": "/contact",
+      "icon": "/assets/icons/cta-icon.svg"
+    },
+    "profiles": [
+      {
+        "link": "https://github.com/dmesmar",
+        "icon": "iconoir-github"
+      },
+      {
+        "link": "https://www.linkedin.com/in/dario-mesas-marti/",
+        "icon": "iconoir-linkedin"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Mira el meu <br />  <span> CV</span>",
+    "media": "/assets/icons/icon2.png",
+    "button": {
+      "link": "/cv",
+      "icon": "/assets/icons/cta-icon.svg"
+    }
+  },
+  "credentials": {
+    "heading": "Qualificacions",
+    "caption": "Una mica de Darío",
+    "media": "/assets/signature.png",
+    "button": {
+      "link": "/credentials",
+      "icon": "/assets/icons/cta-icon.svg"
+    }
+  }
+}

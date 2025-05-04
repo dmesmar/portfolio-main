@@ -1,0 +1,100 @@
+{
+  "bio": {
+    "media": "/assets/profilelg.jpg",
+    "details": {
+      "heading": "Bio",
+      "name": "Darío Mesas Martí",
+      "description": "Hola! Aquesta descripció encara està en construcció!"
+    }
+  },
+  "experience": {
+    "heading": "Experiència",
+    "experience": [
+      {
+        "date": "Juliol 2024 - Actual",
+        "title": "Fullstack Developer",
+        "company": "Sopra Steria"
+      },
+      {
+        "date": "Gener 2024 - Juliol 2024",
+        "title": "Techincal Engineer",
+        "company": "Atos"
+      },
+      {
+        "date": "Juliol 2023 - Novembre 2023",
+        "title": "Analista de suport i implantació",
+        "company": "Indra"
+      },
+      {
+        "date": "Juny 2022 - Maig 2023",
+        "title": "Software Developer",
+        "company": "Edinn - Industria 4.0"
+      }
+    ]
+  },
+  "education": {
+    "heading": "Educació",
+    "education": [
+      {
+        "date": "2025 - 2026",
+        "degree": "Màster en Intel·ligència Artificial",
+        "university": "Universitat Internacional de València (VIU)"
+      },
+      {
+        "date": "2023 - 2025",
+        "degree": "Màster en Bioinformàtica i Bioestadística",
+        "university": "Universitat Oberta de Catalunya (UOC)"
+      },
+      {
+        "date": "2019 - 2023",
+        "degree": "Grau en Enginyeria Informàtica",
+        "university": "Universitat Politècnica de València (UPV)"
+      }
+    ]
+  },
+  "profiles": {
+    "heading": "Perfils",
+    "caption": "Connectem!",
+    "media": null,
+    "button": {
+      "link": "/contact",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    },
+    "profiles": [
+      {
+        "link": "https://github.com/dmesmar",
+        "icon": "iconoir-github"
+      },
+      {
+        "link": "https://www.linkedin.com/in/dario-mesas-marti/",
+        "icon": "iconoir-linkedin"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "<br/><span>Col·laborem!</span>",
+    "media": "/assets/icons/icon2.png",
+    "button": {
+      "link": "/contact",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    }
+  },
+  "credentials": {
+    "heading": "Qualificacions",
+    "caption": "Una mica de mi",
+    "media": "/assets/signature.png",
+    "button": {
+      "link": "/credentials",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "langs": {
+      "en": "English",
+      "ca": "Catalan",
+      "es": "Spanish"
+    },
+    "flag": "/assets/flags/flagen.png",
+    "menus": {
+      "home":"Home",
+      "bio":"Bio",
+      "portfolio":"Portfolio",
+      "blog":"Blog",
+      "contact":"Contact",
+      "certificates":"Certificates",
+      "links":"Links",
+      "cv": "CV",
+      "offerings":"Offerings",
+      "insights":"Credentials"
+    },
+    "tbd": {
+      "title":"Page under construction",
+      "subtitle": "Sorry for the inconvenience"
+    },
+    "lookmy": "Look at my ",
+    "intro1":"WELCOME TO MY ",
+    "intro2":"PORTFOLIO"
+  }
+  

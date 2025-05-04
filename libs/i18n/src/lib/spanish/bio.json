@@ -1,0 +1,100 @@
+{
+  "bio": {
+    "media": "/assets/profilelg.jpg",
+    "details": {
+      "heading": "Bio",
+      "name": "Darío Mesas Martí",
+      "description": "Hola! Esta descripción todavía está en construcción!"
+    }
+  },
+  "experience": {
+    "heading": "Experiencia",
+    "experience": [
+      {
+        "date": "Julio 2024 - Actual",
+        "title": "Desarrollador Fullstack",
+        "company": "Sopra Steria"
+      },
+      {
+        "date": "Enero 2024 - Julio 2024",
+        "title": "Ingeniero Técnico",
+        "company": "Atos"
+      },
+      {
+        "date": "Julio 2023 - Noviembre 2023",
+        "title": "Analista de Soporte e Implantación",
+        "company": "Indra"
+      },
+      {
+        "date": "Junio 2022 - Mayo 2023",
+        "title": "Desarrollador de Software",
+        "company": "Edinn - Industria 4.0"
+      }
+    ]
+  },
+  "education": {
+    "heading": "Educación",
+    "education": [
+      {
+        "date": "2025 - 2026",
+        "degree": "Máster en Inteligencia Artificial",
+        "university": "Universitat Internacional de València (VIU)"
+      },
+      {
+        "date": "2023 - 2025",
+        "degree": "Máster en Bioinformática y Bioestadística",
+        "university": "Universitat Oberta de Catalunya (UOC)"
+      },
+      {
+        "date": "2019 - 2023",
+        "degree": "Grado en Ingeniería Informática",
+        "university": "Universitat Politècnica de València (UPV)"
+      }
+    ]
+  },
+  "profiles": {
+    "heading": "Perfiles",
+    "caption": "¡Conectemos!",
+    "media": null,
+    "button": {
+      "link": "/contact",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    },
+    "profiles": [
+      {
+        "link": "https://github.com/dmesmar",
+        "icon": "iconoir-github"
+      },
+      {
+        "link": "https://www.linkedin.com/in/dario-mesas-marti/",
+        "icon": "iconoir-linkedin"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "<br/><span>¡Colaboremos!</span>",
+    "media": "/assets/icons/icon2.png",
+    "button": {
+      "link": "/contact",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    }
+  },
+  "credentials": {
+    "heading": "Cualificaciones",
+    "caption": "Un poco de mí",
+    "media": "/assets/signature.png",
+    "button": {
+      "link": "/credentials",
+      "icon": {
+        "light": "/assets/icons/icon-2.svg",
+        "dark": "/assets/icons/icon.svg"
+      }
+    }
+  }
+}

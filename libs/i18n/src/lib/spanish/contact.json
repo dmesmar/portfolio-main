@@ -1,0 +1,45 @@
+{
+  "contact": {
+    "heading": "Contacto",
+    "mail": {
+      "heading": "CORREO ELECTRÓNICO",
+      "icon": "iconoir-mail",
+      "links": ["dariomesas808@gmail.com"]
+    },
+    "phone": {
+      "heading": "CONTACTO",
+      "icon": "iconoir-phone",
+      "links": [
+        {
+          "text": "+34 640 395 184"
+        }
+      ]
+    },
+    "location": {
+      "heading": "LOCALIZACIÓN",
+      "icon": "iconoir-pin-alt",
+      "type": "Location",
+      "location": "Valencia, España"
+    }
+  },
+  "profiles": {
+    "heading": "Enlaces",
+    "profiles": [
+      {
+        "link": "https://github.com/dmesmar",
+        "icon": "iconoir-github"
+      },
+      {
+        "link": "https://www.linkedin.com/in/dario-mesas-marti/",
+        "icon": "iconoir-linkedin"
+      }
+    ]
+  },
+  "form": {
+    "heading": "<span>Hablemos.</span>",
+    "onCompletion": "¡Se ha enviado el mensaje!",
+    "button": {
+      "text": "Enviar mensaje"
+    }
+  }
+}
