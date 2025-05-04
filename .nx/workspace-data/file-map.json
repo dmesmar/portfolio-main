@@ -87,40 +87,12 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".npmrc",
-        "hash": "1743485301228659824"
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
       },
       {
-        "file": "compose.yaml",
-        "hash": "6905586194972882453"
-      },
-      {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "16088922570277978783"
-      },
-      {
-        "file": ".dockerignore",
-        "hash": "9337847545319974149"
-      },
-      {
-        "file": "renovate.json",
-        "hash": "17754747776914184589"
-      },
-      {
-        "file": "Dockerfile",
-        "hash": "10616349284309558749"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "17866138117546000433"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "4685382503087938635"
+        "file": "migrations.json",
+        "hash": "12650540116914318569"
       },
       {
         "file": ".eslintignore",
@@ -131,28 +103,68 @@
         "hash": "180881509324921272"
       },
       {
-        "file": "assets/open-link.svg",
-        "hash": "4102355578012129655"
+        "file": ".nginx/nginx.conf",
+        "hash": "13801735157279586102"
+      },
+      {
+        "file": "renovate.json",
+        "hash": "17754747776914184589"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "235626400633494639"
+      },
+      {
+        "file": "README.md",
+        "hash": "5027327698766784245"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "4685382503087938635"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "10616349284309558749"
+      },
+      {
+        "file": ".docker/docker-compose.yaml",
+        "hash": "2373920154868289504"
       },
       {
         "file": ".editorconfig",
         "hash": "5443105041930014821"
       },
       {
+        "file": ".dockerignore",
+        "hash": "9337847545319974149"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": "assets/open-link.svg",
+        "hash": "4102355578012129655"
+      },
+      {
         "file": "tsconfig.base.json",
         "hash": "17125505079288791209"
       },
       {
-        "file": ".nginx/nginx.conf",
-        "hash": "13801735157279586102"
+        "file": "compose.yaml",
+        "hash": "6905586194972882453"
       },
       {
-        "file": "migrations.json",
-        "hash": "12650540116914318569"
-      },
-      {
-        "file": "package.json",
-        "hash": "8283755123157708252"
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
       },
       {
         "file": ".prettierrc",
@@ -163,34 +175,6 @@
         "hash": "3244421341483603138"
       },
       {
-        "file": ".github/dependabot.yml",
-        "hash": "12433580915786516937"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "2444223549802190038"
-      },
-      {
-        "file": ".docker/docker-compose.yaml",
-        "hash": "2373920154868289504"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "16448050467312557263"
-      },
-      {
-        "file": "README.md",
-        "hash": "5027327698766784245"
-      },
-      {
-        "file": "libs/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "235626400633494639"
-      },
-      {
         "file": "nx.json",
         "hash": "6940708801572925058"
       },
@@ -199,8 +183,24 @@
         "hash": "3656425270347423648"
       },
       {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "2444223549802190038"
+      },
+      {
+        "file": "package.json",
+        "hash": "8283755123157708252"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "1743485301228659824"
+      },
+      {
+        "file": ".github/dependabot.yml",
+        "hash": "12433580915786516937"
       }
     ],
     "projectFileMap": {
@@ -897,7 +897,7 @@
         },
         {
           "file": "apps/personal-portfolio/next.config.js",
-          "hash": "11072212152618502627",
+          "hash": "18240052102168677676",
           "deps": [
             "npm:@nx/next"
           ]
