@@ -87,124 +87,116 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".github/FUNDING.yml",
-        "hash": "180881509324921272"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "235626400633494639"
-      },
-      {
-        "file": "assets/open-link.svg",
-        "hash": "4102355578012129655"
-      },
-      {
-        "file": "renovate.json",
-        "hash": "17754747776914184589"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "16448050467312557263"
-      },
-      {
-        "file": "apps/.gitkeep",
-        "hash": "3244421341483603138"
+        "file": ".docker/docker-compose.yaml",
+        "hash": "2373920154868289504"
       },
       {
         "file": ".dockerignore",
         "hash": "9337847545319974149"
       },
       {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "16088922570277978783"
-      },
-      {
-        "file": "pages/borrar.txt",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "Dockerfile",
-        "hash": "10616349284309558749"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "17125505079288791209"
-      },
-      {
-        "file": "compose.yaml",
-        "hash": "6905586194972882453"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "1743485301228659824"
-      },
-      {
-        "file": ".docker/docker-compose.yaml",
-        "hash": "2373920154868289504"
-      },
-      {
-        "file": ".github/workflows/nextjs.yml",
-        "hash": "4776893724654903174"
-      },
-      {
-        "file": "nx.json",
-        "hash": "6940708801572925058"
-      },
-      {
         "file": ".editorconfig",
         "hash": "5443105041930014821"
-      },
-      {
-        "file": "README.md",
-        "hash": "5027327698766784245"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
       },
       {
         "file": ".eslintignore",
         "hash": "7663861978715868291"
       },
       {
-        "file": ".nginx/nginx.conf",
-        "hash": "13801735157279586102"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "2444223549802190038"
-      },
-      {
-        "file": "migrations.json",
-        "hash": "12650540116914318569"
-      },
-      {
         "file": ".eslintrc.json",
         "hash": "17866138117546000433"
       },
       {
-        "file": "package.json",
-        "hash": "8283755123157708252"
+        "file": ".github/FUNDING.yml",
+        "hash": "180881509324921272"
+      },
+      {
+        "file": ".github/dependabot.yml",
+        "hash": "12433580915786516937"
       },
       {
         "file": ".gitignore",
         "hash": "4685382503087938635"
       },
       {
-        "file": "libs/.gitkeep",
-        "hash": "3244421341483603138"
+        "file": ".nginx/nginx.conf",
+        "hash": "13801735157279586102"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "1743485301228659824"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
       },
       {
         "file": ".prettierrc",
         "hash": "16267754514737964994"
       },
       {
-        "file": ".github/dependabot.yml",
-        "hash": "12433580915786516937"
+        "file": ".vscode/extensions.json",
+        "hash": "235626400633494639"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "10616349284309558749"
+      },
+      {
+        "file": "README.md",
+        "hash": "5027327698766784245"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "assets/open-link.svg",
+        "hash": "4102355578012129655"
+      },
+      {
+        "file": "compose.yaml",
+        "hash": "6905586194972882453"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "12650540116914318569"
+      },
+      {
+        "file": "nx.json",
+        "hash": "6940708801572925058"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "2444223549802190038"
+      },
+      {
+        "file": "package.json",
+        "hash": "8283755123157708252"
+      },
+      {
+        "file": "renovate.json",
+        "hash": "17754747776914184589"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "17125505079288791209"
       }
     ],
     "projectFileMap": {
