@@ -35,42 +35,38 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-      - name: Set environment variables
-        run: |
-          echo "NODE_ENV=production" >> $GITHUB_ENV
-      
       - name: Build with Nx
         run: npx nx build personal-portfolio --prod
       
-      - name: Validate build output
+      # Add explicit Next.js export step
+      - name: Export Next.js as static HTML
         run: |
-          echo "Checking build output..."
-          ls -la dist/apps/personal-portfolio
+          cd apps/personal-portfolio
+          # Ensure we're in the right directory
+          ls -la
+          # Run the export command directly
+          ../../node_modules/.bin/next export -o ../../out
+      
+      - name: Validate exported output
+        run: |
+          echo "Checking exported output..."
+          ls -la out
           
           # Make sure index.html exists in the output
-          if [ ! -f dist/apps/personal-portfolio/index.html ]; then
-            echo "ERROR: index.html not found in build output!"
-            exit 1
-          fi
-          
-          # Check if the output contains HTML files and assets
-          html_count=$(find dist/apps/personal-portfolio -name "*.html" | wc -l)
-          echo "Found $html_count HTML files in the output directory."
-          
-          if [ "$html_count" -eq 0 ]; then
-            echo "ERROR: No HTML files found in the build output!"
+          if [ ! -f out/index.html ]; then
+            echo "ERROR: index.html not found in export output!"
             exit 1
           fi
       
-      # Critical fix - add .nojekyll file to prevent GitHub Pages from processing with Jekyll
+      # Add .nojekyll file to prevent GitHub Pages from processing with Jekyll
       - name: Add .nojekyll file
         run: |
-          touch dist/apps/personal-portfolio/.nojekyll
+          touch out/.nojekyll
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist/apps/personal-portfolio
+          path: ./out
 
   deploy:
     environment:
