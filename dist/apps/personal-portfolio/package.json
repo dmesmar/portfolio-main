@@ -1,0 +1,41 @@
+{
+  "name": "personal-portfolio",
+  "version": "0.0.1",
+  "dependencies": {
+    "@formspree/react": "3.0.0",
+    "@hotjar/browser": "1.0.9",
+    "@nx/next": "20.6.2",
+    "@reduxjs/toolkit": "2.2.7",
+    "@vercel/analytics": "1.5.0",
+    "@vercel/speed-insights": "1.2.0",
+    "aos": "2.3.4",
+    "bootstrap": "5.3.3",
+    "classnames": "2.3.2",
+    "d3": "7.9.0",
+    "d3-array": "3.2.4",
+    "d3-drag": "3.0.0",
+    "d3-force": "3.0.0",
+    "d3-random": "3.0.1",
+    "d3-selection": "3.0.0",
+    "framer-motion": "10.18.0",
+    "gray-matter": "4.0.3",
+    "moment": "2.30.1",
+    "next": "14.2.26",
+    "next-mdx-remote": "4.4.1",
+    "next-themes": "0.3.0",
+    "react": "18.3.1",
+    "react-calendly": "4.3.0",
+    "react-dom": "18.3.1",
+    "react-github-calendar": "4.2.2",
+    "react-image-lightbox": "5.1.4",
+    "react-moment": "1.1.3",
+    "react-redux": "9.2.0",
+    "reactstrap": "9.2.1",
+    "redux-persist": "6.0.0",
+    "remark-gfm": "3.0.1",
+    "typescript": "5.5.4"
+  },
+  "scripts": {
+    "start": "next start"
+  }
+}

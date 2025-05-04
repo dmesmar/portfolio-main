@@ -1,10 +1,10 @@
 //@ts-check
 /** @type {import('next').NextConfig} */
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { composePlugins, withNx } = require('@nx/next');
+const { composePlugins, withNx } = require('./.nx-helpers/compiled.js');
 
 /**
- * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
+ * @type {import('./.nx-helpers/compiled.js').WithNxOptions}
  **/
 const nextConfig = {
   reactStrictMode: true,
@@ -27,4 +27,4 @@ const plugins = [
   withNx,
 ];
 
-module.exports = composePlugins(...plugins)(nextConfig);
+module.exports = nextConfig;
