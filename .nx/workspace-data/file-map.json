@@ -87,100 +87,28 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".nginx/nginx.conf",
-        "hash": "13801735157279586102"
-      },
-      {
-        "file": ".github/FUNDING.yml",
-        "hash": "180881509324921272"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "17866138117546000433"
-      },
-      {
         "file": ".docker/docker-compose.yaml",
         "hash": "2373920154868289504"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": "compose.yaml",
-        "hash": "6905586194972882453"
-      },
-      {
-        "file": "apps/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "Dockerfile",
-        "hash": "10616349284309558749"
-      },
-      {
-        "file": "nx.json",
-        "hash": "6940708801572925058"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "235626400633494639"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "7663861978715868291"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "1743485301228659824"
-      },
-      {
-        "file": "package.json",
-        "hash": "8283755123157708252"
-      },
-      {
-        "file": ".github/workflows/nextjs.yml",
-        "hash": "3656425270347423648"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "16448050467312557263"
       },
       {
         "file": ".dockerignore",
         "hash": "9337847545319974149"
       },
       {
-        "file": "renovate.json",
-        "hash": "17754747776914184589"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "2444223549802190038"
-      },
-      {
-        "file": "README.md",
-        "hash": "5027327698766784245"
-      },
-      {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "16088922570277978783"
-      },
-      {
-        "file": "migrations.json",
-        "hash": "12650540116914318569"
-      },
-      {
         "file": ".editorconfig",
         "hash": "5443105041930014821"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "17125505079288791209"
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
       },
       {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": ".github/FUNDING.yml",
+        "hash": "180881509324921272"
       },
       {
         "file": ".github/dependabot.yml",
@@ -191,80 +119,552 @@
         "hash": "4685382503087938635"
       },
       {
+        "file": ".nginx/nginx.conf",
+        "hash": "13801735157279586102"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "1743485301228659824"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "235626400633494639"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "10616349284309558749"
+      },
+      {
+        "file": "README.md",
+        "hash": "5027327698766784245"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "assets/open-link.svg",
+        "hash": "4102355578012129655"
+      },
+      {
+        "file": "compose.yaml",
+        "hash": "6905586194972882453"
+      },
+      {
+        "file": "index.html",
+        "hash": "3607575908061175062"
+      },
+      {
         "file": "jest.config.ts",
         "hash": "12333515226966617182"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
       },
       {
         "file": "libs/.gitkeep",
         "hash": "3244421341483603138"
       },
       {
-        "file": "assets/open-link.svg",
-        "hash": "4102355578012129655"
+        "file": "migrations.json",
+        "hash": "12650540116914318569"
+      },
+      {
+        "file": "nx.json",
+        "hash": "6940708801572925058"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "2444223549802190038"
+      },
+      {
+        "file": "package.json",
+        "hash": "8283755123157708252"
+      },
+      {
+        "file": "renovate.json",
+        "hash": "17754747776914184589"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "17125505079288791209"
       }
     ],
     "projectFileMap": {
-      "store": [
+      "personal-portfolio": [
         {
-          "file": "libs/store/.eslintrc.json",
-          "hash": "11012487992710232822"
+          "file": "apps/personal-portfolio/.eslintrc.json",
+          "hash": "6611013156076466121"
         },
         {
-          "file": "libs/store/README.md",
-          "hash": "14268224184050075617"
+          "file": "apps/personal-portfolio/case-studies/prueba.mdx",
+          "hash": "9179031628731173084"
         },
         {
-          "file": "libs/store/project.json",
-          "hash": "14622926798779224690"
+          "file": "apps/personal-portfolio/case-studies/prueba2.mdx",
+          "hash": "14036744611770020141"
         },
         {
-          "file": "libs/store/src/index.ts",
-          "hash": "9549265216385861042"
+          "file": "apps/personal-portfolio/case-studies/prueba3.mdx",
+          "hash": "6938952853156330027"
         },
         {
-          "file": "libs/store/src/lib/blog/index.ts",
-          "hash": "7028054376571644716",
+          "file": "apps/personal-portfolio/case-studies/prueba4.mdx",
+          "hash": "16298364340249998360"
+        },
+        {
+          "file": "apps/personal-portfolio/case-studies/prueba5.mdx",
+          "hash": "7954891536503821684"
+        },
+        {
+          "file": "apps/personal-portfolio/index.d.ts",
+          "hash": "5498222895072842432"
+        },
+        {
+          "file": "apps/personal-portfolio/jest.config.ts",
+          "hash": "6956402663436376813"
+        },
+        {
+          "file": "apps/personal-portfolio/next-env.d.ts",
+          "hash": "15001922542048550947"
+        },
+        {
+          "file": "apps/personal-portfolio/next.config.js",
+          "hash": "9936191079683420957",
           "deps": [
-            "npm:@reduxjs/toolkit"
+            "npm:@nx/next"
           ]
         },
         {
-          "file": "libs/store/src/lib/blog/types.ts",
-          "hash": "3606556298236179986"
-        },
-        {
-          "file": "libs/store/src/lib/hooks.ts",
-          "hash": "4463342700467615898",
+          "file": "apps/personal-portfolio/pages/404.js",
+          "hash": "2853860360800413728",
           "deps": [
-            "npm:react-redux"
+            "npm:framer-motion",
+            "npm:next",
+            "core-components",
+            "npm:react"
           ]
         },
         {
-          "file": "libs/store/src/lib/layout/index.ts",
-          "hash": "2010662076623614963",
-          "deps": [
-            "npm:@reduxjs/toolkit"
-          ]
+          "file": "apps/personal-portfolio/pages/404.png",
+          "hash": "8099949021035215758"
         },
         {
-          "file": "libs/store/src/lib/layout/types.ts",
-          "hash": "8010209020070453087"
+          "file": "apps/personal-portfolio/pages/CertificatesPage.module.scss",
+          "hash": "2035882925820273096"
         },
         {
-          "file": "libs/store/src/lib/store.ts",
-          "hash": "13598545675636466348",
+          "file": "apps/personal-portfolio/pages/_app.tsx",
+          "hash": "2963292947557671144",
           "deps": [
-            "npm:@reduxjs/toolkit",
+            "core-components",
+            "store",
+            "npm:aos",
+            "npm:@vercel/speed-insights",
+            "npm:bootstrap",
+            "npm:framer-motion",
+            "npm:next-themes",
+            "npm:next",
+            "npm:react",
+            "npm:react-redux",
             "npm:redux-persist"
           ]
         },
         {
-          "file": "libs/store/tsconfig.json",
-          "hash": "14088618039610991405"
+          "file": "apps/personal-portfolio/pages/bio.tsx",
+          "hash": "4579737770888404949",
+          "deps": [
+            "core-components",
+            "i18n",
+            "npm:next-themes",
+            "npm:next"
+          ]
         },
         {
-          "file": "libs/store/tsconfig.lib.json",
-          "hash": "16926797462261449620"
+          "file": "apps/personal-portfolio/pages/certificates.tsx",
+          "hash": "17586025944732114921",
+          "deps": [
+            "npm:react",
+            "core-components",
+            "npm:reactstrap",
+            "npm:react-image-lightbox",
+            "i18n"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/contact.tsx",
+          "hash": "2593430435250211428",
+          "deps": [
+            "npm:@formspree/react",
+            "core-components",
+            "i18n",
+            "npm:react",
+            "npm:reactstrap"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/credentials.tsx",
+          "hash": "6414697636466182915",
+          "deps": [
+            "core-components",
+            "i18n",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/cv.tsx",
+          "hash": "16369902260171227922",
+          "deps": [
+            "core-components",
+            "i18n",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/index.html",
+          "hash": "9397747079361934879"
+        },
+        {
+          "file": "apps/personal-portfolio/pages/index.tsx",
+          "hash": "17598420271938902532",
+          "deps": [
+            "core-components",
+            "i18n",
+            "npm:next-themes",
+            "npm:next",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/offerings.tsx",
+          "hash": "9305545295727168962",
+          "deps": [
+            "core-components",
+            "i18n",
+            "npm:classnames",
+            "npm:next",
+            "npm:reactstrap"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/portfolio/[entry].tsx",
+          "hash": "1993989926194057442",
+          "deps": [
+            "core-components",
+            "npm:gray-matter",
+            "npm:next",
+            "npm:next-mdx-remote",
+            "npm:remark-gfm"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/portfolio/index.tsx",
+          "hash": "11913800391478524317",
+          "deps": [
+            "core-components",
+            "store",
+            "i18n",
+            "npm:next-themes",
+            "npm:react",
+            "npm:gray-matter",
+            "npm:next",
+            "npm:react-moment"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/styles-light.scss",
+          "hash": "6733390296069846421"
+        },
+        {
+          "file": "apps/personal-portfolio/pages/styles.scss",
+          "hash": "12585301407636820705"
+        },
+        {
+          "file": "apps/personal-portfolio/pages/tbd.tsx",
+          "hash": "9115067167273845603",
+          "deps": [
+            "core-components",
+            "i18n",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/posts/abc.txt",
+          "hash": "4234980849898001589"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/echoes-of-an-empty-heart.mdx",
+          "hash": "16518546455972726993"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/i-don’t-love-you-anymore-I.mdx",
+          "hash": "7347211315274819931"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/i-don’t-love-you-anymore-II.mdx",
+          "hash": "308898183237626212"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/if-you-wonder-why.mdx",
+          "hash": "2693186618183194489"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/the-gods-and-the-joke.mdx",
+          "hash": "11519158169386504201"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/the-hundred-lives-to-live.mdx",
+          "hash": "12316560920567342916"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/the-it.mdx",
+          "hash": "7071370229640812136"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/the-loudest-silence.mdx",
+          "hash": "4695909326697291566"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/the-memory.mdx",
+          "hash": "6217627772977747810"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/the-nights.mdx",
+          "hash": "4720840222316658122"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/the-poem-i-dont-want-to-write.mdx",
+          "hash": "8886474983317142428"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/the-silent-symphony.mdx",
+          "hash": "6064984264856122178"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/you-should-know-better.mdx",
+          "hash": "15009482574003479349"
+        },
+        {
+          "file": "apps/personal-portfolio/project.json",
+          "hash": "4575371667075232982"
+        },
+        {
+          "file": "apps/personal-portfolio/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/404.jpg",
+          "hash": "8099949021035215758"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/DarioMesasCV.pdf",
+          "hash": "11734279452633517853"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/ai900.pdf",
+          "hash": "9469850677833586664"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/ai900.png",
+          "hash": "13613586811576111550"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/b1.jpg",
+          "hash": "5322084007285025313"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/bg1.png",
+          "hash": "1988836829220948772"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/blog-lg.png",
+          "hash": "888589922242217439"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/blog.png",
+          "hash": "4319026571540924066"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/abc.png",
+          "hash": "13457653633665441271"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/lg.png",
+          "hash": "13457653633665441271"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/lu.png",
+          "hash": "13457653633665441271"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/sg.png",
+          "hash": "13457653633665441271"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/credentials.png",
+          "hash": "3828894661998684238"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/cv.jpg",
+          "hash": "14871052631608598018"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/cv/caDarioMesasCV.pdf",
+          "hash": "14861496134528256560"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/cv/enDarioMesasCV.pdf",
+          "hash": "14861496134528256560"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/cv/esDarioMesas.pdf",
+          "hash": "14861496134528256560"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/dp900.pdf",
+          "hash": "1418962117508257162"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/dp900.png",
+          "hash": "10116708073006182275"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/flags/flagca.png",
+          "hash": "8970244663822692388"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/flags/flagen.png",
+          "hash": "10633787831834659634"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/flags/flages.png",
+          "hash": "15640223130900891175"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/cta-icon.svg",
+          "hash": "12531215345958099932"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon-2.svg",
+          "hash": "18299380306226086637"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon.png",
+          "hash": "16578384637710179418"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon.svg",
+          "hash": "12531215345958099932"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon2-2.png",
+          "hash": "6864321371583874432"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon2.png",
+          "hash": "10053155060496083269"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon3-2.png",
+          "hash": "405615848309891611"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon3.png",
+          "hash": "11854365188062509294"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/md102.pdf",
+          "hash": "4653163348248436895"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/md102.png",
+          "hash": "581544399166683100"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/ms900.pdf",
+          "hash": "2643722958108944984"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/ms900.png",
+          "hash": "16439922211520851661"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/portfolio.png",
+          "hash": "12270564153707153126"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/profilelg.jpg",
+          "hash": "3642377912295042646"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/profilesm.jpg",
+          "hash": "15361694754115646048"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/signature.png",
+          "hash": "16773948087886195937"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/star-2-2.png",
+          "hash": "5502485838430338589"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/star-2.png",
+          "hash": "1618035679378694751"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/star1.svg",
+          "hash": "1892934735499956438"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/tbd.jpg",
+          "hash": "12071723981143325809"
+        },
+        {
+          "file": "apps/personal-portfolio/public/favicon.ico",
+          "hash": "11728413188760586365"
+        },
+        {
+          "file": "apps/personal-portfolio/tests/index.test.tsx",
+          "hash": "11056183168799669859",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/tsconfig.json",
+          "hash": "3221940855045008011"
+        },
+        {
+          "file": "apps/personal-portfolio/tsconfig.spec.json",
+          "hash": "6922413205408300107"
+        },
+        {
+          "file": "apps/personal-portfolio/utils/mdx.utils.ts",
+          "hash": "13562478062717177773"
+        },
+        {
+          "file": "apps/personal-portfolio/utils/tracking.utils.tsx",
+          "hash": "1796539310192597102",
+          "deps": [
+            "npm:@hotjar/browser",
+            "npm:@vercel/analytics",
+            "npm:next"
+          ]
         }
       ],
       "i18n": [
@@ -858,467 +1258,67 @@
           "hash": "16926797462261449620"
         }
       ],
-      "personal-portfolio": [
+      "store": [
         {
-          "file": "apps/personal-portfolio/.eslintrc.json",
-          "hash": "6611013156076466121"
+          "file": "libs/store/.eslintrc.json",
+          "hash": "11012487992710232822"
         },
         {
-          "file": "apps/personal-portfolio/case-studies/prueba.mdx",
-          "hash": "9179031628731173084"
+          "file": "libs/store/README.md",
+          "hash": "14268224184050075617"
         },
         {
-          "file": "apps/personal-portfolio/case-studies/prueba2.mdx",
-          "hash": "14036744611770020141"
+          "file": "libs/store/project.json",
+          "hash": "14622926798779224690"
         },
         {
-          "file": "apps/personal-portfolio/case-studies/prueba3.mdx",
-          "hash": "6938952853156330027"
+          "file": "libs/store/src/index.ts",
+          "hash": "9549265216385861042"
         },
         {
-          "file": "apps/personal-portfolio/case-studies/prueba4.mdx",
-          "hash": "16298364340249998360"
-        },
-        {
-          "file": "apps/personal-portfolio/case-studies/prueba5.mdx",
-          "hash": "7954891536503821684"
-        },
-        {
-          "file": "apps/personal-portfolio/index.d.ts",
-          "hash": "5498222895072842432"
-        },
-        {
-          "file": "apps/personal-portfolio/jest.config.ts",
-          "hash": "6956402663436376813"
-        },
-        {
-          "file": "apps/personal-portfolio/next-env.d.ts",
-          "hash": "15001922542048550947"
-        },
-        {
-          "file": "apps/personal-portfolio/next.config.js",
-          "hash": "9936191079683420957",
+          "file": "libs/store/src/lib/blog/index.ts",
+          "hash": "7028054376571644716",
           "deps": [
-            "npm:@nx/next"
+            "npm:@reduxjs/toolkit"
           ]
         },
         {
-          "file": "apps/personal-portfolio/pages/404.js",
-          "hash": "2853860360800413728",
+          "file": "libs/store/src/lib/blog/types.ts",
+          "hash": "3606556298236179986"
+        },
+        {
+          "file": "libs/store/src/lib/hooks.ts",
+          "hash": "4463342700467615898",
           "deps": [
-            "npm:framer-motion",
-            "npm:next",
-            "core-components",
-            "npm:react"
+            "npm:react-redux"
           ]
         },
         {
-          "file": "apps/personal-portfolio/pages/404.png",
-          "hash": "8099949021035215758"
-        },
-        {
-          "file": "apps/personal-portfolio/pages/CertificatesPage.module.scss",
-          "hash": "2035882925820273096"
-        },
-        {
-          "file": "apps/personal-portfolio/pages/_app.tsx",
-          "hash": "2963292947557671144",
+          "file": "libs/store/src/lib/layout/index.ts",
+          "hash": "2010662076623614963",
           "deps": [
-            "core-components",
-            "store",
-            "npm:aos",
-            "npm:@vercel/speed-insights",
-            "npm:bootstrap",
-            "npm:framer-motion",
-            "npm:next-themes",
-            "npm:next",
-            "npm:react",
-            "npm:react-redux",
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "libs/store/src/lib/layout/types.ts",
+          "hash": "8010209020070453087"
+        },
+        {
+          "file": "libs/store/src/lib/store.ts",
+          "hash": "13598545675636466348",
+          "deps": [
+            "npm:@reduxjs/toolkit",
             "npm:redux-persist"
           ]
         },
         {
-          "file": "apps/personal-portfolio/pages/bio.tsx",
-          "hash": "4579737770888404949",
-          "deps": [
-            "core-components",
-            "i18n",
-            "npm:next-themes",
-            "npm:next"
-          ]
+          "file": "libs/store/tsconfig.json",
+          "hash": "14088618039610991405"
         },
         {
-          "file": "apps/personal-portfolio/pages/certificates.tsx",
-          "hash": "17586025944732114921",
-          "deps": [
-            "npm:react",
-            "core-components",
-            "npm:reactstrap",
-            "npm:react-image-lightbox",
-            "i18n"
-          ]
-        },
-        {
-          "file": "apps/personal-portfolio/pages/contact.tsx",
-          "hash": "2593430435250211428",
-          "deps": [
-            "npm:@formspree/react",
-            "core-components",
-            "i18n",
-            "npm:react",
-            "npm:reactstrap"
-          ]
-        },
-        {
-          "file": "apps/personal-portfolio/pages/credentials.tsx",
-          "hash": "6414697636466182915",
-          "deps": [
-            "core-components",
-            "i18n",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/personal-portfolio/pages/cv.tsx",
-          "hash": "16369902260171227922",
-          "deps": [
-            "core-components",
-            "i18n",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/personal-portfolio/pages/index.tsx",
-          "hash": "17598420271938902532",
-          "deps": [
-            "core-components",
-            "i18n",
-            "npm:next-themes",
-            "npm:next",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/personal-portfolio/pages/offerings.tsx",
-          "hash": "9305545295727168962",
-          "deps": [
-            "core-components",
-            "i18n",
-            "npm:classnames",
-            "npm:next",
-            "npm:reactstrap"
-          ]
-        },
-        {
-          "file": "apps/personal-portfolio/pages/portfolio/[entry].tsx",
-          "hash": "1993989926194057442",
-          "deps": [
-            "core-components",
-            "npm:gray-matter",
-            "npm:next",
-            "npm:next-mdx-remote",
-            "npm:remark-gfm"
-          ]
-        },
-        {
-          "file": "apps/personal-portfolio/pages/portfolio/index.tsx",
-          "hash": "11913800391478524317",
-          "deps": [
-            "core-components",
-            "store",
-            "i18n",
-            "npm:next-themes",
-            "npm:react",
-            "npm:gray-matter",
-            "npm:next",
-            "npm:react-moment"
-          ]
-        },
-        {
-          "file": "apps/personal-portfolio/pages/styles-light.scss",
-          "hash": "6733390296069846421"
-        },
-        {
-          "file": "apps/personal-portfolio/pages/styles.scss",
-          "hash": "12585301407636820705"
-        },
-        {
-          "file": "apps/personal-portfolio/pages/tbd.tsx",
-          "hash": "9115067167273845603",
-          "deps": [
-            "core-components",
-            "i18n",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/personal-portfolio/posts/abc.txt",
-          "hash": "4234980849898001589"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/echoes-of-an-empty-heart.mdx",
-          "hash": "16518546455972726993"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/i-don’t-love-you-anymore-I.mdx",
-          "hash": "7347211315274819931"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/i-don’t-love-you-anymore-II.mdx",
-          "hash": "308898183237626212"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/if-you-wonder-why.mdx",
-          "hash": "2693186618183194489"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/the-gods-and-the-joke.mdx",
-          "hash": "11519158169386504201"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/the-hundred-lives-to-live.mdx",
-          "hash": "12316560920567342916"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/the-it.mdx",
-          "hash": "7071370229640812136"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/the-loudest-silence.mdx",
-          "hash": "4695909326697291566"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/the-memory.mdx",
-          "hash": "6217627772977747810"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/the-nights.mdx",
-          "hash": "4720840222316658122"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/the-poem-i-dont-want-to-write.mdx",
-          "hash": "8886474983317142428"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/the-silent-symphony.mdx",
-          "hash": "6064984264856122178"
-        },
-        {
-          "file": "apps/personal-portfolio/posts/you-should-know-better.mdx",
-          "hash": "15009482574003479349"
-        },
-        {
-          "file": "apps/personal-portfolio/project.json",
-          "hash": "4575371667075232982"
-        },
-        {
-          "file": "apps/personal-portfolio/public/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/404.jpg",
-          "hash": "8099949021035215758"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/DarioMesasCV.pdf",
-          "hash": "11734279452633517853"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/ai900.pdf",
-          "hash": "9469850677833586664"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/ai900.png",
-          "hash": "13613586811576111550"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/b1.jpg",
-          "hash": "5322084007285025313"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/bg1.png",
-          "hash": "1988836829220948772"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/blog-lg.png",
-          "hash": "888589922242217439"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/blog.png",
-          "hash": "4319026571540924066"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/case-studies/abc.png",
-          "hash": "13457653633665441271"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/case-studies/lg.png",
-          "hash": "13457653633665441271"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/case-studies/lu.png",
-          "hash": "13457653633665441271"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/case-studies/sg.png",
-          "hash": "13457653633665441271"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/credentials.png",
-          "hash": "3828894661998684238"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/cv.jpg",
-          "hash": "14871052631608598018"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/cv/caDarioMesasCV.pdf",
-          "hash": "14861496134528256560"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/cv/enDarioMesasCV.pdf",
-          "hash": "14861496134528256560"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/cv/esDarioMesas.pdf",
-          "hash": "14861496134528256560"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/dp900.pdf",
-          "hash": "1418962117508257162"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/dp900.png",
-          "hash": "10116708073006182275"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/flags/flagca.png",
-          "hash": "8970244663822692388"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/flags/flagen.png",
-          "hash": "10633787831834659634"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/flags/flages.png",
-          "hash": "15640223130900891175"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/icons/cta-icon.svg",
-          "hash": "12531215345958099932"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/icons/icon-2.svg",
-          "hash": "18299380306226086637"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/icons/icon.png",
-          "hash": "16578384637710179418"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/icons/icon.svg",
-          "hash": "12531215345958099932"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/icons/icon2-2.png",
-          "hash": "6864321371583874432"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/icons/icon2.png",
-          "hash": "10053155060496083269"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/icons/icon3-2.png",
-          "hash": "405615848309891611"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/icons/icon3.png",
-          "hash": "11854365188062509294"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/md102.pdf",
-          "hash": "4653163348248436895"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/md102.png",
-          "hash": "581544399166683100"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/ms900.pdf",
-          "hash": "2643722958108944984"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/ms900.png",
-          "hash": "16439922211520851661"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/portfolio.png",
-          "hash": "12270564153707153126"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/profilelg.jpg",
-          "hash": "3642377912295042646"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/profilesm.jpg",
-          "hash": "15361694754115646048"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/signature.png",
-          "hash": "16773948087886195937"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/star-2-2.png",
-          "hash": "5502485838430338589"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/star-2.png",
-          "hash": "1618035679378694751"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/star1.svg",
-          "hash": "1892934735499956438"
-        },
-        {
-          "file": "apps/personal-portfolio/public/assets/tbd.jpg",
-          "hash": "12071723981143325809"
-        },
-        {
-          "file": "apps/personal-portfolio/public/favicon.ico",
-          "hash": "11728413188760586365"
-        },
-        {
-          "file": "apps/personal-portfolio/tests/index.test.tsx",
-          "hash": "11056183168799669859",
-          "deps": [
-            "npm:react",
-            "npm:@testing-library/react"
-          ]
-        },
-        {
-          "file": "apps/personal-portfolio/tsconfig.json",
-          "hash": "3221940855045008011"
-        },
-        {
-          "file": "apps/personal-portfolio/tsconfig.spec.json",
-          "hash": "6922413205408300107"
-        },
-        {
-          "file": "apps/personal-portfolio/utils/mdx.utils.ts",
-          "hash": "13562478062717177773"
-        },
-        {
-          "file": "apps/personal-portfolio/utils/tracking.utils.tsx",
-          "hash": "1796539310192597102",
-          "deps": [
-            "npm:@hotjar/browser",
-            "npm:@vercel/analytics",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/personal-portfolio/pages/index.html",
-          "hash": "9397747079361934879"
+          "file": "libs/store/tsconfig.lib.json",
+          "hash": "16926797462261449620"
         }
       ]
     }
