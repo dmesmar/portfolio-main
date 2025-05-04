@@ -87,44 +87,52 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".github/workflows/nextjs.yml",
-        "hash": "3656425270347423648"
+        "file": "assets/open-link.svg",
+        "hash": "4102355578012129655"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
       },
       {
         "file": ".eslintrc.json",
         "hash": "17866138117546000433"
       },
       {
-        "file": ".npmrc",
-        "hash": "1743485301228659824"
-      },
-      {
-        "file": ".dockerignore",
-        "hash": "9337847545319974149"
+        "file": ".vscode/extensions.json",
+        "hash": "235626400633494639"
       },
       {
         "file": "libs/.gitkeep",
         "hash": "3244421341483603138"
       },
       {
-        "file": "assets/open-link.svg",
-        "hash": "4102355578012129655"
+        "file": ".dockerignore",
+        "hash": "9337847545319974149"
       },
       {
-        "file": ".vscode/extensions.json",
-        "hash": "235626400633494639"
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
       },
       {
-        "file": "apps/.gitkeep",
-        "hash": "3244421341483603138"
+        "file": "migrations.json",
+        "hash": "12650540116914318569"
       },
       {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
+        "file": ".docker/docker-compose.yaml",
+        "hash": "2373920154868289504"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
       },
       {
         "file": ".github/dependabot.yml",
         "hash": "12433580915786516937"
+      },
+      {
+        "file": ".github/workflows/nextjs.yml",
+        "hash": "3656425270347423648"
       },
       {
         "file": "renovate.json",
@@ -135,72 +143,64 @@
         "hash": "5027327698766784245"
       },
       {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
+        "file": "tsconfig.base.json",
+        "hash": "17125505079288791209"
       },
       {
         "file": "Dockerfile",
         "hash": "10616349284309558749"
       },
       {
-        "file": "migrations.json",
-        "hash": "12650540116914318569"
+        "file": "package.json",
+        "hash": "8283755123157708252"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "17125505079288791209"
-      },
-      {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "16088922570277978783"
-      },
-      {
-        "file": ".github/FUNDING.yml",
-        "hash": "180881509324921272"
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
       },
       {
         "file": ".gitignore",
         "hash": "4685382503087938635"
       },
       {
-        "file": "compose.yaml",
-        "hash": "6905586194972882453"
-      },
-      {
-        "file": ".docker/docker-compose.yaml",
-        "hash": "2373920154868289504"
-      },
-      {
         "file": "nx.json",
         "hash": "6940708801572925058"
       },
       {
-        "file": ".eslintignore",
-        "hash": "7663861978715868291"
+        "file": ".github/FUNDING.yml",
+        "hash": "180881509324921272"
       },
       {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": ".nginx/nginx.conf",
-        "hash": "13801735157279586102"
-      },
-      {
-        "file": "package.json",
-        "hash": "8283755123157708252"
+        "file": "compose.yaml",
+        "hash": "6905586194972882453"
       },
       {
         "file": "jest.preset.js",
         "hash": "9430166341120122740"
       },
       {
-        "file": ".prettierignore",
-        "hash": "16448050467312557263"
+        "file": ".nginx/nginx.conf",
+        "hash": "13801735157279586102"
       },
       {
         "file": "package-lock.json",
         "hash": "2444223549802190038"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "1743485301228659824"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
       }
     ],
     "projectFileMap": {
@@ -897,7 +897,7 @@
         },
         {
           "file": "apps/personal-portfolio/next.config.js",
-          "hash": "15626063092787351942",
+          "hash": "12182916525759303730",
           "deps": [
             "npm:@nx/next"
           ]
