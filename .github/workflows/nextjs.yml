@@ -35,38 +35,75 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-      - name: Build with Nx
-        run: npx nx build personal-portfolio --prod
-      
-      # Add explicit Next.js export step
-      - name: Export Next.js as static HTML
+      # Try using the Nx export command directly
+      - name: Export Next.js site with Nx
         run: |
-          cd apps/personal-portfolio
-          # Ensure we're in the right directory
-          ls -la
-          # Run the export command directly
-          ../../node_modules/.bin/next export -o ../../out
+          echo "NODE_ENV=production" >> $GITHUB_ENV
+          npx nx export personal-portfolio --prod
       
-      - name: Validate exported output
+      # Find the export output directory
+      - name: Find export output
+        id: find-output
         run: |
-          echo "Checking exported output..."
-          ls -la out
+          echo "Looking for export output..."
           
-          # Make sure index.html exists in the output
-          if [ ! -f out/index.html ]; then
-            echo "ERROR: index.html not found in export output!"
+          # Check common export paths
+          if [ -d "dist/apps/personal-portfolio/exported" ]; then
+            echo "EXPORT_DIR=dist/apps/personal-portfolio/exported" >> $GITHUB_ENV
+            echo "Export found at dist/apps/personal-portfolio/exported"
+          elif [ -d "dist/apps/personal-portfolio/out" ]; then
+            echo "EXPORT_DIR=dist/apps/personal-portfolio/out" >> $GITHUB_ENV
+            echo "Export found at dist/apps/personal-portfolio/out"
+          elif [ -d "apps/personal-portfolio/out" ]; then
+            echo "EXPORT_DIR=apps/personal-portfolio/out" >> $GITHUB_ENV
+            echo "Export found at apps/personal-portfolio/out"
+          else
+            echo "Searching for out directory recursively..."
+            OUT_DIR=$(find . -type d -name "out" | grep -v node_modules | head -n 1)
+            
+            if [ -n "$OUT_DIR" ]; then
+              echo "EXPORT_DIR=$OUT_DIR" >> $GITHUB_ENV
+              echo "Export found at $OUT_DIR"
+            else
+              echo "No export directory found. Looking for any HTML files..."
+              HTML_DIR=$(find dist -name "*.html" | head -n 1 | xargs dirname || echo "")
+              
+              if [ -n "$HTML_DIR" ]; then
+                echo "EXPORT_DIR=$HTML_DIR" >> $GITHUB_ENV
+                echo "HTML files found at $HTML_DIR"
+              else
+                echo "ERROR: Could not find export output!"
+                find dist -type d | sort
+                exit 1
+              fi
+            fi
+          fi
+      
+      # Validate the export directory
+      - name: Validate export directory
+        run: |
+          if [ -z "$EXPORT_DIR" ]; then
+            echo "ERROR: Export directory not found!"
+            exit 1
+          fi
+          
+          echo "Checking export directory: $EXPORT_DIR"
+          ls -la $EXPORT_DIR
+          
+          if [ ! -f "$EXPORT_DIR/index.html" ]; then
+            echo "ERROR: index.html not found in export directory!"
             exit 1
           fi
       
-      # Add .nojekyll file to prevent GitHub Pages from processing with Jekyll
+      # Add .nojekyll file
       - name: Add .nojekyll file
         run: |
-          touch out/.nojekyll
+          touch $EXPORT_DIR/.nojekyll
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ${{ env.EXPORT_DIR }}
 
   deploy:
     environment:
@@ -76,5 +113,4 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        id:<span class="ml-2" /><span class="inline-block w-3 h-3 rounded-full bg-neutral-a12 align-middle mb-[0.1rem]" />
