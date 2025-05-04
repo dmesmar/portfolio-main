@@ -28,7 +28,7 @@ jobs:
       - name: Instal deps and run unit tests
         run: |
           npm ci
-          npm run personal-portfolio
+          npm run build
 
   deploy:
     environment:
