@@ -18,7 +18,7 @@ const nextConfig = {
     svgr: false,
   },
   output: 'export',
-  basePath: '/apps/portfolio-main',
+  basePath: '/apps/personal-portfolio',
 };
 
 const plugins = [
