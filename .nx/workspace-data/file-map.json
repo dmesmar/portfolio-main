@@ -24,11 +24,7 @@
     "next-themes": "^0.3.0",
     "react": "^18.3.1",
     "react-calendly": "^4.1.1",
-<<<<<<< HEAD
     "react-dom": "^18.3.1",
-=======
-    "react-dom": "19.1.0",
->>>>>>> 7cd7daee86bce59e84ec6c6a0b79da564b5e4967
     "react-github-calendar": "^4.2.2",
     "react-image-lightbox": "^5.1.4",
     "react-moment": "^1.1.3",
@@ -91,7 +87,6 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-<<<<<<< HEAD
         "file": "dist/apps/personal-portfolio/public/assets/404.jpg",
         "hash": "8099949021035215758"
       },
@@ -154,29 +149,12 @@
       {
         "file": ".dockerignore",
         "hash": "8371422785544518460"
-=======
-        "file": "jest.preset.js",
-        "hash": "7473220183190921152"
-      },
-      {
-        "file": "package.json",
-        "hash": "9283156838192718740"
-      },
-      {
-        "file": ".nginx/nginx.conf",
-        "hash": "8453352850825070498"
-      },
-      {
-        "file": "renovate.json",
-        "hash": "13443992470324556308"
->>>>>>> 7cd7daee86bce59e84ec6c6a0b79da564b5e4967
       },
       {
         "file": "apps/.gitkeep",
         "hash": "3244421341483603138"
       },
       {
-<<<<<<< HEAD
         "file": "dist/apps/personal-portfolio/public/.gitkeep",
         "hash": "3244421341483603138"
       },
@@ -243,53 +221,12 @@
       {
         "file": "tools/tsconfig.tools.json",
         "hash": "11810713488198132402"
-=======
-        "file": "assets/open-link.svg",
-        "hash": "9371317109158837357"
-      },
-      {
-        "file": "README.md",
-        "hash": "16460941514148185379"
-      },
-      {
-        "file": ".docker/docker-compose.yaml",
-        "hash": "6841547899925939665"
-      },
-      {
-        "file": ".dockerignore",
-        "hash": "8371422785544518460"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "17155643021314519802"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "13391140343975966684"
-      },
-      {
-        "file": ".github/dependabot.yml",
-        "hash": "17880178529918778353"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "3407785570333453138"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "6120393370793295371"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "12181963894070265571"
->>>>>>> 7cd7daee86bce59e84ec6c6a0b79da564b5e4967
       },
       {
         "file": ".prettierignore",
         "hash": "2687824826588932174"
       },
       {
-<<<<<<< HEAD
         "file": ".vscode/extensions.json",
         "hash": "13391140343975966684"
       },
@@ -324,25 +261,12 @@
       {
         "file": "dist/apps/personal-portfolio/public/assets/case-studies/lu.png",
         "hash": "13457653633665441271"
-=======
-        "file": "nx.json",
-        "hash": "8971965658938709239"
-      },
-      {
-        "file": "Dockerfile",
-        "hash": "13192074523490816689"
-      },
-      {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "11810713488198132402"
->>>>>>> 7cd7daee86bce59e84ec6c6a0b79da564b5e4967
       },
       {
         "file": ".npmrc",
         "hash": "1743485301228659824"
       },
       {
-<<<<<<< HEAD
         "file": ".eslintrc.json",
         "hash": "9188201835120897554"
       },
@@ -353,21 +277,12 @@
       {
         "file": "dist/apps/personal-portfolio/public/assets/md102.png",
         "hash": "581544399166683100"
-=======
-        "file": "compose.yaml",
-        "hash": "12900953774628336726"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "13404745306227114823"
->>>>>>> 7cd7daee86bce59e84ec6c6a0b79da564b5e4967
       },
       {
         "file": "libs/.gitkeep",
         "hash": "3244421341483603138"
       },
       {
-<<<<<<< HEAD
         "file": "README.md",
         "hash": "16460941514148185379"
       },
@@ -440,13 +355,10 @@
         "hash": "11854365188062509294"
       },
       {
-=======
->>>>>>> 7cd7daee86bce59e84ec6c6a0b79da564b5e4967
         "file": ".editorconfig",
         "hash": "11532813898455409296"
       },
       {
-<<<<<<< HEAD
         "file": "dist/apps/personal-portfolio/public/assets/dp900.png",
         "hash": "10116708073006182275"
       },
@@ -461,21 +373,12 @@
       {
         "file": "dist/apps/personal-portfolio/public/assets/case-studies/lg.png",
         "hash": "13457653633665441271"
-=======
-        "file": "migrations.json",
-        "hash": "16809287042842644393"
-      },
-      {
-        "file": ".github/FUNDING.yml",
-        "hash": "8451750085923079472"
->>>>>>> 7cd7daee86bce59e84ec6c6a0b79da564b5e4967
       },
       {
         "file": ".prettierrc",
         "hash": "6820402234827505055"
       },
       {
-<<<<<<< HEAD
         "file": "tsconfig.base.json",
         "hash": "6120393370793295371"
       },
@@ -501,545 +404,6 @@
       }
     ],
     "projectFileMap": {
-=======
-        "file": ".eslintrc.json",
-        "hash": "9188201835120897554"
-      }
-    ],
-    "projectFileMap": {
-      "store": [
-        {
-          "file": "libs/store/.eslintrc.json",
-          "hash": "14830867113928387670"
-        },
-        {
-          "file": "libs/store/README.md",
-          "hash": "15983487490036612803"
-        },
-        {
-          "file": "libs/store/project.json",
-          "hash": "11048646824324033209"
-        },
-        {
-          "file": "libs/store/src/index.ts",
-          "hash": "14364699501305937034"
-        },
-        {
-          "file": "libs/store/src/lib/blog/index.ts",
-          "hash": "17678792801906800879",
-          "deps": [
-            "npm:@reduxjs/toolkit"
-          ]
-        },
-        {
-          "file": "libs/store/src/lib/blog/types.ts",
-          "hash": "13885505165969884655"
-        },
-        {
-          "file": "libs/store/src/lib/hooks.ts",
-          "hash": "10364339568731894689",
-          "deps": [
-            "npm:react-redux"
-          ]
-        },
-        {
-          "file": "libs/store/src/lib/layout/index.ts",
-          "hash": "5497065594865047283",
-          "deps": [
-            "npm:@reduxjs/toolkit"
-          ]
-        },
-        {
-          "file": "libs/store/src/lib/layout/types.ts",
-          "hash": "2180176320204834209"
-        },
-        {
-          "file": "libs/store/src/lib/store.ts",
-          "hash": "10918688048350535413",
-          "deps": [
-            "npm:@reduxjs/toolkit",
-            "npm:redux-persist"
-          ]
-        },
-        {
-          "file": "libs/store/tsconfig.json",
-          "hash": "13979398437825372391"
-        },
-        {
-          "file": "libs/store/tsconfig.lib.json",
-          "hash": "6604186782021510538"
-        }
-      ],
-      "core-components": [
-        {
-          "file": "libs/core-components/.eslintrc.json",
-          "hash": "14830867113928387670"
-        },
-        {
-          "file": "libs/core-components/README.md",
-          "hash": "12866470826190783278"
-        },
-        {
-          "file": "libs/core-components/project.json",
-          "hash": "6940303859207416423"
-        },
-        {
-          "file": "libs/core-components/src/index.ts",
-          "hash": "15141062420769046685"
-        },
-        {
-          "file": "libs/core-components/src/lib/GithubCalendar.tsx",
-          "hash": "1417192150533394572",
-          "deps": [
-            "npm:react",
-            "npm:react-github-calendar"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/YouTubeVideo.tsx",
-          "hash": "6811637981358745560",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/blog-navbar.component.tsx",
-          "hash": "12354870808129375621",
-          "deps": [
-            "store",
-            "npm:next",
-            "npm:react-moment",
-            "npm:reactstrap"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/head.component.tsx",
-          "hash": "3860584556227849591",
-          "deps": [
-            "npm:next",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/language-configurator.tsx",
-          "hash": "1213196997789709122",
-          "deps": [
-            "npm:react",
-            "i18n"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/ShiningStar.tsx",
-          "hash": "12616399662130121653",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/ShootingStar.tsx",
-          "hash": "1683560496948068934",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/breadcrumb.component.tsx",
-          "hash": "421608814962491062"
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/footer.component.tsx",
-          "hash": "6934497055121727259",
-          "deps": [
-            "npm:next",
-            "i18n"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/header.component.tsx",
-          "hash": "506995027564621893",
-          "deps": [
-            "store",
-            "npm:classnames",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/index.ts",
-          "hash": "15962390781618986765"
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/layout.component.tsx",
-          "hash": "2741614594700781369",
-          "deps": [
-            "npm:classnames",
-            "npm:next",
-            "npm:react",
-            [
-              "npm:react-calendly",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/menu.ts",
-          "hash": "18159188908879800569",
-          "deps": [
-            "i18n"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/star.module.scss",
-          "hash": "907660353046351812"
-        },
-        {
-          "file": "libs/core-components/src/lib/portfolio/index.ts",
-          "hash": "7903889821810120396"
-        },
-        {
-          "file": "libs/core-components/src/lib/portfolio/portfolio-footer.component.tsx",
-          "hash": "17946386299720690037",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/portfolio/portfolio-header.component.tsx",
-          "hash": "3510300805098851881"
-        },
-        {
-          "file": "libs/core-components/src/lib/preloader.component.tsx",
-          "hash": "14517118574189649895",
-          "deps": [
-            "npm:framer-motion"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/SVGComponent.tsx",
-          "hash": "5184522502327029339",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/button.css",
-          "hash": "8813083829786779021"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/button.tsx",
-          "hash": "15407320330517849673",
-          "deps": [
-            "npm:react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/icon.tsx",
-          "hash": "4444436397414114818",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/index.ts",
-          "hash": "17231903211719023081"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/lines.css",
-          "hash": "15754163303069634250"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/lines.tsx",
-          "hash": "6936866672292156990",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/scripts/canvas.ts",
-          "hash": "429630084927536186",
-          "deps": [
-            "npm:d3"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/scripts/force.ts",
-          "hash": "13240450562761299679",
-          "deps": [
-            "npm:d3-array",
-            "npm:d3-drag",
-            "npm:d3-force",
-            "npm:d3-random",
-            "npm:d3-selection"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/section.css",
-          "hash": "2429778953998859726"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/section/elements.tsx",
-          "hash": "10047535008254701072",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/section/grid.tsx",
-          "hash": "12677116251651372193",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/section/index.tsx",
-          "hash": "10401139270906346383",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/section/nav.tsx",
-          "hash": "14123402094763722073",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/section/types.ts",
-          "hash": "6956984362944663444",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/skills-list.ts",
-          "hash": "7517182987090094266"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/skills.css",
-          "hash": "2249978207953997259"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/skills.tsx",
-          "hash": "11655924401887473923",
-          "deps": [
-            "npm:react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg.css",
-          "hash": "1898949196750698669"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/adobeillustrator.svg",
-          "hash": "16160172197550033873"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/adobephotoshop.svg",
-          "hash": "5405873161526215764"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/bootstrap.svg",
-          "hash": "10306334944467547174"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/c++.svg",
-          "hash": "1595028492887018897"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/c.svg",
-          "hash": "8996624979238502170"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/canva.svg",
-          "hash": "2034561280872182255"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/cloudflare.svg",
-          "hash": "7798325773775727726"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/copilot.svg",
-          "hash": "12991955672344426042"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/css3.svg",
-          "hash": "9597799669059812572"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/figma.svg",
-          "hash": "5136708450735679850"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/git.svg",
-          "hash": "9658755458367043271"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/github.svg",
-          "hash": "10104316582269130886"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/githubactions.svg",
-          "hash": "9736691025290039342"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/githubpages.svg",
-          "hash": "12240174925425460825"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/gnubash.svg",
-          "hash": "6702400131044650960"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/googleanalytics.svg",
-          "hash": "4162431238093738570"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/googletagmanager.svg",
-          "hash": "1881612104954170856"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/html5.svg",
-          "hash": "2922290744941613450"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/hugging.svg",
-          "hash": "3404393993031996293"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/javascript.svg",
-          "hash": "1339985932969854044"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/json-schema.svg",
-          "hash": "7267735488278601469"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/json.svg",
-          "hash": "33708782819147682"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/linux.svg",
-          "hash": "12275693334917471812"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/logo.svg",
-          "hash": "13916000590578282298"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/matlab.svg",
-          "hash": "13457174083543401070"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/mdx.svg",
-          "hash": "14949581472299897703"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/microsoftexcel.svg",
-          "hash": "12284606718757195318"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/microsoftpowerpoint.svg",
-          "hash": "5488151789283707962"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/microsoftword.svg",
-          "hash": "5491054068990968737"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/netlify.svg",
-          "hash": "12474250222095238061"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/nextdotjs.svg",
-          "hash": "4386790002236399054"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/npm.svg",
-          "hash": "1171935381622993809"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/prettier.svg",
-          "hash": "1032930683242359718"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/python.svg",
-          "hash": "16304175349637376025"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/react.svg",
-          "hash": "2093395954760806647"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/sass.svg",
-          "hash": "6154665378483629794"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/solidity.svg",
-          "hash": "12131705112466913646"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/sublimetext.svg",
-          "hash": "16164892249949821256"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/tailwindcss.svg",
-          "hash": "14557587096271009180"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/tensorflow.svg",
-          "hash": "1940700550563984590"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/tsnode.svg",
-          "hash": "5798983999030658371"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/typescript.svg",
-          "hash": "1271923861790582801"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/wordpress.svg",
-          "hash": "9438361705644771843"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/xampp.svg",
-          "hash": "18118196999193661670"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/yarn.svg",
-          "hash": "6036140344152277000"
-        },
-        {
-          "file": "libs/core-components/src/lib/theme-configurator.component.tsx",
-          "hash": "1893048088037366568",
-          "deps": [
-            "npm:next-themes"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/utils/get-language-asset.utils.ts",
-          "hash": "10681115510061206190"
-        },
-        {
-          "file": "libs/core-components/src/lib/utils/get-themed-asset.utils.ts",
-          "hash": "5438635258811292975"
-        },
-        {
-          "file": "libs/core-components/src/lib/utils/index.ts",
-          "hash": "12843777679570540779"
-        },
-        {
-          "file": "libs/core-components/tsconfig.json",
-          "hash": "13979398437825372391"
-        },
-        {
-          "file": "libs/core-components/tsconfig.lib.json",
-          "hash": "6604186782021510538"
-        }
-      ],
->>>>>>> 7cd7daee86bce59e84ec6c6a0b79da564b5e4967
       "i18n": [
         {
           "file": "libs/i18n/.eslintrc.json",
