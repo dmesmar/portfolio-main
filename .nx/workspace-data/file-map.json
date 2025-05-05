@@ -4,6 +4,7 @@
   "deps": {
     "@formspree/react": "^3.0.0",
     "@hotjar/browser": "^1.0.9",
+    "@netlify/plugin-nextjs": "^5.10.7",
     "@nx/next": "20.6.2",
     "@reduxjs/toolkit": "^2.0.0",
     "@splinetool/react-spline": "^4.0.0",
@@ -87,76 +88,16 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".docker/docker-compose.yaml",
-        "hash": "6841547899925939665"
-      },
-      {
-        "file": ".dockerignore",
-        "hash": "8371422785544518460"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "11532813898455409296"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "13404745306227114823"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "9188201835120897554"
+        "file": ".npmrc",
+        "hash": "1743485301228659824"
       },
       {
         "file": ".github/FUNDING.yml",
         "hash": "8451750085923079472"
       },
       {
-        "file": ".github/dependabot.yml",
-        "hash": "17880178529918778353"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "17155643021314519802"
-      },
-      {
-        "file": ".nginx/nginx.conf",
-        "hash": "8453352850825070498"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "1743485301228659824"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "2687824826588932174"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "6820402234827505055"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "13391140343975966684"
-      },
-      {
-        "file": "Dockerfile",
-        "hash": "13192074523490816689"
-      },
-      {
-        "file": "README.md",
-        "hash": "16460941514148185379"
-      },
-      {
-        "file": "apps/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
         "file": "assets/open-link.svg",
         "hash": "9371317109158837357"
-      },
-      {
-        "file": "compose.yaml",
-        "hash": "12900953774628336726"
       },
       {
         "file": "jest.config.ts",
@@ -167,36 +108,96 @@
         "hash": "7473220183190921152"
       },
       {
-        "file": "libs/.gitkeep",
-        "hash": "3244421341483603138"
+        "file": ".github/dependabot.yml",
+        "hash": "17880178529918778353"
       },
       {
-        "file": "migrations.json",
-        "hash": "16809287042842644393"
+        "file": ".prettierrc",
+        "hash": "6820402234827505055"
       },
       {
-        "file": "nx.json",
-        "hash": "8971965658938709239"
+        "file": "Dockerfile",
+        "hash": "13192074523490816689"
       },
       {
         "file": "package-lock.json",
         "hash": "2404030952279423091"
       },
       {
-        "file": "package.json",
-        "hash": "17659132628874468905"
+        "file": ".editorconfig",
+        "hash": "11532813898455409296"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "2687824826588932174"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "13391140343975966684"
       },
       {
         "file": "renovate.json",
         "hash": "13443992470324556308"
       },
       {
+        "file": "tsconfig.base.json",
+        "hash": "6120393370793295371"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "9188201835120897554"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "17155643021314519802"
+      },
+      {
+        "file": "README.md",
+        "hash": "16460941514148185379"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "13404745306227114823"
+      },
+      {
+        "file": ".nginx/nginx.conf",
+        "hash": "8453352850825070498"
+      },
+      {
+        "file": "compose.yaml",
+        "hash": "12900953774628336726"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "16809287042842644393"
+      },
+      {
+        "file": "package.json",
+        "hash": "13529928331756576510"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "nx.json",
+        "hash": "8971965658938709239"
+      },
+      {
         "file": "tools/tsconfig.tools.json",
         "hash": "11810713488198132402"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "6120393370793295371"
+        "file": ".docker/docker-compose.yaml",
+        "hash": "6841547899925939665"
+      },
+      {
+        "file": ".dockerignore",
+        "hash": "8371422785544518460"
       }
     ],
     "projectFileMap": {

@@ -12,6 +12,7 @@
   "dependencies": {
     "@formspree/react": "^3.0.0",
     "@hotjar/browser": "^1.0.9",
+    "@netlify/plugin-nextjs": "^5.10.7",
     "@nx/next": "20.6.2",
     "@reduxjs/toolkit": "^2.0.0",
     "@splinetool/react-spline": "^4.0.0",
