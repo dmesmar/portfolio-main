@@ -18,7 +18,7 @@ function regexEqual(x, y) {
  */
 function getWithNxContext() {
 return {
-workspaceRoot: 'C:\\Users\\Usuario\\Downloads\\portfolio-main\\portfolio-main',
+workspaceRoot: 'C:\\Users\\Usuario\\Desktop\\cosas\\PROYECTOS\\portfolio-main',
 libsDir: 'libs'
 }
 }

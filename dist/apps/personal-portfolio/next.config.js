@@ -27,4 +27,4 @@ const plugins = [
   withNx,
 ];
 
-module.exports = nextConfig;
+module.exports = composePlugins(...plugins)(nextConfig);

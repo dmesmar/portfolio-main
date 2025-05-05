@@ -16798,11 +16798,6 @@
       },
       {
         "source": "personal-portfolio",
-        "target": "npm:react",
-        "type": "static"
-      },
-      {
-        "source": "personal-portfolio",
         "target": "store",
         "type": "static"
       },
@@ -16898,11 +16893,6 @@
       }
     ],
     "core-components": [
-      {
-        "source": "core-components",
-        "target": "npm:react",
-        "type": "static"
-      },
       {
         "source": "core-components",
         "target": "npm:react-github-calendar",

@@ -439,3 +439,61 @@
 [NX Daemon Server] - 2025-05-04T11:58:02.938Z - [WATCHER]: Stopping the watcher for C:\Users\Usuario\Downloads\portfolio-main\portfolio-main (sources)
 [NX Daemon Server] - 2025-05-04T11:58:02.938Z - [WATCHER]: Stopping the watcher for C:\Users\Usuario\Downloads\portfolio-main\portfolio-main (outputs)
 [NX Daemon Server] - 2025-05-04T11:58:02.939Z - Server stopped because: "LOCK_FILES_CHANGED"
+[NX Daemon Server] - 2025-05-05T07:46:15.056Z - Started listening on: \\.\pipe\nx\C:\Users\Usuario\AppData\Local\Temp\447b5806aaaf92ceda02\d.sock
+[NX Daemon Server] - 2025-05-05T07:46:15.059Z - [WATCHER]: Subscribed to changes within: C:\Users\Usuario\Desktop\cosas\PROYECTOS\portfolio-main (native)
+[NX Daemon Server] - 2025-05-05T07:46:15.065Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-05-05T07:46:15.067Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-05-05T07:46:15.067Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-05-05T07:46:15.068Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-05-05T07:46:15.266Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-05T07:46:15.266Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-05T07:46:15.266Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-05T07:46:15.271Z - Time taken for 'loadNxPlugins' 196.1299ms
+[NX Daemon Server] - 2025-05-05T07:46:15.313Z - Time taken for 'build-project-configs' 26.32650000000001ms
+[NX Daemon Server] - 2025-05-05T07:46:15.588Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-05T07:46:15.589Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-05T07:46:15.589Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-05-05T07:46:15.590Z - Time taken for 'total for creating and serializing project graph' 520.7237ms
+[NX Daemon Server] - 2025-05-05T07:46:15.591Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-05-05T07:46:15.591Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 521. Response time: 2.
+[NX Daemon Server] - 2025-05-05T07:46:15.654Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-05-05T07:46:15.655Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-05-05T07:46:15.655Z - Handled HASH_TASKS. Handling time: 15. Response time: 1.
+[NX Daemon Server] - 2025-05-05T07:46:17.781Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-05-05T07:46:17.782Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-05-05T07:46:17.782Z - Handled RECORD_OUTPUTS_HASH. Handling time: 2. Response time: 1.
+[NX Daemon Server] - 2025-05-05T07:46:18.311Z - [REQUEST]: Responding to the client. PROCESS_IN_BACKGROUND
+[NX Daemon Server] - 2025-05-05T07:46:18.311Z - Uploading file artifacts
+[NX Daemon Server] - 2025-05-05T07:46:18.317Z - Done responding to the client PROCESS_IN_BACKGROUND
+[NX Daemon Server] - 2025-05-05T07:46:18.317Z - Handled PROCESS_IN_BACKGROUND. Handling time: 445. Response time: 6.
+[NX Daemon Server] - 2025-05-05T07:46:18.318Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-05-05T07:46:18.582Z - Done uploading file artifacts
+[NX Daemon Server] - 2025-05-05T07:46:18.582Z - Sending EndRun request
+[NX Daemon Server] - 2025-05-05T07:46:18.745Z - Done sending EndRun request
+[NX Daemon Server] - 2025-05-05T07:47:43.093Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-05T07:47:43.095Z - [WATCHER]: package.json was modified
+[NX Daemon Server] - 2025-05-05T07:47:43.202Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-05T07:47:43.202Z - [REQUEST]: package.json
+[NX Daemon Server] - 2025-05-05T07:47:43.202Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-05T07:47:43.204Z - Time taken for 'hash changed files from watcher' 0.3496000000013737ms
+[NX Daemon Server] - 2025-05-05T07:47:43.226Z - Time taken for 'build-project-configs' 16.2098999999871ms
+[NX Daemon Server] - 2025-05-05T07:47:43.260Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-05T07:47:43.261Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-05T07:47:43.261Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-05T07:47:43.261Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-05T07:47:43.261Z - Time taken for 'total execution time for createProjectGraph()' 30.138299999991432ms
+[NX Daemon Server] - 2025-05-05T07:47:43.498Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-05T07:47:43.498Z - [WATCHER]: Stopping the watcher for C:\Users\Usuario\Desktop\cosas\PROYECTOS\portfolio-main (sources)
+[NX Daemon Server] - 2025-05-05T07:47:43.499Z - [WATCHER]: Stopping the watcher for C:\Users\Usuario\Desktop\cosas\PROYECTOS\portfolio-main (outputs)
+[NX Daemon Server] - 2025-05-05T07:47:43.500Z - Server stopped because: "LOCK_FILES_CHANGED"
+[NX Daemon Server] - 2025-05-05T07:49:27.520Z - Started listening on: \\.\pipe\nx\C:\Users\Usuario\AppData\Local\Temp\447b5806aaaf92ceda02\d.sock
+[NX Daemon Server] - 2025-05-05T07:49:27.523Z - [WATCHER]: Subscribed to changes within: C:\Users\Usuario\Desktop\cosas\PROYECTOS\portfolio-main (native)
+[NX Daemon Server] - 2025-05-05T07:49:27.530Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-05-05T07:49:27.532Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-05-05T07:49:27.532Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-05-05T07:49:27.534Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2025-05-05T07:49:27.534Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2025-05-05T07:49:27.534Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-05-05T07:49:27.543Z - [WATCHER]: Stopping the watcher for C:\Users\Usuario\Desktop\cosas\PROYECTOS\portfolio-main (sources)
+[NX Daemon Server] - 2025-05-05T07:49:27.543Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-05-05T07:49:27.544Z - [WATCHER]: Stopping the watcher for C:\Users\Usuario\Desktop\cosas\PROYECTOS\portfolio-main (outputs)
