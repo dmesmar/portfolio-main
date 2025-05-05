@@ -32,11 +32,7 @@
     "next-themes": "^0.3.0",
     "react": "^18.3.1",
     "react-calendly": "^4.1.1",
-<<<<<<< HEAD
     "react-dom": "^18.3.1",
-=======
-    "react-dom": "19.1.0",
->>>>>>> 7cd7daee86bce59e84ec6c6a0b79da564b5e4967
     "react-github-calendar": "^4.2.2",
     "react-image-lightbox": "^5.1.4",
     "react-moment": "^1.1.3",
