@@ -2790,6 +2790,15 @@
         "hash": "sha512-9zESzOO5aDByvhIAsOy9TbpZ0Ur2AJbUI7UT73kcUTS2mxAMHOBaa1st/jAymNoCtvrit99kkzT1FZuXVcgfIQ=="
       }
     },
+    "npm:@netlify/plugin-nextjs": {
+      "type": "npm",
+      "name": "npm:@netlify/plugin-nextjs",
+      "data": {
+        "version": "5.10.7",
+        "packageName": "@netlify/plugin-nextjs",
+        "hash": "sha512-UZ0D6MKMV+7toNTeiki96YDcxwR/2lddW9zJQh4n62o564S/D2r5w46UTE0DcCY7Jtw7WGVOy1VtB3ws2gKW0A=="
+      }
+    },
     "npm:@next/env": {
       "type": "npm",
       "name": "npm:@next/env",
@@ -9189,6 +9198,42 @@
         "hash": "sha512-KZNh1xvWG1ZDFD2f2WkvvnMpp7Sjsl6xJXCsvfEe8GH1FLXn6GtXo7lY9S8xDcn6oBWmKA0hSrlrp1DNQ9QDnQ=="
       }
     },
+    "npm:eslint-plugin-react@7.37.5": {
+      "type": "npm",
+      "name": "npm:eslint-plugin-react@7.37.5",
+      "data": {
+        "version": "7.37.5",
+        "packageName": "eslint-plugin-react",
+        "hash": "sha512-Qteup0SqU15kdocexFNAJMvCJEfa2xUKNV4CC1xsVMrIIqEy3SQ/rqyxCWNzfrd3/ldy6HMlD2e0JDVpDg2qIA=="
+      }
+    },
+    "npm:eslint-plugin-react": {
+      "type": "npm",
+      "name": "npm:eslint-plugin-react",
+      "data": {
+        "version": "7.32.2",
+        "packageName": "eslint-plugin-react",
+        "hash": "sha512-t2fBMa+XzonrrNkyVirzKlvn5RXzzPwRHtMvLAtVZrt8oxgnTQaYbU6SXTOO1mwQgp1y5+toMSKInnzGr0Knqg=="
+      }
+    },
+    "npm:resolve@2.0.0-next.5": {
+      "type": "npm",
+      "name": "npm:resolve@2.0.0-next.5",
+      "data": {
+        "version": "2.0.0-next.5",
+        "packageName": "resolve",
+        "hash": "sha512-U7WjGVG9sH8tvjW5SmGbQuui75FiyjAX72HX15DwBBwF9dNiQZRQAg9nnPhYy+TUnE0+VcrttuvNI8oSxZcocA=="
+      }
+    },
+    "npm:resolve": {
+      "type": "npm",
+      "name": "npm:resolve",
+      "data": {
+        "version": "1.22.8",
+        "packageName": "resolve",
+        "hash": "sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw=="
+      }
+    },
     "npm:eslint-config-prettier": {
       "type": "npm",
       "name": "npm:eslint-config-prettier",
@@ -9306,15 +9351,6 @@
         "hash": "sha512-63Bog4iIethyo8smBklORknVjB0T2dwB8Mr/hIC+fBS0uyHdYYpzM/Ed+YC8VxTjlXHEWFOdmgwcDn1U2L9VCA=="
       }
     },
-    "npm:eslint-plugin-react": {
-      "type": "npm",
-      "name": "npm:eslint-plugin-react",
-      "data": {
-        "version": "7.37.5",
-        "packageName": "eslint-plugin-react",
-        "hash": "sha512-Qteup0SqU15kdocexFNAJMvCJEfa2xUKNV4CC1xsVMrIIqEy3SQ/rqyxCWNzfrd3/ldy6HMlD2e0JDVpDg2qIA=="
-      }
-    },
     "npm:eslint-plugin-react-hooks": {
       "type": "npm",
       "name": "npm:eslint-plugin-react-hooks",
@@ -9322,24 +9358,6 @@
         "version": "4.6.2",
         "packageName": "eslint-plugin-react-hooks",
         "hash": "sha512-QzliNJq4GinDBcD8gPB5v0wh6g8q3SUi6EFF0x8N/BL9PoVs0atuGc47ozMRyOWAKdwaZ5OnbOEa3WR+dSGKuQ=="
-      }
-    },
-    "npm:resolve@2.0.0-next.5": {
-      "type": "npm",
-      "name": "npm:resolve@2.0.0-next.5",
-      "data": {
-        "version": "2.0.0-next.5",
-        "packageName": "resolve",
-        "hash": "sha512-U7WjGVG9sH8tvjW5SmGbQuui75FiyjAX72HX15DwBBwF9dNiQZRQAg9nnPhYy+TUnE0+VcrttuvNI8oSxZcocA=="
-      }
-    },
-    "npm:resolve": {
-      "type": "npm",
-      "name": "npm:resolve",
-      "data": {
-        "version": "1.22.8",
-        "packageName": "resolve",
-        "hash": "sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw=="
       }
     },
     "npm:eslint-scope": {
@@ -13392,6 +13410,15 @@
         "hash": "sha512-+Lhy3TQTuzXI5hevh8sBGqbmurHbbIjAi0Z4S63nthVLmLxfbj4T54a4CfZrXIrt9iP4mVAPYMo/v99taj3wjQ=="
       }
     },
+    "npm:object.hasown": {
+      "type": "npm",
+      "name": "npm:object.hasown",
+      "data": {
+        "version": "1.1.4",
+        "packageName": "object.hasown",
+        "hash": "sha512-FZ9LZt9/RHzGySlBARE3VF+gE26TxR38SdmqOqliuTnl9wrKulaQs+4dee1V+Io8VfxqzAfHu6YuRgUy8OHoTg=="
+      }
+    },
     "npm:object.values": {
       "type": "npm",
       "name": "npm:object.values",
@@ -15025,9 +15052,9 @@
       "type": "npm",
       "name": "npm:scheduler",
       "data": {
-        "version": "0.23.2",
+        "version": "0.26.0",
         "packageName": "scheduler",
-        "hash": "sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ=="
+        "hash": "sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA=="
       }
     },
     "npm:section-matter": {
@@ -32397,12 +32424,127 @@
     },
     {
       "source": "npm:eslint-config-next",
-      "target": "npm:eslint-plugin-react",
+      "target": "npm:eslint-plugin-react@7.37.5",
       "type": "static"
     },
     {
       "source": "npm:eslint-config-next",
       "target": "npm:eslint-plugin-react-hooks",
+      "type": "static"
+    },
+    {
+      "source": "npm:doctrine@2.1.0",
+      "target": "npm:esutils",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:eslint",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:array-includes",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:array.prototype.findlast",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:array.prototype.flatmap",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:array.prototype.tosorted",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:doctrine@2.1.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:es-iterator-helpers",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:estraverse",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:hasown",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:jsx-ast-utils",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:minimatch",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:object.entries",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:object.fromentries",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:object.values",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:prop-types",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:resolve@2.0.0-next.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:semver@6.3.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:string.prototype.matchall",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react@7.37.5",
+      "target": "npm:string.prototype.repeat",
+      "type": "static"
+    },
+    {
+      "source": "npm:resolve@2.0.0-next.5",
+      "target": "npm:is-core-module",
+      "type": "static"
+    },
+    {
+      "source": "npm:resolve@2.0.0-next.5",
+      "target": "npm:path-parse",
+      "type": "static"
+    },
+    {
+      "source": "npm:resolve@2.0.0-next.5",
+      "target": "npm:supports-preserve-symlinks-flag",
       "type": "static"
     },
     {
@@ -32762,11 +32904,6 @@
     },
     {
       "source": "npm:eslint-plugin-react",
-      "target": "npm:array.prototype.findlast",
-      "type": "static"
-    },
-    {
-      "source": "npm:eslint-plugin-react",
       "target": "npm:array.prototype.flatmap",
       "type": "static"
     },
@@ -32782,17 +32919,7 @@
     },
     {
       "source": "npm:eslint-plugin-react",
-      "target": "npm:es-iterator-helpers",
-      "type": "static"
-    },
-    {
-      "source": "npm:eslint-plugin-react",
       "target": "npm:estraverse",
-      "type": "static"
-    },
-    {
-      "source": "npm:eslint-plugin-react",
-      "target": "npm:hasown",
       "type": "static"
     },
     {
@@ -32813,6 +32940,11 @@
     {
       "source": "npm:eslint-plugin-react",
       "target": "npm:object.fromentries",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-plugin-react",
+      "target": "npm:object.hasown",
       "type": "static"
     },
     {
@@ -32838,11 +32970,6 @@
     {
       "source": "npm:eslint-plugin-react",
       "target": "npm:string.prototype.matchall",
-      "type": "static"
-    },
-    {
-      "source": "npm:eslint-plugin-react",
-      "target": "npm:string.prototype.repeat",
       "type": "static"
     },
     {
@@ -38736,6 +38863,21 @@
       "type": "static"
     },
     {
+      "source": "npm:object.hasown",
+      "target": "npm:define-properties",
+      "type": "static"
+    },
+    {
+      "source": "npm:object.hasown",
+      "target": "npm:es-abstract",
+      "type": "static"
+    },
+    {
+      "source": "npm:object.hasown",
+      "target": "npm:es-object-atoms",
+      "type": "static"
+    },
+    {
       "source": "npm:object.values",
       "target": "npm:call-bind",
       "type": "static"
@@ -39661,6 +39803,11 @@
       "type": "static"
     },
     {
+      "source": "npm:react-dom",
+      "target": "npm:scheduler",
+      "type": "static"
+    },
+    {
       "source": "npm:react-error-boundary",
       "target": "npm:react",
       "type": "static"
@@ -40388,11 +40535,6 @@
     {
       "source": "npm:saxes",
       "target": "npm:xmlchars",
-      "type": "static"
-    },
-    {
-      "source": "npm:scheduler",
-      "target": "npm:loose-envify",
       "type": "static"
     },
     {
