@@ -47,7 +47,7 @@
     "@nx/eslint": "19.6.1",
     "@nx/eslint-plugin": "20.6.4",
     "@nx/jest": "19.6.1",
-    "@nx/js": "19.6.1",
+    "@nx/js": "20.8.1",
     "@nx/react": "19.6.1",
     "@nx/workspace": "19.6.1",
     "@swc/cli": "0.6.0",
