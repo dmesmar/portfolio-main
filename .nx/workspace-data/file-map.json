@@ -87,442 +87,546 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "dist/apps/personal-portfolio/public/assets/404.jpg",
-        "hash": "8099949021035215758"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/credentials.png",
-        "hash": "3828894661998684238"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/b1.jpg",
-        "hash": "5322084007285025313"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/profilelg.jpg",
-        "hash": "3642377912295042646"
-      },
-      {
-        "file": "migrations.json",
-        "hash": "16809287042842644393"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/.nx-helpers/compiled.js",
-        "hash": "10475717735555826831"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/flags/flages.png",
-        "hash": "15640223130900891175"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/blog.png",
-        "hash": "4319026571540924066"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/flags/flagca.png",
-        "hash": "8970244663822692388"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/portfolio.png",
-        "hash": "12270564153707153126"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/ms900.pdf",
-        "hash": "2643722958108944984"
-      },
-      {
-        "file": ".github/dependabot.yml",
-        "hash": "17880178529918778353"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/signature.png",
-        "hash": "16773948087886195937"
-      },
-      {
-        "file": "index.html",
-        "hash": "17459247878787849510"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/cv.jpg",
-        "hash": "14871052631608598018"
+        "file": ".docker/docker-compose.yaml",
+        "hash": "6841547899925939665"
       },
       {
         "file": ".dockerignore",
         "hash": "8371422785544518460"
       },
       {
-        "file": "apps/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".github/FUNDING.yml",
-        "hash": "8451750085923079472"
-      },
-      {
-        "file": "Dockerfile",
-        "hash": "13192074523490816689"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "15987731359478257425"
-      },
-      {
-        "file": "assets/open-link.svg",
-        "hash": "9371317109158837357"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/cv/enDarioMesasCV.pdf",
-        "hash": "14861496134528256560"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/icon2-2.png",
-        "hash": "6864321371583874432"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/profilesm.jpg",
-        "hash": "15361694754115646048"
+        "file": ".editorconfig",
+        "hash": "11532813898455409296"
       },
       {
         "file": ".eslintignore",
         "hash": "13404745306227114823"
       },
       {
-        "file": "dist/apps/personal-portfolio/next.config.js",
-        "hash": "10469859507099460943"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/dp900.pdf",
-        "hash": "1418962117508257162"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/star-2.png",
-        "hash": "1618035679378694751"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/ai900.pdf",
-        "hash": "9469850677833586664"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/DarioMesasCV.pdf",
-        "hash": "11734279452633517853"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/blog-lg.png",
-        "hash": "888589922242217439"
-      },
-      {
-        "file": "package.json",
-        "hash": "13585141146445991858"
-      },
-      {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "11810713488198132402"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "2687824826588932174"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "13391140343975966684"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/star-2-2.png",
-        "hash": "5502485838430338589"
-      },
-      {
-        "file": "nx.json",
-        "hash": "16129838123541722498"
-      },
-      {
-        "file": ".github/workflows/deploynx.yml",
-        "hash": "9809759015427645549"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/.nx-helpers/compose-plugins.js",
-        "hash": "530203344399478070"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/ms900.png",
-        "hash": "16439922211520851661"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/icon3-2.png",
-        "hash": "405615848309891611"
-      },
-      {
-        "file": "renovate.json",
-        "hash": "13443992470324556308"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/case-studies/lu.png",
-        "hash": "13457653633665441271"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "1743485301228659824"
-      },
-      {
         "file": ".eslintrc.json",
         "hash": "9188201835120897554"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/star1.svg",
-        "hash": "1892934735499956438"
+        "file": ".github/FUNDING.yml",
+        "hash": "8451750085923079472"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/md102.png",
-        "hash": "581544399166683100"
+        "file": ".github/dependabot.yml",
+        "hash": "17880178529918778353"
       },
       {
-        "file": "libs/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "README.md",
-        "hash": "16460941514148185379"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "12829166153507483088"
-      },
-      {
-        "file": "compose.yaml",
-        "hash": "12900953774628336726"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/cv/caDarioMesasCV.pdf",
-        "hash": "14861496134528256560"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/ai900.png",
-        "hash": "13613586811576111550"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/flags/flagen.png",
-        "hash": "10633787831834659634"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/case-studies/abc.png",
-        "hash": "13457653633665441271"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/icon.svg",
-        "hash": "12531215345958099932"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/favicon.ico",
-        "hash": "11728413188760586365"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/icon2.png",
-        "hash": "10053155060496083269"
-      },
-      {
-        "file": ".docker/docker-compose.yaml",
-        "hash": "6841547899925939665"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/tbd.jpg",
-        "hash": "12071723981143325809"
+        "file": ".gitignore",
+        "hash": "17155643021314519802"
       },
       {
         "file": ".nginx/nginx.conf",
         "hash": "8453352850825070498"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/icon-2.svg",
-        "hash": "18299380306226086637"
+        "file": ".npmrc",
+        "hash": "1743485301228659824"
       },
       {
-        "file": "dist/apps/personal-portfolio/.nx-helpers/with-nx.js",
-        "hash": "17144825985939303373"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/cv/esDarioMesas.pdf",
-        "hash": "14861496134528256560"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/cta-icon.svg",
-        "hash": "12531215345958099932"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/icon3.png",
-        "hash": "11854365188062509294"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "11532813898455409296"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/dp900.png",
-        "hash": "10116708073006182275"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/bg1.png",
-        "hash": "1988836829220948772"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "3407785570333453138"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/case-studies/lg.png",
-        "hash": "13457653633665441271"
+        "file": ".prettierignore",
+        "hash": "2687824826588932174"
       },
       {
         "file": ".prettierrc",
         "hash": "6820402234827505055"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "6120393370793295371"
+        "file": ".vscode/extensions.json",
+        "hash": "13391140343975966684"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/case-studies/sg.png",
-        "hash": "13457653633665441271"
+        "file": "Dockerfile",
+        "hash": "13192074523490816689"
       },
       {
-        "file": "dist/apps/personal-portfolio/package.json",
-        "hash": "14217116384043532364"
+        "file": "README.md",
+        "hash": "16460941514148185379"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/icon.png",
-        "hash": "16578384637710179418"
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/md102.pdf",
-        "hash": "4653163348248436895"
+        "file": "assets/open-link.svg",
+        "hash": "9371317109158837357"
+      },
+      {
+        "file": "compose.yaml",
+        "hash": "12900953774628336726"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3407785570333453138"
       },
       {
         "file": "jest.preset.js",
         "hash": "7473220183190921152"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "16809287042842644393"
+      },
+      {
+        "file": "nx.json",
+        "hash": "8971965658938709239"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "2404030952279423091"
+      },
+      {
+        "file": "package.json",
+        "hash": "17659132628874468905"
+      },
+      {
+        "file": "renovate.json",
+        "hash": "13443992470324556308"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "11810713488198132402"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "6120393370793295371"
       }
     ],
     "projectFileMap": {
-      "i18n": [
+      "core-components": [
         {
-          "file": "libs/i18n/.eslintrc.json",
+          "file": "libs/core-components/.eslintrc.json",
           "hash": "14830867113928387670"
         },
         {
-          "file": "libs/i18n/README.md",
-          "hash": "17738017461099636823"
+          "file": "libs/core-components/README.md",
+          "hash": "12866470826190783278"
         },
         {
-          "file": "libs/i18n/project.json",
-          "hash": "2755686827300328729"
+          "file": "libs/core-components/project.json",
+          "hash": "6940303859207416423"
         },
         {
-          "file": "libs/i18n/src/index.ts",
-          "hash": "14835374285355545066"
+          "file": "libs/core-components/src/index.ts",
+          "hash": "15141062420769046685"
         },
         {
-          "file": "libs/i18n/src/lib/catalan/bio.json",
-          "hash": "18098545998243563173"
+          "file": "libs/core-components/src/lib/GithubCalendar.tsx",
+          "hash": "1417192150533394572",
+          "deps": [
+            "npm:react-github-calendar"
+          ]
         },
         {
-          "file": "libs/i18n/src/lib/catalan/contact.json",
-          "hash": "8119569385111834991"
+          "file": "libs/core-components/src/lib/YouTubeVideo.tsx",
+          "hash": "6811637981358745560"
         },
         {
-          "file": "libs/i18n/src/lib/catalan/credentials.json",
-          "hash": "8457607099874647952"
+          "file": "libs/core-components/src/lib/blog-navbar.component.tsx",
+          "hash": "12354870808129375621",
+          "deps": [
+            "store",
+            "npm:next",
+            "npm:react-moment",
+            "npm:reactstrap"
+          ]
         },
         {
-          "file": "libs/i18n/src/lib/catalan/index.ts",
-          "hash": "11034528309833507831"
+          "file": "libs/core-components/src/lib/head.component.tsx",
+          "hash": "3860584556227849591",
+          "deps": [
+            "npm:next"
+          ]
         },
         {
-          "file": "libs/i18n/src/lib/catalan/landing.json",
-          "hash": "5710341835051865335"
+          "file": "libs/core-components/src/lib/language-configurator.tsx",
+          "hash": "1213196997789709122",
+          "deps": [
+            "i18n"
+          ]
         },
         {
-          "file": "libs/i18n/src/lib/catalan/misc.json",
-          "hash": "8419163290199780692"
+          "file": "libs/core-components/src/lib/layout/ShiningStar.tsx",
+          "hash": "12616399662130121653"
         },
         {
-          "file": "libs/i18n/src/lib/catalan/offerings.json",
-          "hash": "11337548704330406105"
+          "file": "libs/core-components/src/lib/layout/ShootingStar.tsx",
+          "hash": "1683560496948068934"
         },
         {
-          "file": "libs/i18n/src/lib/catalan/portfolio.json",
-          "hash": "13677166257207592229"
+          "file": "libs/core-components/src/lib/layout/breadcrumb.component.tsx",
+          "hash": "421608814962491062"
         },
         {
-          "file": "libs/i18n/src/lib/english/bio.json",
-          "hash": "14476924777512541193"
+          "file": "libs/core-components/src/lib/layout/footer.component.tsx",
+          "hash": "6934497055121727259",
+          "deps": [
+            "npm:next",
+            "i18n"
+          ]
         },
         {
-          "file": "libs/i18n/src/lib/english/contact.json",
-          "hash": "18433100563530351664"
+          "file": "libs/core-components/src/lib/layout/header.component.tsx",
+          "hash": "506995027564621893",
+          "deps": [
+            "store",
+            "npm:classnames",
+            "npm:next"
+          ]
         },
         {
-          "file": "libs/i18n/src/lib/english/credentials.json",
-          "hash": "18171164932719832084"
+          "file": "libs/core-components/src/lib/layout/index.ts",
+          "hash": "15962390781618986765"
         },
         {
-          "file": "libs/i18n/src/lib/english/index.ts",
-          "hash": "11893359026032714278"
+          "file": "libs/core-components/src/lib/layout/layout.component.tsx",
+          "hash": "2741614594700781369",
+          "deps": [
+            "npm:classnames",
+            "npm:next",
+            [
+              "npm:react-calendly",
+              "dynamic"
+            ]
+          ]
         },
         {
-          "file": "libs/i18n/src/lib/english/landing.json",
-          "hash": "7706195396953136266"
+          "file": "libs/core-components/src/lib/layout/menu.ts",
+          "hash": "18159188908879800569",
+          "deps": [
+            "i18n"
+          ]
         },
         {
-          "file": "libs/i18n/src/lib/english/misc.json",
-          "hash": "16651388137570237208"
+          "file": "libs/core-components/src/lib/layout/star.module.scss",
+          "hash": "907660353046351812"
         },
         {
-          "file": "libs/i18n/src/lib/english/offerings.json",
-          "hash": "10341521616060438363"
+          "file": "libs/core-components/src/lib/portfolio/index.ts",
+          "hash": "7903889821810120396"
         },
         {
-          "file": "libs/i18n/src/lib/english/portfolio.json",
-          "hash": "13677166257207592229"
+          "file": "libs/core-components/src/lib/portfolio/portfolio-footer.component.tsx",
+          "hash": "17946386299720690037",
+          "deps": [
+            "npm:next"
+          ]
         },
         {
-          "file": "libs/i18n/src/lib/spanish/bio.json",
-          "hash": "13192532792184919220"
+          "file": "libs/core-components/src/lib/portfolio/portfolio-header.component.tsx",
+          "hash": "3510300805098851881"
         },
         {
-          "file": "libs/i18n/src/lib/spanish/contact.json",
-          "hash": "3892104639657098355"
+          "file": "libs/core-components/src/lib/preloader.component.tsx",
+          "hash": "14517118574189649895",
+          "deps": [
+            "npm:framer-motion"
+          ]
         },
         {
-          "file": "libs/i18n/src/lib/spanish/credentials.json",
-          "hash": "12842195502069240513"
+          "file": "libs/core-components/src/lib/skills/SVGComponent.tsx",
+          "hash": "5184522502327029339"
         },
         {
-          "file": "libs/i18n/src/lib/spanish/index.ts",
-          "hash": "2136444713970231984"
+          "file": "libs/core-components/src/lib/skills/button.css",
+          "hash": "8813083829786779021"
         },
         {
-          "file": "libs/i18n/src/lib/spanish/landing.json",
-          "hash": "2870405708193457358"
+          "file": "libs/core-components/src/lib/skills/button.tsx",
+          "hash": "15407320330517849673",
+          "deps": [
+            "npm:next"
+          ]
         },
         {
-          "file": "libs/i18n/src/lib/spanish/misc.json",
-          "hash": "4209058837321866362"
+          "file": "libs/core-components/src/lib/skills/icon.tsx",
+          "hash": "4444436397414114818"
         },
         {
-          "file": "libs/i18n/src/lib/spanish/offerings.json",
-          "hash": "1248027490213686595"
+          "file": "libs/core-components/src/lib/skills/index.ts",
+          "hash": "17231903211719023081"
         },
         {
-          "file": "libs/i18n/src/lib/spanish/portfolio.json",
-          "hash": "13677166257207592229"
+          "file": "libs/core-components/src/lib/skills/lines.css",
+          "hash": "15754163303069634250"
         },
         {
-          "file": "libs/i18n/tsconfig.json",
-          "hash": "12609354798543878154"
+          "file": "libs/core-components/src/lib/skills/lines.tsx",
+          "hash": "6936866672292156990"
         },
         {
-          "file": "libs/i18n/tsconfig.lib.json",
+          "file": "libs/core-components/src/lib/skills/scripts/canvas.ts",
+          "hash": "429630084927536186",
+          "deps": [
+            "npm:d3"
+          ]
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/scripts/force.ts",
+          "hash": "13240450562761299679",
+          "deps": [
+            "npm:d3-array",
+            "npm:d3-drag",
+            "npm:d3-force",
+            "npm:d3-random",
+            "npm:d3-selection"
+          ]
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/section.css",
+          "hash": "2429778953998859726"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/section/elements.tsx",
+          "hash": "10047535008254701072"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/section/grid.tsx",
+          "hash": "12677116251651372193"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/section/index.tsx",
+          "hash": "10401139270906346383"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/section/nav.tsx",
+          "hash": "14123402094763722073"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/section/types.ts",
+          "hash": "6956984362944663444"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/skills-list.ts",
+          "hash": "7517182987090094266"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/skills.css",
+          "hash": "2249978207953997259"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/skills.tsx",
+          "hash": "11655924401887473923",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg.css",
+          "hash": "1898949196750698669"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/adobeillustrator.svg",
+          "hash": "16160172197550033873"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/adobephotoshop.svg",
+          "hash": "5405873161526215764"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/bootstrap.svg",
+          "hash": "10306334944467547174"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/c++.svg",
+          "hash": "1595028492887018897"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/c.svg",
+          "hash": "8996624979238502170"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/canva.svg",
+          "hash": "2034561280872182255"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/cloudflare.svg",
+          "hash": "7798325773775727726"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/copilot.svg",
+          "hash": "12991955672344426042"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/css3.svg",
+          "hash": "9597799669059812572"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/figma.svg",
+          "hash": "5136708450735679850"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/git.svg",
+          "hash": "9658755458367043271"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/github.svg",
+          "hash": "10104316582269130886"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/githubactions.svg",
+          "hash": "9736691025290039342"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/githubpages.svg",
+          "hash": "12240174925425460825"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/gnubash.svg",
+          "hash": "6702400131044650960"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/googleanalytics.svg",
+          "hash": "4162431238093738570"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/googletagmanager.svg",
+          "hash": "1881612104954170856"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/html5.svg",
+          "hash": "2922290744941613450"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/hugging.svg",
+          "hash": "3404393993031996293"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/javascript.svg",
+          "hash": "1339985932969854044"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/json-schema.svg",
+          "hash": "7267735488278601469"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/json.svg",
+          "hash": "33708782819147682"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/linux.svg",
+          "hash": "12275693334917471812"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/logo.svg",
+          "hash": "13916000590578282298"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/matlab.svg",
+          "hash": "13457174083543401070"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/mdx.svg",
+          "hash": "14949581472299897703"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/microsoftexcel.svg",
+          "hash": "12284606718757195318"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/microsoftpowerpoint.svg",
+          "hash": "5488151789283707962"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/microsoftword.svg",
+          "hash": "5491054068990968737"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/netlify.svg",
+          "hash": "12474250222095238061"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/nextdotjs.svg",
+          "hash": "4386790002236399054"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/npm.svg",
+          "hash": "1171935381622993809"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/prettier.svg",
+          "hash": "1032930683242359718"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/python.svg",
+          "hash": "16304175349637376025"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/react.svg",
+          "hash": "2093395954760806647"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/sass.svg",
+          "hash": "6154665378483629794"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/solidity.svg",
+          "hash": "12131705112466913646"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/sublimetext.svg",
+          "hash": "16164892249949821256"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/tailwindcss.svg",
+          "hash": "14557587096271009180"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/tensorflow.svg",
+          "hash": "1940700550563984590"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/tsnode.svg",
+          "hash": "5798983999030658371"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/typescript.svg",
+          "hash": "1271923861790582801"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/wordpress.svg",
+          "hash": "9438361705644771843"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/xampp.svg",
+          "hash": "18118196999193661670"
+        },
+        {
+          "file": "libs/core-components/src/lib/skills/svg/yarn.svg",
+          "hash": "6036140344152277000"
+        },
+        {
+          "file": "libs/core-components/src/lib/theme-configurator.component.tsx",
+          "hash": "1893048088037366568",
+          "deps": [
+            "npm:next-themes"
+          ]
+        },
+        {
+          "file": "libs/core-components/src/lib/utils/get-language-asset.utils.ts",
+          "hash": "10681115510061206190"
+        },
+        {
+          "file": "libs/core-components/src/lib/utils/get-themed-asset.utils.ts",
+          "hash": "5438635258811292975"
+        },
+        {
+          "file": "libs/core-components/src/lib/utils/index.ts",
+          "hash": "12843777679570540779"
+        },
+        {
+          "file": "libs/core-components/tsconfig.json",
+          "hash": "13979398437825372391"
+        },
+        {
+          "file": "libs/core-components/tsconfig.lib.json",
           "hash": "6604186782021510538"
         }
       ],
@@ -980,436 +1084,6 @@
           ]
         }
       ],
-      "core-components": [
-        {
-          "file": "libs/core-components/.eslintrc.json",
-          "hash": "14830867113928387670"
-        },
-        {
-          "file": "libs/core-components/README.md",
-          "hash": "12866470826190783278"
-        },
-        {
-          "file": "libs/core-components/project.json",
-          "hash": "6940303859207416423"
-        },
-        {
-          "file": "libs/core-components/src/index.ts",
-          "hash": "15141062420769046685"
-        },
-        {
-          "file": "libs/core-components/src/lib/GithubCalendar.tsx",
-          "hash": "1417192150533394572",
-          "deps": [
-            "npm:react-github-calendar"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/YouTubeVideo.tsx",
-          "hash": "6811637981358745560"
-        },
-        {
-          "file": "libs/core-components/src/lib/blog-navbar.component.tsx",
-          "hash": "12354870808129375621",
-          "deps": [
-            "store",
-            "npm:next",
-            "npm:react-moment",
-            "npm:reactstrap"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/head.component.tsx",
-          "hash": "3860584556227849591",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/language-configurator.tsx",
-          "hash": "1213196997789709122",
-          "deps": [
-            "i18n"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/ShiningStar.tsx",
-          "hash": "12616399662130121653"
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/ShootingStar.tsx",
-          "hash": "1683560496948068934"
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/breadcrumb.component.tsx",
-          "hash": "421608814962491062"
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/footer.component.tsx",
-          "hash": "6934497055121727259",
-          "deps": [
-            "npm:next",
-            "i18n"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/header.component.tsx",
-          "hash": "506995027564621893",
-          "deps": [
-            "store",
-            "npm:classnames",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/index.ts",
-          "hash": "15962390781618986765"
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/layout.component.tsx",
-          "hash": "2741614594700781369",
-          "deps": [
-            "npm:classnames",
-            "npm:next",
-            [
-              "npm:react-calendly",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/menu.ts",
-          "hash": "18159188908879800569",
-          "deps": [
-            "i18n"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/layout/star.module.scss",
-          "hash": "907660353046351812"
-        },
-        {
-          "file": "libs/core-components/src/lib/portfolio/index.ts",
-          "hash": "7903889821810120396"
-        },
-        {
-          "file": "libs/core-components/src/lib/portfolio/portfolio-footer.component.tsx",
-          "hash": "17946386299720690037",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/portfolio/portfolio-header.component.tsx",
-          "hash": "3510300805098851881"
-        },
-        {
-          "file": "libs/core-components/src/lib/preloader.component.tsx",
-          "hash": "14517118574189649895",
-          "deps": [
-            "npm:framer-motion"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/SVGComponent.tsx",
-          "hash": "5184522502327029339"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/button.css",
-          "hash": "8813083829786779021"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/button.tsx",
-          "hash": "15407320330517849673",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/icon.tsx",
-          "hash": "4444436397414114818"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/index.ts",
-          "hash": "17231903211719023081"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/lines.css",
-          "hash": "15754163303069634250"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/lines.tsx",
-          "hash": "6936866672292156990"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/scripts/canvas.ts",
-          "hash": "429630084927536186",
-          "deps": [
-            "npm:d3"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/scripts/force.ts",
-          "hash": "13240450562761299679",
-          "deps": [
-            "npm:d3-array",
-            "npm:d3-drag",
-            "npm:d3-force",
-            "npm:d3-random",
-            "npm:d3-selection"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/section.css",
-          "hash": "2429778953998859726"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/section/elements.tsx",
-          "hash": "10047535008254701072"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/section/grid.tsx",
-          "hash": "12677116251651372193"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/section/index.tsx",
-          "hash": "10401139270906346383"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/section/nav.tsx",
-          "hash": "14123402094763722073"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/section/types.ts",
-          "hash": "6956984362944663444"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/skills-list.ts",
-          "hash": "7517182987090094266"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/skills.css",
-          "hash": "2249978207953997259"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/skills.tsx",
-          "hash": "11655924401887473923",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg.css",
-          "hash": "1898949196750698669"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/adobeillustrator.svg",
-          "hash": "16160172197550033873"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/adobephotoshop.svg",
-          "hash": "5405873161526215764"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/bootstrap.svg",
-          "hash": "10306334944467547174"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/c++.svg",
-          "hash": "1595028492887018897"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/c.svg",
-          "hash": "8996624979238502170"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/canva.svg",
-          "hash": "2034561280872182255"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/cloudflare.svg",
-          "hash": "7798325773775727726"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/copilot.svg",
-          "hash": "12991955672344426042"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/css3.svg",
-          "hash": "9597799669059812572"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/figma.svg",
-          "hash": "5136708450735679850"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/git.svg",
-          "hash": "9658755458367043271"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/github.svg",
-          "hash": "10104316582269130886"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/githubactions.svg",
-          "hash": "9736691025290039342"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/githubpages.svg",
-          "hash": "12240174925425460825"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/gnubash.svg",
-          "hash": "6702400131044650960"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/googleanalytics.svg",
-          "hash": "4162431238093738570"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/googletagmanager.svg",
-          "hash": "1881612104954170856"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/html5.svg",
-          "hash": "2922290744941613450"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/hugging.svg",
-          "hash": "3404393993031996293"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/javascript.svg",
-          "hash": "1339985932969854044"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/json-schema.svg",
-          "hash": "7267735488278601469"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/json.svg",
-          "hash": "33708782819147682"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/linux.svg",
-          "hash": "12275693334917471812"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/logo.svg",
-          "hash": "13916000590578282298"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/matlab.svg",
-          "hash": "13457174083543401070"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/mdx.svg",
-          "hash": "14949581472299897703"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/microsoftexcel.svg",
-          "hash": "12284606718757195318"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/microsoftpowerpoint.svg",
-          "hash": "5488151789283707962"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/microsoftword.svg",
-          "hash": "5491054068990968737"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/netlify.svg",
-          "hash": "12474250222095238061"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/nextdotjs.svg",
-          "hash": "4386790002236399054"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/npm.svg",
-          "hash": "1171935381622993809"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/prettier.svg",
-          "hash": "1032930683242359718"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/python.svg",
-          "hash": "16304175349637376025"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/react.svg",
-          "hash": "2093395954760806647"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/sass.svg",
-          "hash": "6154665378483629794"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/solidity.svg",
-          "hash": "12131705112466913646"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/sublimetext.svg",
-          "hash": "16164892249949821256"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/tailwindcss.svg",
-          "hash": "14557587096271009180"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/tensorflow.svg",
-          "hash": "1940700550563984590"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/tsnode.svg",
-          "hash": "5798983999030658371"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/typescript.svg",
-          "hash": "1271923861790582801"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/wordpress.svg",
-          "hash": "9438361705644771843"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/xampp.svg",
-          "hash": "18118196999193661670"
-        },
-        {
-          "file": "libs/core-components/src/lib/skills/svg/yarn.svg",
-          "hash": "6036140344152277000"
-        },
-        {
-          "file": "libs/core-components/src/lib/theme-configurator.component.tsx",
-          "hash": "1893048088037366568",
-          "deps": [
-            "npm:next-themes"
-          ]
-        },
-        {
-          "file": "libs/core-components/src/lib/utils/get-language-asset.utils.ts",
-          "hash": "10681115510061206190"
-        },
-        {
-          "file": "libs/core-components/src/lib/utils/get-themed-asset.utils.ts",
-          "hash": "5438635258811292975"
-        },
-        {
-          "file": "libs/core-components/src/lib/utils/index.ts",
-          "hash": "12843777679570540779"
-        },
-        {
-          "file": "libs/core-components/tsconfig.json",
-          "hash": "13979398437825372391"
-        },
-        {
-          "file": "libs/core-components/tsconfig.lib.json",
-          "hash": "6604186782021510538"
-        }
-      ],
       "store": [
         {
           "file": "libs/store/.eslintrc.json",
@@ -1470,6 +1144,128 @@
         },
         {
           "file": "libs/store/tsconfig.lib.json",
+          "hash": "6604186782021510538"
+        }
+      ],
+      "i18n": [
+        {
+          "file": "libs/i18n/.eslintrc.json",
+          "hash": "14830867113928387670"
+        },
+        {
+          "file": "libs/i18n/README.md",
+          "hash": "17738017461099636823"
+        },
+        {
+          "file": "libs/i18n/project.json",
+          "hash": "2755686827300328729"
+        },
+        {
+          "file": "libs/i18n/src/index.ts",
+          "hash": "14835374285355545066"
+        },
+        {
+          "file": "libs/i18n/src/lib/catalan/bio.json",
+          "hash": "18098545998243563173"
+        },
+        {
+          "file": "libs/i18n/src/lib/catalan/contact.json",
+          "hash": "8119569385111834991"
+        },
+        {
+          "file": "libs/i18n/src/lib/catalan/credentials.json",
+          "hash": "8457607099874647952"
+        },
+        {
+          "file": "libs/i18n/src/lib/catalan/index.ts",
+          "hash": "11034528309833507831"
+        },
+        {
+          "file": "libs/i18n/src/lib/catalan/landing.json",
+          "hash": "5710341835051865335"
+        },
+        {
+          "file": "libs/i18n/src/lib/catalan/misc.json",
+          "hash": "8419163290199780692"
+        },
+        {
+          "file": "libs/i18n/src/lib/catalan/offerings.json",
+          "hash": "11337548704330406105"
+        },
+        {
+          "file": "libs/i18n/src/lib/catalan/portfolio.json",
+          "hash": "13677166257207592229"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/bio.json",
+          "hash": "14476924777512541193"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/contact.json",
+          "hash": "18433100563530351664"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/credentials.json",
+          "hash": "18171164932719832084"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/index.ts",
+          "hash": "11893359026032714278"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/landing.json",
+          "hash": "7706195396953136266"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/misc.json",
+          "hash": "16651388137570237208"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/offerings.json",
+          "hash": "10341521616060438363"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/portfolio.json",
+          "hash": "13677166257207592229"
+        },
+        {
+          "file": "libs/i18n/src/lib/spanish/bio.json",
+          "hash": "13192532792184919220"
+        },
+        {
+          "file": "libs/i18n/src/lib/spanish/contact.json",
+          "hash": "3892104639657098355"
+        },
+        {
+          "file": "libs/i18n/src/lib/spanish/credentials.json",
+          "hash": "12842195502069240513"
+        },
+        {
+          "file": "libs/i18n/src/lib/spanish/index.ts",
+          "hash": "2136444713970231984"
+        },
+        {
+          "file": "libs/i18n/src/lib/spanish/landing.json",
+          "hash": "2870405708193457358"
+        },
+        {
+          "file": "libs/i18n/src/lib/spanish/misc.json",
+          "hash": "4209058837321866362"
+        },
+        {
+          "file": "libs/i18n/src/lib/spanish/offerings.json",
+          "hash": "1248027490213686595"
+        },
+        {
+          "file": "libs/i18n/src/lib/spanish/portfolio.json",
+          "hash": "13677166257207592229"
+        },
+        {
+          "file": "libs/i18n/tsconfig.json",
+          "hash": "12609354798543878154"
+        },
+        {
+          "file": "libs/i18n/tsconfig.lib.json",
           "hash": "6604186782021510538"
         }
       ]

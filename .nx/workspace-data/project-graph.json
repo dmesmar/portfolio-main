@@ -14518,9 +14518,9 @@
       "type": "npm",
       "name": "npm:react-dom",
       "data": {
-        "version": "19.1.0",
+        "version": "18.3.1",
         "packageName": "react-dom",
-        "hash": "sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g=="
+        "hash": "sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw=="
       }
     },
     "npm:react-error-boundary": {
@@ -15238,9 +15238,9 @@
       "type": "npm",
       "name": "npm:scheduler",
       "data": {
-        "version": "0.26.0",
+        "version": "0.23.2",
         "packageName": "scheduler",
-        "hash": "sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA=="
+        "hash": "sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ=="
       }
     },
     "npm:section-matter": {
@@ -25616,6 +25616,11 @@
       },
       {
         "source": "npm:@testing-library/react",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "npm:@testing-library/react",
         "target": "npm:@babel/runtime",
         "type": "static"
       },
@@ -29867,6 +29872,11 @@
         "source": "npm:disqus-react",
         "target": "npm:react",
         "type": "static"
+      },
+      {
+        "source": "npm:disqus-react",
+        "target": "npm:react-dom",
+        "type": "static"
       }
     ],
     "npm:dns-packet": [
@@ -32086,6 +32096,11 @@
       {
         "source": "npm:framer-motion",
         "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:framer-motion",
+        "target": "npm:react-dom",
         "type": "static"
       },
       {
@@ -36644,6 +36659,11 @@
       },
       {
         "source": "npm:next",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "npm:next",
         "target": "npm:sass",
         "type": "static"
       },
@@ -36736,6 +36756,11 @@
       },
       {
         "source": "npm:next-mdx-remote",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "npm:next-mdx-remote",
         "target": "npm:@mdx-js/mdx",
         "type": "static"
       },
@@ -36759,6 +36784,11 @@
       {
         "source": "npm:next-themes",
         "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:next-themes",
+        "target": "npm:react-dom",
         "type": "static"
       }
     ],
@@ -38277,6 +38307,11 @@
       },
       {
         "source": "npm:react-activity-calendar",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-activity-calendar",
         "target": "npm:@types/chroma-js",
         "type": "static"
       },
@@ -38303,13 +38338,6 @@
         "type": "static"
       }
     ],
-    "npm:react-dom": [
-      {
-        "source": "npm:react-dom",
-        "target": "npm:scheduler",
-        "type": "static"
-      }
-    ],
     "npm:react-error-boundary": [
       {
         "source": "npm:react-error-boundary",
@@ -38326,6 +38354,11 @@
       {
         "source": "npm:react-github-calendar",
         "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-github-calendar",
+        "target": "npm:react-dom",
         "type": "static"
       },
       {
@@ -38355,6 +38388,11 @@
       {
         "source": "npm:react-modal",
         "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-modal",
+        "target": "npm:react-dom",
         "type": "static"
       },
       {
@@ -38404,6 +38442,11 @@
       {
         "source": "npm:react-popper",
         "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-popper",
+        "target": "npm:react-dom",
         "type": "static"
       },
       {
@@ -39099,6 +39142,13 @@
       {
         "source": "npm:saxes",
         "target": "npm:xmlchars",
+        "type": "static"
+      }
+    ],
+    "npm:scheduler": [
+      {
+        "source": "npm:scheduler",
+        "target": "npm:loose-envify",
         "type": "static"
       }
     ],
