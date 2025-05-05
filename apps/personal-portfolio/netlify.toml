@@ -1,5 +1,5 @@
 [build]
-  command = "npx nx personal-porfolio:build"
+  command = "nx personal-porfolio:build"
   publish = "out"
 
 [[plugins]]
