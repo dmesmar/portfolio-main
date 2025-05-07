@@ -2574,3 +2574,42 @@ ol {
 #disqus_thread {
   color-scheme: none;
 }
+.about-me-wrap {
+  align-items: stretch !important;
+}
+
+.about-image-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-image-box .image-inner {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.profile-image {
+  max-width: 100%;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-details-inner {
+  height: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

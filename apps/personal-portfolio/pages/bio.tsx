@@ -22,21 +22,21 @@ const BioPage = () => {
     <Layout wrapperClass="main-aboutpage" title='About me'>
       <section className="about-area">
         <div className="container">
-          <div className="d-flex about-me-wrap align-items-start gap-24">
+        <h1 className="section-heading" data-aos="fade-up">
+                {lang.bio.bio.details.heading}{' '}
+              </h1>
+          <div className="d-flex about-me-wrap align-items-stretch gap-24">
+            
             <div data-aos="zoom-in">
-              <div className="about-image-box shadow-box">
+              <div className="about-image-box shadow-box d-flex align-items-center justify-content-center">
                 <img src="/assets/bg1.png" alt="BG" className="bg-img" />
-                <div className="image-inner">
-                <ShootingStar />
-                  <img src={lang.bio.bio.media} alt="bio" />
+                <div className="image-inner d-flex flex-column justify-content-center">
+                  <ShootingStar />
+                  <img src={lang.bio.bio.media} alt="bio" className="profile-image" />
                 </div>
               </div>
             </div>
             <div className="about-details" data-aos="zoom-in">
-              <h1 className="section-heading" data-aos="fade-up">
-
-                {lang.bio.bio.details.heading}{' '}
-              </h1>
               <div className="about-details-inner shadow-box">
                 <img src="/assets/icons/icon2.png" alt="Star" />
                 <h1>{lang.bio.bio.details.name}</h1>
