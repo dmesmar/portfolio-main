@@ -52,10 +52,11 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
   return (
     <Layout wrapperClass="main-workspage" title='Projects'>
       <section className="projects-area">
-        <div className="container">
-          <h1 className="section-heading" data-aos="fade-up">
+      <h1 className="section-heading" data-aos="fade-up">
             Portfolio{' '}
           </h1>
+        <div className="container">
+
           <div className="row">
             <div className="col-md-4">
               {caseStudies.slice(0, 2).map((study, i) => (
@@ -94,8 +95,6 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
               ))}
             </div>
             <div className="col-md-8">
-              <h1 className="section-heading" data-aos="fade-up"> {lang.misc.menus.portfolio}{' '}
-              </h1>
               <div className="d-flex align-items-start gap-24">
                 {caseStudies.slice(2, 4).map((study, i) => (
                   <div data-aos="zoom-in" className="flex-1" key={i}>
