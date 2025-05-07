@@ -1,0 +1,13 @@
+{
+    "categories": "Categorías",
+    "placeholder_search_bar":"Buscar certificados (por nombre)",
+    "categories_list" : {
+        "ML":"Machine Learning",
+        "AI":"IA",
+        "azure":"Azure",
+        "other":"Otro"
+    },
+    "not_found":"No se ha encontrado ningún certificado."
+    
+}
+  

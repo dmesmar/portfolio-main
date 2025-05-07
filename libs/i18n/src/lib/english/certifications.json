@@ -1,0 +1,13 @@
+{
+    "categories": "Categories",
+    "placeholder_search_bar":"Search certificates",
+    "categories_list" : {
+        "ML":"Machine Learning",
+        "AI":"AI",
+        "azure":"Azure",
+        "other":"Other"
+    },
+    "not_found":"No certificates match your search criteria."
+    
+}
+  
