@@ -148,7 +148,7 @@ const LandingPage = () => {
               <div className="blog-service-profile-wrap d-flex gap-24">
                 <div data-aos="zoom-in">
                   <div className="about-blog-box info-box shadow-box h-full">
-                    <Link href="/posts" className="overlay-link" />
+                    <Link href="/tbd" className="overlay-link" />
                     <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                     <img src={lang.landing.blog.media} alt="thumbnail" />
                     <div className="d-flex align-items-center justify-content-between">

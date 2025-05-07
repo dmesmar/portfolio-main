@@ -5,7 +5,7 @@
     font-size: 14px;
     scroll-behavior: smooth;
     color: #949597;
-    background: #f7f9fc;
+    background: #c2d3ec;
     line-height: 19.2px;
   }
 
@@ -111,11 +111,29 @@
   .shadow-box {
     position: relative;
     border-radius: 30px;
-    background: #ffffff;
-
-    * {
-      z-index: 2;
-      position: relative;
+    background: white;
+    border: white;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  
+      /* background: linear-gradient(to right, rgb(255 255 255 / 15%), rgb(255 255 255 / 1%)); */
+      background: linear-gradient(
+        120deg,
+        rgb(255 255 255 / 12%),
+        rgb(255 255 255 / 1%)
+      );
+      content: '';
+      z-index: -1;
+      border-radius: 30px;
+      margin: -1px;
     }
   }
 
