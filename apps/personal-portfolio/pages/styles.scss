@@ -103,6 +103,8 @@ a {
 
 .mt-24 {
   margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .mb-24 {
@@ -829,6 +831,10 @@ ol {
   }
 
   .about-edc-exp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     padding: 30px;
 
     h3 {
