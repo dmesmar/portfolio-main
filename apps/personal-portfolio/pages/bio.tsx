@@ -22,9 +22,12 @@ const BioPage = () => {
     <Layout wrapperClass="main-aboutpage" title='About me'>
       <section className="about-area">
         <div className="container">
-        <h1 className="section-heading" data-aos="fade-up">
+          <div className='section-heading-bio'>
+          <h1 className="section-heading" data-aos="fade-up">
                 {lang.bio.bio.details.heading}{' '}
               </h1>
+          </div>
+        
           <div className="d-flex about-me-wrap align-items-stretch gap-24">
             
             <div data-aos="zoom-in">
