@@ -30,11 +30,6 @@ const LandingPage = () => {
               <div className="about-me-box shadow-box h-100">
                 
                 <Link className="overlay-link" href="/bio" />
-                <img
-                  className="bg-img"
-                  src="/assets/bg1.png"
-                  alt="background"
-                />
                 <div className="img-box">
                   <img src={lang.landing.bio.media} alt="profile" />
                 </div>
@@ -86,11 +81,6 @@ const LandingPage = () => {
                     <div className="about-crenditials-box info-box shadow-box h-full">
                       <Link className="overlay-link" href="/certificates" />
                       <img
-                        src="/assets/bg1.png"
-                        alt="background"
-                        className="bg-img"
-                      />
-                      <img
                         src={lang.landing.credentials.media}
                         alt="credentials"
                       />
@@ -117,7 +107,6 @@ const LandingPage = () => {
                   <div data-aos="zoom-in">
                     <div className="about-project-box info-box shadow-box h-full">
                       <Link className="overlay-link" href="/portfolio" />
-                      <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                       <img src={lang.landing.cv.media} alt="My Works" />
                       <div className="d-flex align-items-center justify-content-between">
                         <div className="infos">
@@ -149,7 +138,6 @@ const LandingPage = () => {
                 <div data-aos="zoom-in">
                   <div className="about-blog-box info-box shadow-box h-full">
                     <Link href="/tbd" className="overlay-link" />
-                    <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                     <img src={lang.landing.blog.media} alt="thumbnail" />
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="infos">
@@ -177,7 +165,6 @@ const LandingPage = () => {
                       href={lang.landing.offerings.link}
                       className="overlay-link"
                     />
-                    <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                     {/* <img src={lang.landing.offerings.media} alt="thumbnail" /> */}
                     <div className="icon-boxes">
                       {lang.landing.offerings.icons.map((item, index) => (
@@ -206,7 +193,6 @@ const LandingPage = () => {
                 </div>
                 <div data-aos="zoom-in">
                   <div className="about-profile-box info-box shadow-box h-full">
-                    <img src="/assets/bg1.png" alt="BG" className="bg-img" />
 
                     {Array.from(
                       {
@@ -261,7 +247,6 @@ const LandingPage = () => {
           <div className="row mt-24">
             <div className="col-md-6" data-aos="zoom-in">
               <div className="about-client-box info-box shadow-box">
-                <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                 <div className="clients d-flex align-items-start gap-24 justify-content-center">
                   {lang.landing.facts.quickFacts.map((item, index) => (
                     <div className="client-item" key={index}>
@@ -279,7 +264,6 @@ const LandingPage = () => {
             <div className="col-md-6" data-aos="zoom-in">
               <div className="about-contact-box info-box shadow-box">
                 <Link className="overlay-link" href="/cv" />
-                <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                 <img
                   src="/assets/icons/icon2.png"
                   alt="Icon"

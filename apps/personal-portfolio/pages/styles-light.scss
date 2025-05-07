@@ -5,7 +5,7 @@
     font-size: 14px;
     scroll-behavior: smooth;
     color: #949597;
-    background: #c2d3ec;
+    background: #d8e0ec;
     line-height: 19.2px;
   }
 
@@ -111,8 +111,7 @@
   .shadow-box {
     position: relative;
     border-radius: 30px;
-    background: white;
-    border: white;
+    background: rgb(245, 245, 245, 75%);
   
     &::after {
       content: '';
@@ -1752,7 +1751,7 @@
           .right {
             span {
               display: block;
-              color: #bcbcbc;
+              color: #7400c2;
               font-size: 14px;
               text-transform: uppercase;
               line-height: 1.2;
