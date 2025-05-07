@@ -30,7 +30,7 @@ const BioPage = () => {
             <div data-aos="zoom-in">
               <div className="about-image-box shadow-box d-flex align-items-center justify-content-center">
                 <img src="/assets/bg1.png" alt="BG" className="bg-img" />
-                <div className="image-inner d-flex flex-column justify-content-center">
+                <div className=" d-flex flex-column justify-content-center">
                   <ShootingStar />
                   <img src={lang.bio.bio.media} alt="bio" className="profile-image" />
                 </div>
