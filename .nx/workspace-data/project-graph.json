@@ -16973,12 +16973,12 @@
       },
       {
         "source": "personal-portfolio",
-        "target": "npm:reactstrap",
+        "target": "npm:react",
         "type": "static"
       },
       {
         "source": "personal-portfolio",
-        "target": "npm:react-image-lightbox",
+        "target": "npm:reactstrap",
         "type": "static"
       },
       {
