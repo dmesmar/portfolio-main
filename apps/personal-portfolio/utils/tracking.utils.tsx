@@ -1,5 +1,4 @@
 import Hotjar from '@hotjar/browser';
-import { Analytics } from '@vercel/analytics/react';
 import Script from 'next/script';
 
 // Default: Tracking is enabled when no .env file is present
@@ -66,11 +65,6 @@ export const registerMicrosoftClarity = () => {
   }
 };
 
-export const registerVercelAnalytics = () => {
-  if (trackingEnabled) {
-    return <Analytics />;
-  }
-};
 
 export const registerDebugBearRUM = () => {
   if (trackingEnabled) {

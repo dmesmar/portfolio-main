@@ -2,7 +2,6 @@ import { Preloader } from '@dmesmar/core-components';
 import { persistor, store } from '@dmesmar/store';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AnimatePresence } from 'framer-motion';
 import { ThemeProvider } from 'next-themes';
@@ -18,7 +17,6 @@ import {
   registerGTM,
   registerHotjar,
   registerMicrosoftClarity,
-  registerVercelAnalytics,
 } from '../utils/tracking.utils';
 import './styles-light.scss';
 import './styles.scss';
@@ -73,7 +71,6 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
               name="description"
               content="Hard-working developer with a flair for creating elegant solutions to complex problems. "
             />
-            <SpeedInsights/>
 
             {/* <!-- Open Graph / Facebook --> */}
             <meta property="og:type" content="website" />
@@ -111,7 +108,6 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
           <AnimatePresence mode="wait" initial={false}>
             <main className={font.className}>
               {loading ? <Preloader /> : <Component {...pageProps} />}
-              {registerVercelAnalytics()}
             </main>
           </AnimatePresence>
         </ThemeProvider>
