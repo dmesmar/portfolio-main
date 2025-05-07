@@ -83,7 +83,7 @@ const CertificatesPage: React.FC = () => {
   };
 
   return (
-    <Layout title='CERTIFICATES'>
+    <Layout title={lang.misc.menus.certificates}>
       <section className={styles['certificates-area']}>
         <Container>
           <div className="about-details" data-aos="zoom-in">
