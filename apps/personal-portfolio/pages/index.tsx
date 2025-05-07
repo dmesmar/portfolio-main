@@ -84,7 +84,7 @@ const LandingPage = () => {
                 <div className="gx-row d-flex gap-24">
                   <div data-aos="zoom-in">
                     <div className="about-crenditials-box info-box shadow-box h-full">
-                      <Link className="overlay-link" href="/credentials" />
+                      <Link className="overlay-link" href="/certificates" />
                       <img
                         src="/assets/bg1.png"
                         alt="background"

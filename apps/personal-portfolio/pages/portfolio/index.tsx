@@ -54,8 +54,7 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
       <section className="projects-area">
         <div className="container">
           <h1 className="section-heading" data-aos="fade-up">
-            <img src="/assets/star-2.png" alt="Star" /> Portfolio{' '}
-            <img src="/assets/star-2.png" alt="Star" />
+            Portfolio{' '}
           </h1>
           <div className="row">
             <div className="col-md-4">
