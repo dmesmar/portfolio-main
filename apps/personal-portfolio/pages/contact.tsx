@@ -6,7 +6,7 @@ import { Alert, Form } from 'reactstrap';
 import { getCurrentLanguage } from '../../../libs/core-components/src/lib/language-configurator';
 
 const ContactPage = () => {
-  const [state, handleSubmit] = useForm('xwkgadjr');
+  const [state, handleSubmit] = useForm('xgvkyobd');
   const [displayBanner, setDisplayBanner] = useState(false);
   
   // Get the current language code
