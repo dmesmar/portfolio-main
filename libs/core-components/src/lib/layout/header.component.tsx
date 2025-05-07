@@ -71,6 +71,8 @@ export const Header = () => {
           </div>
         </div>
       </div>
+      <hr className='linea'></hr>
     </header>
+    
   );
 };

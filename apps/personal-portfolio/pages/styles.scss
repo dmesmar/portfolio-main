@@ -25,7 +25,9 @@ body {
   background: #0f0f0f;
   line-height: 19.2px;
 }
-
+.linea {
+  color: gray;
+}
 img {
   max-width: 100%;
 }
@@ -580,7 +582,7 @@ ol {
 /* # Header */
 
 .header-area {
-  margin-top: 10px;
+  margin-top: 0px;
 
   .logo {
     display: inline-block;
@@ -612,7 +614,7 @@ ol {
           color: #676767;
           transition: 0.3s;
           display: block;
-          padding: 26px 0px;
+          padding: 25px 0px;
         }
 
         &.active a,
@@ -667,8 +669,11 @@ ol {
 /* # About */
 
 .about-area {
-  padding-top: 80px;
-
+  padding-top: 65px;
+  .section-heading {
+    justify-content: center;
+    margin-bottom: 35px;
+  }
   .about-me-box {
     position: relative;
     padding: 50px 46px;
@@ -883,15 +888,17 @@ ol {
 /* # Project */
 
 .projects-area {
-  padding-top: 65px;
+  padding-top: 15px;
 
   .container > .section-heading {
     display: none;
+    
   }
 
   .section-heading {
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+    
   }
 
   .project-item {
@@ -1752,7 +1759,11 @@ ol {
 /* # Contact */
 
 .contact-area {
-  padding-top: 80px;
+  padding-top: 15px;
+      .section-heading {
+        justify-content: center;
+        margin-bottom: 35px;
+      }
 
   .contact-form {
     position: relative;

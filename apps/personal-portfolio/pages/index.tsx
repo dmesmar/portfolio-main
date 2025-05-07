@@ -25,10 +25,10 @@ const LandingPage = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 " data-aos="zoom-in">
+              
+              <div className="about-me-box shadow-box h-100">
               <ShiningStar />
               <ShootingStar />
-              <div className="about-me-box shadow-box h-100">
-                
                 <Link className="overlay-link" href="/bio" />
                 <div className="img-box">
                   <img src={lang.landing.bio.media} alt="profile" />
