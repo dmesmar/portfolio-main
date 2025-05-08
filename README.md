@@ -6,6 +6,7 @@
 
 - Para empezar `npm run start`
 
-[Link 1]:dariomesasmarti.com
+[Link 1](https://dariomesasmarti.com)
 
-[Link 2]:dariomesasmarti.netlify.app
+[Link if Link 1 does not work](https://dariomesasmarti.netlify.app)
+
