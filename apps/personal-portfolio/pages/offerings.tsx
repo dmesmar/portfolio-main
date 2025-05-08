@@ -20,11 +20,13 @@ const OfferingsPage = () => {
       <section className="service-area">
         <div className="container">
           <h1 className="section-heading" data-aos="fade-up">
-            <img src="/assets/star-2.png" alt="Star" /> {lang.offerings.heading}{' '}
-            <img src="/assets/star-2.png" alt="Star" />
+            {lang.offerings.heading}{' '}
           </h1>
           <div className="row">
             {/* Sidebar */}
+            <h1 className="section-heading" data-aos="fade-up">
+                {lang.offerings.heading}{' '}
+              </h1>
             <div className="col-md-4">
               <div className="service-sidebar" data-aos="fade-right">
                 <div className="service-sidebar-inner shadow-box">
@@ -49,12 +51,8 @@ const OfferingsPage = () => {
               </div>
             </div>
             {/* Content */}
-            <div className="col-md-8">
-              <h1 className="section-heading" data-aos="fade-up">
-                <img src="/assets/star-2.png" alt="Star" />{' '}
-                {lang.offerings.heading}{' '}
-                <img src="/assets/star-2.png" alt="Star" />
-              </h1>
+            <div className="col-md-8 h-100">
+              
               <div className="service-content-wrap" data-aos="zoom-in">
                 <div className="service-content-inner shadow-box">
                   <div className="service-items">

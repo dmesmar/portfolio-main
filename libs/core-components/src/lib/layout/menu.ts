@@ -29,6 +29,10 @@ export const getMenu = () => {
       path: '/certificates',
     },
     {
+      label: lang.misc.menus.cv,
+      path: '/cv',
+    },
+    {
       label: lang.misc.menus.links,
       path: '/tbd',
     },
