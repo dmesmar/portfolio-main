@@ -36,6 +36,10 @@
     ]
   },
   "form": {
+    "placeholderName":"Nombre",
+    "placeholderEmail":"Email",
+    "placeholderTopic":"Tema",
+    "placeholderMessage":"Mensaje",
     "heading": "<span>Hablemos.</span>",
     "onCompletion": "¡Se ha enviado el mensaje!",
     "button": {

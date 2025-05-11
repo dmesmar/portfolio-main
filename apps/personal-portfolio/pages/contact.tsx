@@ -131,7 +131,7 @@ const ContactPage = () => {
                       name="name"
                       id="name"
                       required
-                      placeholder="Name *"
+                      placeholder={lang.contact.form.placeholderName}
                     />
                     
                     <ValidationError
@@ -146,7 +146,7 @@ const ContactPage = () => {
                       type="email"
                       name="email"
                       required
-                      placeholder="Email *"
+                      placeholder={lang.contact.form.placeholderEmail}
                     />
                     <ValidationError
                       prefix="Email"
@@ -160,7 +160,7 @@ const ContactPage = () => {
                       name="topic"
                       id="topic"
                       required
-                      placeholder="Topic *"
+                      placeholder={lang.contact.form.placeholderTopic}
                     />
                     
                     <ValidationError
@@ -175,7 +175,7 @@ const ContactPage = () => {
                       name="message"
                       id="message"
                       required
-                      placeholder="Message *"
+                      placeholder={lang.contact.form.placeholderMessage}
                     />
                     <ValidationError
                       prefix="Message"
