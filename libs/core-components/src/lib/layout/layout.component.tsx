@@ -5,8 +5,17 @@ import { Head } from '../head.component';
 import { Breadcrumb } from './breadcrumb.component';
 import { Footer } from './footer.component';
 import { Header } from './header.component';
+import { getCurrentLanguage } from '../language-configurator';
+import { en, es, ca } from '@dmesmar/i18n';
 
-
+  // Get the current language code
+  const langCode = getCurrentLanguage();
+  
+  // Map language code to language data
+  const langMap = { en, es, ca };
+  
+  // Get the language data based on current language
+  const lang = langMap[langCode];
 type LayoutProps = {
   title?: string;
   breadcrumb?: string;
@@ -50,7 +59,7 @@ export const Layout = ({
          * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
          */
         rootElement={document.getElementById('__next') as HTMLElement}
-        text=" 💬 Chat with Darío"
+        text={lang.misc.contactMe}
         color="#020000"
       />
       <Footer />

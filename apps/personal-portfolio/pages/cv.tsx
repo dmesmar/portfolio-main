@@ -34,9 +34,6 @@ const cv = () => {
       <section className="contact-area">
         <div className="container">
           <div className="about-details" data-aos="zoom-in">
-            <h1 className="section-heading" data-aos="fade-up">
-              {lang.misc.lookmy}CV
-            </h1>
             <br />
             <br />
           </div>
