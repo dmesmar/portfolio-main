@@ -34,9 +34,6 @@ export const Footer = () => {
               <Link href="/cv">{lang.misc.menus.cv}</Link>
             </li>
             <li>
-              <Link href="/offerings">{lang.misc.menus.offerings}</Link>
-            </li>
-            <li>
               <Link href="/credentials">{lang.misc.menus.insights}</Link>
             </li>
           </ul>
