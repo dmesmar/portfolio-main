@@ -96,5 +96,12 @@
         "dark": "/assets/icons/icon.svg"
       }
     }
+  },
+  "misc": {
+    "moreDetails":"Vols més detalls?"
+  },
+  "cv": {
+    "checkCv":"<br/>Mira el meu <span> CV sencer.</span>",
+    "credentials":"<br/>Més informació <span>sobre mi.</span>"
   }
 }

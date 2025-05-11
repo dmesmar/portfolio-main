@@ -22,12 +22,7 @@ const BioPage = () => {
     <Layout wrapperClass="main-aboutpage" title='About me'>
       <section className="about-area">
         <div className="container">
-          <div className='section-heading-bio'>
-          <h1 className="section-heading" data-aos="fade-up">
-                {lang.bio.bio.details.heading}{' '}
-              </h1>
-          </div>
-        
+
           <div className="d-flex about-me-wrap align-items-stretch gap-24">
             
             <div data-aos="zoom-in">
@@ -81,35 +76,12 @@ const BioPage = () => {
           </div>
           <div className="row mt-24">
             <div className="col-md-12">
+              <h1 className='section-heading'>{lang.bio.misc.moreDetails}</h1>
               <div className="d-flex profile-contact-credentials-wrap gap-24">
-                <div data-aos="zoom-in" className="h-full">
-                  <div className="about-crenditials-box info-box shadow-box">
-                    <Link className="overlay-link" href="/credentials" />
-                    <img src="/assets/bg1.png" alt="BG" className="bg-img" />
-                    <img src={lang.bio.credentials.media} alt="Sign" />
-                    <div className="d-flex align-items-center justify-content-between">
-                      <div className="infos">
-                        <h4>{lang.bio.credentials.caption}</h4>
-                        <h1>{lang.bio.credentials.heading}</h1>
-                      </div>
-                      <Link
-                        href={lang.bio.credentials.button.link}
-                        className="about-btn"
-                      >
-                        <img
-                          src={getThemedContent(
-                            theme,
-                            lang.bio.credentials.button.icon
-                          )}
-                          alt="button"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+
                 <div data-aos="zoom-in" className="flex-1">
                   <div className="about-contact-box info-box shadow-box">
-                    <Link className="overlay-link" href="/contact" />
+                    <Link className="overlay-link" href="/cv" />
                     <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                     <img
                       src="/assets/icons/icon2.png"
@@ -118,7 +90,35 @@ const BioPage = () => {
                     />
                     <h1
                       dangerouslySetInnerHTML={{
-                        __html: lang.bio.contact.heading,
+                        __html: lang.bio.cv.checkCv,
+                      }}
+                    ></h1>
+                    <Link
+                      href={lang.bio.contact.button.link}
+                      className="about-btn"
+                    >
+                      <img
+                        src={getThemedContent(
+                          theme,
+                          lang.bio.contact.button.icon
+                        )}
+                        alt="button"
+                      />
+                    </Link>
+                  </div>
+                </div>
+                <div data-aos="zoom-in" className="flex-1">
+                  <div className="about-contact-box info-box shadow-box">
+                    <Link className="overlay-link" href="/credentials" />
+                    <img src="/assets/bg1.png" alt="BG" className="bg-img" />
+                    <img
+                      src="/assets/icons/icon2.png"
+                      alt="Icon"
+                      className="star-icon"
+                    />
+                    <h1
+                      dangerouslySetInnerHTML={{
+                        __html: lang.bio.cv.credentials,
                       }}
                     ></h1>
                     <Link

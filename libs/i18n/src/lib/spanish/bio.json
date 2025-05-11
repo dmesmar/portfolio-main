@@ -96,5 +96,12 @@
         "dark": "/assets/icons/icon.svg"
       }
     }
+  },
+  "misc": {
+    "moreDetails":"¿Quieres más detalles?"
+  },
+  "cv": {
+    "checkCv":"<br/>Mira mi<span> CV entero.</span>",
+    "credentials":"<br/>Mas información <span>sobre mí.</span>"
   }
 }
