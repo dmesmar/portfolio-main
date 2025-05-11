@@ -215,16 +215,7 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
              
             </div>
           </div>
-          <div className="about-contact-box info-box shadow-box">
-                <Link className="overlay-link" href="/cv" />
-                <img src="/assets/bg1.png" alt="BG" className="bg-img" />
-                <img
-                  src="/assets/icons/icon2.png"
-                  alt="Icon"
-                  className="star-icon"
-                />
-                <h1>{lang.misc.lookmy}<span>CV</span>
-                </h1>                </div>
+          
                 <div className="mt-5"></div>
                 <div className="about-contact-box info-box shadow-box">
                   <img src="/assets/bg1.png" alt="BG" className="bg-img" />

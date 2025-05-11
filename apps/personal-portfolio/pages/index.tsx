@@ -134,63 +134,7 @@ const LandingPage = () => {
           </div>
           <div className="row mt-24">
             <div className="col-md-12">
-              <div className="blog-service-profile-wrap d-flex gap-24">
-                <div data-aos="zoom-in">
-                  <div className="about-blog-box info-box shadow-box h-full">
-                    <Link href="/tbd" className="overlay-link" />
-                    <img src={lang.landing.blog.media} alt="thumbnail" />
-                    <div className="d-flex align-items-center justify-content-between">
-                      <div className="infos">
-                        <h4>{lang.landing.blog.caption}</h4>
-                        <h1>{lang.landing.blog.heading}</h1>
-                      </div>
-                      <Link
-                        href={lang.landing.blog.button.link}
-                        className="about-btn"
-                      >
-                        <img
-                          src={getThemedContent(
-                            theme,
-                            lang.landing.blog.button.icon
-                          )}
-                          alt="button"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-aos="zoom-in" className="flex-1">
-                  <div className="about-services-box info-box shadow-box h-full">
-                    <Link
-                      href={lang.landing.offerings.link}
-                      className="overlay-link"
-                    />
-                    {/* <img src={lang.landing.offerings.media} alt="thumbnail" /> */}
-                    <div className="icon-boxes">
-                      {lang.landing.offerings.icons.map((item, index) => (
-                        <i key={index} className={item} />
-                      ))}
-                    </div>
-                    <div className="d-flex align-items-center justify-content-between">
-                      <div className="infos">
-                        <h4>{lang.landing.offerings.caption}</h4>
-                        <h1>{lang.landing.offerings.heading}</h1>
-                      </div>
-                      <Link
-                        href={lang.landing.offerings.button.link}
-                        className="about-btn"
-                      >
-                        <img
-                          src={getThemedContent(
-                            theme,
-                            lang.landing.offerings.button.icon
-                          )}
-                          alt="Button"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+              <div className="blog-service-profile-wrap d-flex gap-24">     
                 <div data-aos="zoom-in">
                   <div className="about-profile-box info-box shadow-box h-full">
 
@@ -241,12 +185,8 @@ const LandingPage = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="row mt-24">
-            <div className="col-md-6" data-aos="zoom-in">
-              <div className="about-client-box info-box shadow-box">
+                <div data-aos="zoom-in">
+                  <div className="about-client-box info-box shadow-box h-full">
                 <div className="clients d-flex align-items-start gap-24 justify-content-center">
                   {lang.landing.facts.quickFacts.map((item, index) => (
                     <div className="client-item" key={index}>
@@ -260,8 +200,8 @@ const LandingPage = () => {
                   ))}
                 </div>
               </div>
-            </div>
-            <div className="col-md-6" data-aos="zoom-in">
+                </div>
+                <div data-aos="zoom-in">
               <div className="about-contact-box info-box shadow-box">
                 <Link className="overlay-link" href="/cv" />
                 <img
@@ -286,6 +226,8 @@ const LandingPage = () => {
                     alt="button"
                   />
                 </Link>
+              </div>
+            </div>
               </div>
             </div>
           </div>
