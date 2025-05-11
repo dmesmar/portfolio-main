@@ -38,6 +38,10 @@
       }
     }
   },
+  "projects" : {
+    "header":"Projectes",
+    "text":"Mira els meus projectes"
+  },
   "blog": {
     "caption": "Llegir el Blog",
     "heading": "Blog",

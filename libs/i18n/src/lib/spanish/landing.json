@@ -16,7 +16,7 @@
   },
   "credentials": {
     "heading": "Certificaciones",
-    "caption": "Un poco de mí",
+    "caption": "Un poco sobre mí",
     "media": "/assets/credentials.png",
     "button": {
       "link": "/credentials",
@@ -37,6 +37,10 @@
         "dark": "/assets/icons/icon.svg"
       }
     }
+  },
+  "projects" : {
+    "header":"Proyectos",
+    "text":"Mira mis proyectos"
   },
   "blog": {
     "caption": "Explora el blog",

@@ -110,8 +110,8 @@ const LandingPage = () => {
                       <img src={lang.landing.cv.media} alt="My Works" />
                       <div className="d-flex align-items-center justify-content-between">
                         <div className="infos">
-                          <h4>{lang.landing.cv.caption}</h4>
-                          <h1>{lang.landing.cv.heading}</h1>
+                          <h4>{lang.landing.projects.header}</h4>
+                          <h1>{lang.landing.projects.text}</h1>
                         </div>
                         <Link
                           href={lang.landing.cv.button.link}
@@ -133,61 +133,60 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="row mt-24">
-            <div className="col-md-12">
-              <div className="blog-service-profile-wrap d-flex gap-24">     
-                <div data-aos="zoom-in">
-                  <div className="about-profile-box info-box shadow-box h-full">
+            <div className="blog-service-profile-wrap d-flex gap-24">     
+              <div data-aos="zoom-in" className='col'>
+                <div className="about-profile-box info-box shadow-box h-full ">
 
-                    {Array.from(
-                      {
-                        length: Math.ceil(
-                          lang.landing.profiles.profiles.length / 2
-                        ),
-                      },
-                      (_, i) => i * 2
-                    ).map((startIndex, index) => (
-                      <div
-                        className="inner-profile-icons shadow-box"
-                        key={index}
-                      >
-                        {lang.landing.profiles.profiles
-                          .slice(startIndex, startIndex + 2)
-                          .map((item, i) => (
-                            <a
-                              href={item.link}
-                              key={i}
-                              target="_blank"
-                              rel="noreferrer noopener"
-                            >
-                              <i className={item.icon} />
-                            </a>
-                          ))}
-                      </div>
-                    ))}
-
-                    <div className="d-flex align-items-center justify-content-between">
-                      <div className="infos">
-                        <h4>{lang.landing.profiles.caption}</h4>
-                        <h1>{lang.landing.profiles.heading}</h1>
-                      </div>
-                      <Link
-                        href={lang.landing.profiles.button.link}
-                        className="about-btn"
-                      >
-                        <img
-                          src={getThemedContent(
-                            theme,
-                            lang.landing.profiles.button.icon
-                          )}
-                          alt="Button"
-                        />
-                      </Link>
+                  {Array.from(
+                    {
+                      length: Math.ceil(
+                        lang.landing.profiles.profiles.length / 2
+                      ),
+                    },
+                    (_, i) => i * 2
+                  ).map((startIndex, index) => (
+                    <div
+                      className="inner-profile-icons shadow-box"
+                      key={index}
+                    >
+                      {lang.landing.profiles.profiles
+                        .slice(startIndex, startIndex + 2)
+                        .map((item, i) => (
+                          <a
+                            href={item.link}
+                            key={i}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                          >
+                            <i className={item.icon} />
+                          </a>
+                        ))}
                     </div>
+                  ))}
+
+                  <div className="d-flex align-items-center justify-content-between">
+                    <div className="infos">
+                      <h4>{lang.landing.profiles.caption}</h4>
+                      <h1>{lang.landing.profiles.heading}</h1>
+                    </div>
+                    <Link
+                      href={lang.landing.profiles.button.link}
+                      className="about-btn"
+                    >
+                      <img
+                        src={getThemedContent(
+                          theme,
+                          lang.landing.profiles.button.icon
+                        )}
+                        alt="Button"
+                      />
+                    </Link>
                   </div>
                 </div>
-                <div data-aos="zoom-in">
-                  <div className="about-client-box info-box shadow-box h-full">
-                <div className="clients d-flex align-items-start gap-24 justify-content-center">
+              </div>
+              <div data-aos="zoom-in" className='col'>
+                <div className="about-client-box info-box shadow-box h-full">
+                  <div className="clients d-flex align-items-start gap-24 justify-content-center">
                   {lang.landing.facts.quickFacts.map((item, index) => (
                     <div className="client-item" key={index}>
                       <h1>{item.count}</h1>
@@ -195,40 +194,39 @@ const LandingPage = () => {
                         dangerouslySetInnerHTML={{
                           __html: item.label,
                         }}
-                      />
-                    </div>
+                    />
+                  </div>
                   ))}
+                  </div>
                 </div>
               </div>
-                </div>
-                <div data-aos="zoom-in">
-              <div className="about-contact-box info-box shadow-box">
-                <Link className="overlay-link" href="/cv" />
+              <div data-aos="zoom-in" className='col'>
+            <div className="about-contact-box info-box shadow-box">
+              <Link className="overlay-link" href="/cv" />
+              <img
+                src="/assets/icons/icon2.png"
+                alt="Icon"
+                className="star-icon"
+              />
+              <h1
+                dangerouslySetInnerHTML={{
+                  __html: lang.landing.contact.heading,
+                }}
+              ></h1>
+              <Link
+                href={lang.landing.contact.button.link}
+                className="about-btn"
+              >
                 <img
-                  src="/assets/icons/icon2.png"
-                  alt="Icon"
-                  className="star-icon"
+                  src={getThemedContent(
+                    theme,
+                    lang.landing.contact.button.icon
+                  )}
+                  alt="button"
                 />
-                <h1
-                  dangerouslySetInnerHTML={{
-                    __html: lang.landing.contact.heading,
-                  }}
-                ></h1>
-                <Link
-                  href={lang.landing.contact.button.link}
-                  className="about-btn"
-                >
-                  <img
-                    src={getThemedContent(
-                      theme,
-                      lang.landing.contact.button.icon
-                    )}
-                    alt="button"
-                  />
-                </Link>
-              </div>
+              </Link>
             </div>
-              </div>
+          </div>
             </div>
           </div>
         </div>

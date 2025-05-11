@@ -38,6 +38,10 @@
       }
     }
   },
+  "projects" : {
+    "header":"Projects",
+    "text":"Check my projects"
+  },
   "blog": {
     "caption": "Explore blog",
     "heading": "Blog",
