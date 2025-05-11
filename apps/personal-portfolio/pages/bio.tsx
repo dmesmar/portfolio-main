@@ -23,25 +23,51 @@ const BioPage = () => {
       <section className="about-area">
         <div className="container">
 
-          <div className="d-flex about-me-wrap align-items-stretch gap-24">
-            
-            <div data-aos="zoom-in">
-              <div className="about-image-box shadow-box d-flex align-items-center justify-content-center">
-                <img src="/assets/bg1.png" alt="BG" className="bg-img" />
-                <div className=" d-flex flex-column justify-content-center">
-                  <ShootingStar />
-                  <img src={lang.bio.bio.media} alt="bio" className="profile-image" />
+          <div className="d-flex about-me-wrap align-items-stretch ">
+            <div className='col mt-24'>
+              <div data-aos="zoom-in" className='row-md-6 about-image-box-bio'>
+                <div className="shadow-box d-flex align-items-center justify-content-center about-image-box ">
+                  <img src="/assets/bg1.png" alt="BG" className="bg-img" />
+                  <div className=" d-flex flex-column justify-content-center">
+                    <ShootingStar />
+                    <img src={lang.bio.bio.media} alt="bio" className="profile-image" />
+                  </div>
+                </div>
+              </div>
+              <div className="about-details col-md-6" data-aos="zoom-in">
+                <div className="about-details-inner shadow-box">
+                  <img src="/assets/icons/icon2.png" alt="Star" />
+                  <h1>{lang.bio.bio.details.name}</h1>
+                  <p>{lang.bio.bio.details.description}</p>
                 </div>
               </div>
             </div>
-            <div className="about-details" data-aos="zoom-in">
-              <div className="about-details-inner shadow-box">
-                <img src="/assets/icons/icon2.png" alt="Star" />
-                <h1>{lang.bio.bio.details.name}</h1>
-                <p>{lang.bio.bio.details.description}</p>
-              </div>
-            </div>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <div className="row mt-24">
             <div className="col-md-6" data-aos="zoom-in">
               <div className="about-edc-exp about-experience shadow-box">
