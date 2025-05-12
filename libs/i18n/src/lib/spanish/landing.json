@@ -99,11 +99,11 @@
     "quickFacts": [
       {
         "count": "2+",
-        "label": "AÑOS DE <br /> EXPERIENCIA"
+        "label": "AÑOS DE <br /> EXPERIENCIA<br /><br />"
       },
       {
-        "count": "0",
-        "label": "PROYECTOS <br /> TOTALES"
+        "count": "1",
+        "label": "PROYECTO <br /> TOTAL <br/>(por ahora)"
       }
     ]
   },

@@ -37,6 +37,7 @@ const BioPage = () => {
               <div className="about-details col-md-6" data-aos="zoom-in">
                 <div className="about-details-inner shadow-box">
                   <img src="/assets/icons/icon2.png" alt="Star" />
+                  
                   <h1>{lang.bio.bio.details.name}</h1>
                   <p>{lang.bio.bio.details.description}</p>
                 </div>

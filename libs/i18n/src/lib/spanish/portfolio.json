@@ -1,10 +1,20 @@
 {
   "heading": "Portfolio",
   "goBack":"Volver al portfolio",
+  "placeholder_search_bar":"Buscar proyectos",
   "button": {
     "icon": {
       "light": "/assets/icons/icon-2.svg",
       "dark": "/assets/icons/icon.svg"
     }
+  },
+  "categories": {
+    "webDev": "Desarrollo Web",
+    "mobileApp": "Applicació Móvil",
+    "ai": "Inteligencia Artificial",
+    "ml": "Machine Learning",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "thesis": "Trabajo final"
   }
 }

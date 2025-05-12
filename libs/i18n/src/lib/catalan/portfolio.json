@@ -1,10 +1,20 @@
 {
   "heading": "Portfolio",
   "goBack":"Tornar al portfolio",
+  "placeholder_search_bar":"Search projects",
   "button": {
     "icon": {
       "light": "/assets/icons/icon-2.svg",
       "dark": "/assets/icons/icon.svg"
     }
+  },
+  "categories": {
+    "webDev": "Desenvolupament Web",
+    "mobileApp": "Applicació Mòbil",
+    "ai": "Intel·ligència Artificial",
+    "ml": "Machine Learning",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "thesis": "Treball Final"
   }
 }

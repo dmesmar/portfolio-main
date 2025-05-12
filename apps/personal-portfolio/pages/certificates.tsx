@@ -187,7 +187,7 @@ const CertificatesPage: React.FC = () => {
             <Row className="mb-4">
               <Col md="12">
                 <div className={styles.categoriesContainer}>
-                  <span className={styles.categoriesLabel}>Categories: </span>
+                  <span className={styles.categoriesLabel}>{lang.misc.categories}: </span>
                   {categories.map(category => (
                     <Badge 
                       key={category} 

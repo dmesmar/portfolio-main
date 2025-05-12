@@ -1,0 +1,461 @@
+// Common styles (independent of theme)
+.resumeViewer {
+  position: relative;
+}
+
+.certificates-area {
+  .certificates-grid {
+    display: grid;
+    gap: 50px;
+  }
+
+  .certificate-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+  }
+
+  .certificate-item:hover {
+    transform: scale(1.1);
+  }
+
+  .certificate-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    animation: flowing-light 4s linear infinite;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .certificate-item:hover::before {
+    opacity: 1;
+  }
+
+  @keyframes flowing-light {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      transform: translate(50%, 50%);
+    }
+  }
+
+  .img-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .certificate-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  @media (min-width: 768px) {
+    .certificates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 3fr));
+    }
+  }
+}
+
+.download-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  transition: transform 0.3s ease;
+}
+
+.btn.clicked {
+  transform: scale(0.9);
+}
+
+.centerText {
+  text-align: center;
+}
+
+.enlargedImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
+}
+
+.customLightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.lightboxContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+}
+
+.searchSection {
+  margin-bottom: 30px;
+}
+
+.searchContainer {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.selectedCategories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.categoriesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.certificateInfo {
+  padding: 10px;
+  text-align: center;
+}
+
+.certificateCategories {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.smallBadge {
+  font-size: 0.7rem;
+  padding: 3px 8px;
+}
+
+// Dark theme specific styles
+[data-theme='dark'] {
+  .pdfFrame {
+    border: 2px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ff00;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 0 20px #00ff00;
+    }
+  }
+
+  .certificate-item:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+
+  .lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .closeButton {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    
+    &:hover {
+      color: #ddd;
+    }
+  }
+
+  .navButton {
+    background: transparent;
+    color: white;
+    font-size: 50px;
+    border: none;
+    margin: 0 20px;
+    cursor: pointer;
+    z-index: 10;
+    
+    &:hover {
+      color: #ddd;
+    }
+  }
+
+  .searchInput {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid royalblue;
+    background-color: rgba(65, 105, 225, 0.4);
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    
+    &:focus {
+      border-color: #6495ED;
+      box-shadow: 0 0 15px rgba(65, 105, 225, 0.7);
+      background-color: rgba(65, 105, 225, 0.5);
+    }
+    
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .categoryBadge {
+    padding: 6px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: #dc3545;
+    }
+  }
+
+  .categoriesLabel {
+    color: white;
+    font-weight: 500;
+  }
+
+  .categoryButton {
+    padding: 6px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 8px;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .certificateName {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .noResults {
+    text-align: center;
+    padding: 40px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+// Light theme specific styles
+[data-theme='light'] {
+  .pdfFrame {
+    border: 2px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #007bff;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 0 20px #007bff;
+    }
+  }
+
+  .certificate-item:hover {
+    border-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .closeButton {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 30px;
+    color: #222;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    
+    &:hover {
+      color: #555;
+    }
+  }
+
+  .navButton {
+    background: transparent;
+    color: #222;
+    font-size: 50px;
+    border: none;
+    margin: 0 20px;
+    cursor: pointer;
+    z-index: 10;
+    
+    &:hover {
+      color: #555;
+    }
+  }
+
+  .searchInput {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid royalblue;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    
+    &:focus {
+      border-color: royalblue;
+      box-shadow: 0 0 15px rgba(65, 105, 225, 0.5);
+      background-color: white;
+    }
+    
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .categoryBadge {
+    padding: 6px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: #dc3545;
+    }
+  }
+
+  .categoriesLabel {
+    color: #333;
+    font-weight: 500;
+  }
+
+  .categoryButton {
+    padding: 6px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 8px;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .certificateName {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .noResults {
+    text-align: center;
+    padding: 40px;
+    color: #333;
+    font-size: 1.2rem;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Common badge styles
+.categoryBadge {
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  margin: 0 2px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+// Strong selector to override reactstrap Badge styles
+.categoryBadge.categoryBadge {
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  margin: 0 2px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+[data-theme='dark'] {
+  .categoryBadge.categoryBadge {
+    background-color: royalblue !important; 
+    color: white;
+    
+    &:hover {
+      background-color: darken(royalblue, 10%) !important;
+    }
+  }
+}
+
+[data-theme='light'] {
+  .categoryBadge.categoryBadge {
+    background-color: #193d86 !important; 
+    color: white;
+    
+    &:hover {
+      background-color: darken(#e74c3c, 10%) !important;
+    }
+  }
+}

@@ -1,10 +1,20 @@
 {
   "heading": "Portfolio",
   "goBack":"Back to portfolio entries",
+  "placeholder_search_bar":"Buscar projectes",
   "button": {
     "icon": {
       "light": "/assets/icons/icon-2.svg",
       "dark": "/assets/icons/icon.svg"
     }
+  },
+  "categories": {
+    "webDev": "Web Development",
+    "mobileApp": "Mobile App",
+    "ai": "Artificial Intelligence",
+    "ml": "Machine Learning",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "thesis": "Thesis"
   }
 }
