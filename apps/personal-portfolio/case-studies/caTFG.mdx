@@ -1,0 +1,88 @@
+---
+title: Traball final de grau
+description: El meu TFG
+uid: lms
+thumbnail: /assets/case-studies/TFG.png
+category: TFG
+---
+
+{/*Foto del inicio*/}
+<PortfolioHeader media="/assets/case-studies/TFG.png" />
+
+<div className="container">
+
+{/*Abstract*/}
+  <div data-aos="zoom-in">
+    <div class="d-flex project-infos-wrap shadow-box mb-24">
+      <img src="/assets/bg1.png" alt="BG" class="bg-img" />
+      
+      <div class="project-details-info flex-1">
+        <h3>Satisfacció i optimització de restriccions per a la personalització de rutines de gimnàs</h3>
+        <p>
+          <b>
+            Un dels principals problemes quan es comença al gimnàs és familiaritzar-se amb les màquines. 
+            Durant les primeres setmanes, i amb l'ajuda d'amics i entrenadors, ja és possible plantejar-se uns objectius concrets a assolir. 
+            És llavors quan apareix un altre problema: cal començar a organitzar les rutines d'entrenament. 
+            Mitjançant algunes aplicacions o una cerca per internet, és possible trobar milers de rutines diferents. 
+            La dificultat principal consisteix a descobrir quina és la més adequada per utilitzar, quina s'adapta millor a l'horari disponible o a les limitacions de temps, i quina respecta més les preferències personals, com ara evitar cert tipus d'exercicis.
+
+            Molts d'aquests problemes es resolen amb una rutina personalitzada, contractant un entrenador personal. 
+            En aquest treball es proposa el disseny d'una eina per a dispositius mòbils que sigui capaç de generar rutines altament personalitzades en funció del grup muscular que l'usuari desitgi exercitar, del temps màxim d'entrenament disponible i de les seves preferències. 
+            Per a això, l'eina comptarà amb una base de dades d'exercicis, cadascun dels quals especificarà el tipus d'exercici, quins grups musculars treballa i en quina mesura, els temps de descans després de la seva realització i el benefici obtingut. 
+            La base de dades d'exercicis, juntament amb les restriccions i preferències de l'usuari, s'utilitzaran com a entrada per generar, mitjançant algoritmes d'optimització i satisfacció de restriccions, una rutina que aconsegueixi els objectius plantejats tot maximitzant el benefici aconseguit dins de les limitacions temporals.
+
+            Paraules clau: gimnàs, rutina d'entrenament, optimització, satisfacció de restriccions, aplicació mòbil
+		   </b>
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+{/*Tecnologías utilizadas*/}
+<div data-aos="zoom-in">
+    <div class="d-flex project-infos-wrap shadow-box mb-24">
+      <img src="/assets/bg1.png" alt="BG" class="bg-img" />
+        <div class="project-details-info flex-1">
+        <h3>Stack</h3>
+          <ul>
+            <li>- React Native </li>
+            <li>- Node.js </li>
+            <li>- SQLite </li>
+          </ul>
+      </div>
+      
+    </div>
+  </div>
+    
+
+
+{/*Muestra del PDF*/}
+<div data-aos="zoom-in">
+    <div class="project-about-2 d-flex shadow-box mb-24">
+      <img src="/assets/bg1.png" alt="BG" class="bg-img" />
+    <div className="c1-image-container" style={{ flex: 1, minWidth: "480px", paddingLeft: "2vw" }} data-aos="zoom-in">
+      <div className="image-wrapper" style={{ width: "100%" }}>
+        <iframe
+          src={`/assets/case-studies/TFG.pdf`}
+          title="CV"
+          width="100%"
+          height="820px"
+          style={{
+            border: "none",
+            borderRadius: "16px",
+            background: "white",
+            boxShadow: "0 2px 24px #0003"
+          }}
+        >
+          This browser does not support PDFs. Please download the PDF:{" "}
+          <a href={`/assets/case-studies/TFG.pdf`}>Download PDF</a>
+        </iframe>
+      </div>
+    </div>  
+    </div>
+  </div>
+</div>
+
+
+<PortfolioFooter />

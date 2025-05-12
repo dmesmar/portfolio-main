@@ -1,0 +1,99 @@
+---
+title: Trabajo Final de grado
+description: Mi TFG
+uid: lms
+thumbnail: /assets/case-studies/TFG.png
+category: TFG
+---
+
+{/*Foto del inicio*/}
+<PortfolioHeader media="/assets/case-studies/TFG.png" />
+
+<div className="container">
+
+{/*Abstract*/}
+  <div data-aos="zoom-in">
+    <div class="d-flex project-infos-wrap shadow-box mb-24">
+      <img src="/assets/bg1.png" alt="BG" class="bg-img" />
+      
+      <div class="project-details-info flex-1">
+        <h3>Satisfacción y optimización de restricciones para la personalización de rutinas de gimnasio</h3>
+        <p>
+          <b>
+            Uno de los mayores problemas cuando se empieza en el gimnasio es familiarizarse con las
+            máquinas. Durante las primeras semanas, y con la ayuda de amigos y entrenadores, es posible
+            ya plantearse unos objetivos concretos a conseguir. Es ahí cuando llega otro problema: hay que
+            empezar a organizar las rutinas de entrenamiento. Mediante algunas aplicaciones o una
+            búsqueda por internet, es posible encontrar miles de rutinas distintas. La principal dificultad
+            consiste en descubrir cuál es la que más conviene utilizar, cuál se adaptan mejor al horario
+            disponible o a las limitaciones de tiempo y cuál respeta más las preferencias personales, como
+            las de evitar cierto tipo de ejercicios.
+            
+            Muchos de estos problemas se solucionan con una rutina personalizada, contratando a un
+            entrenador personal. En este trabajo se propone el diseño de una herramienta para
+            dispositivos móviles que sea capaz de generar rutinas altamente per sonalizadas en función del
+            grupo de músculos que el usuario desee ejercitar, del tiempo máximo de entrenamiento
+            disponible y de sus preferencias. Para ello, la herramienta contará con una base de datos de
+            ejercicios, cada uno de los cuales especificará el tipo de ejercicio, qué grupos musculares
+            trabaja y en qué medida, los tiempos de descanso tras su realización y el beneficio obtenido.
+            La base de datos de ejercicios junto con las restricciones y preferencias del usuario se utilizarán
+            como entrada para gen erar, mediante algoritmos de optimización y satisfacción de
+            restricciones, una rutina que logre los objetivos planteados al mismo tiempo que maximiza el
+            beneficio conseguido dentro de las limitaciones temporales.
+
+            Palabras clave: gimnasio, rutina de entrenamiento, optimización, satisfacción de restricciones,
+            aplicación móvil
+		   </b>
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+{/*Tecnologías utilizadas*/}
+<div data-aos="zoom-in">
+    <div class="d-flex project-infos-wrap shadow-box mb-24">
+      <img src="/assets/bg1.png" alt="BG" class="bg-img" />
+        <div class="project-details-info flex-1">
+        <h3>Tecnologías utilizadas</h3>
+          <ul>
+            <li>- React Native </li>
+            <li>- Node.js </li>
+            <li>- SQLite </li>
+          </ul>
+      </div>
+      
+    </div>
+  </div>
+    
+
+
+{/*Muestra del PDF*/}
+<div data-aos="zoom-in">
+    <div class="project-about-2 d-flex shadow-box mb-24">
+      <img src="/assets/bg1.png" alt="BG" class="bg-img" />
+    <div className="c1-image-container" style={{ flex: 1, minWidth: "480px", paddingLeft: "2vw" }} data-aos="zoom-in">
+      <div className="image-wrapper" style={{ width: "100%" }}>
+        <iframe
+          src={`/assets/case-studies/TFG.pdf`}
+          title="CV"
+          width="100%"
+          height="820px"
+          style={{
+            border: "none",
+            borderRadius: "16px",
+            background: "white",
+            boxShadow: "0 2px 24px #0003"
+          }}
+        >
+          This browser does not support PDFs. Please download the PDF:{" "}
+          <a href={`/assets/case-studies/TFG.pdf`}>Download PDF</a>
+        </iframe>
+      </div>
+    </div>  
+    </div>
+  </div>
+</div>
+
+
+<PortfolioFooter />
