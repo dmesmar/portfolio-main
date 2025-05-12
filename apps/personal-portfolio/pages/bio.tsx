@@ -47,27 +47,6 @@ const BioPage = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           <div className="row mt-24">
             <div className="col-md-6" data-aos="zoom-in">
               <div className="about-edc-exp about-experience shadow-box">
@@ -105,8 +84,8 @@ const BioPage = () => {
               <h1 className='section-heading'>{lang.bio.misc.moreDetails}</h1>
               <div className="d-flex profile-contact-credentials-wrap gap-24">
 
-                <div data-aos="zoom-in" className="flex-1">
-                  <div className="about-contact-box info-box shadow-box">
+                <div data-aos="zoom-in" className="flex-1 ">
+                  <div className="about-contact-box info-box shadow-box h-100 col">
                     <Link className="overlay-link" href="/cv" />
                     <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                     <img
@@ -133,8 +112,8 @@ const BioPage = () => {
                     </Link>
                   </div>
                 </div>
-                <div data-aos="zoom-in" className="flex-1">
-                  <div className="about-contact-box info-box shadow-box">
+                <div data-aos="zoom-in" className="flex-1 ">
+                  <div className="about-contact-box info-box shadow-box h-100 col">
                     <Link className="overlay-link" href="/credentials" />
                     <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                     <img
@@ -161,8 +140,8 @@ const BioPage = () => {
                     </Link>
                   </div>
                 </div>
-                <div data-aos="zoom-in">
-                  <div className="about-profile-box info-box shadow-box h-full">
+                <div data-aos="zoom-in" className='flex-1 '>
+                  <div className="about-profile-box info-box shadow-box h-100 col">
                     <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                     <div className="inner-profile-icons shadow-box">
                       {lang.bio.profiles.profiles.map((item, index) => (
