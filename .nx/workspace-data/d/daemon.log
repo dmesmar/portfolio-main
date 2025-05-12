@@ -3560,3 +3560,635 @@
 [NX Daemon Server] - 2025-05-12T08:08:44.056Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
 [NX Daemon Server] - 2025-05-12T08:08:44.056Z - [SYNC]: scheduling: []
 [NX Daemon Server] - 2025-05-12T08:08:44.056Z - Time taken for 'total execution time for createProjectGraph()' 29.574400000012247ms
+[NX Daemon Server] - 2025-05-12T08:09:37.721Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:09:38.048Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:09:38.360Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:32:51.753Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-05-12T08:32:51.753Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:32:58.164Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T08:32:58.164Z - [REQUEST]: apps/personal-portfolio/public/assets/cv/cvENDarioMesasMarti.pdf,apps/personal-portfolio/public/assets/cv/cvESPDarioMesasMarti.pdf,apps/personal-portfolio/public/assets/cv/cvCADarioMesasMarti.pdf
+[NX Daemon Server] - 2025-05-12T08:32:58.164Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T08:32:58.166Z - Time taken for 'hash changed files from watcher' 0.6687999998684973ms
+[NX Daemon Server] - 2025-05-12T08:32:58.191Z - Time taken for 'build-project-configs' 19.448199999984354ms
+[NX Daemon Server] - 2025-05-12T08:32:58.229Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T08:32:58.230Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T08:32:58.230Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T08:32:58.230Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T08:32:58.230Z - Time taken for 'total execution time for createProjectGraph()' 30.86269999993965ms
+[NX Daemon Server] - 2025-05-12T08:33:01.376Z - [WATCHER]: apps/personal-portfolio/public/assets/cv/enDarioMesasCV.pdf was deleted
+[NX Daemon Server] - 2025-05-12T08:33:01.377Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:33:03.814Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:33:03.815Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2025-05-12T08:33:07.781Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T08:33:07.781Z - [REQUEST]: apps/personal-portfolio/public/assets/cv/enDarioMesasCV.pdf
+[NX Daemon Server] - 2025-05-12T08:33:07.781Z - [REQUEST]: apps/personal-portfolio/public/assets/cv/cvENDarioMesasMarti.pdf
+[NX Daemon Server] - 2025-05-12T08:33:07.783Z - Time taken for 'hash changed files from watcher' 1.0575999999418855ms
+[NX Daemon Server] - 2025-05-12T08:33:07.800Z - Time taken for 'build-project-configs' 13.114100000122562ms
+[NX Daemon Server] - 2025-05-12T08:33:07.834Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T08:33:07.834Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T08:33:07.835Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T08:33:07.835Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T08:33:07.835Z - Time taken for 'total execution time for createProjectGraph()' 27.673200000077486ms
+[NX Daemon Server] - 2025-05-12T08:33:08.049Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:33:08.050Z - [WATCHER]: apps/personal-portfolio/public/assets/cv/esDarioMesasCV.pdf was deleted
+[NX Daemon Server] - 2025-05-12T08:33:08.256Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T08:33:08.257Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T08:33:08.257Z - [REQUEST]: apps/personal-portfolio/public/assets/cv/esDarioMesasCV.pdf
+[NX Daemon Server] - 2025-05-12T08:33:08.262Z - Time taken for 'hash changed files from watcher' 1.31429999996908ms
+[NX Daemon Server] - 2025-05-12T08:33:08.280Z - Time taken for 'build-project-configs' 17.17090000002645ms
+[NX Daemon Server] - 2025-05-12T08:33:08.313Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T08:33:08.313Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T08:33:08.313Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T08:33:08.313Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T08:33:08.313Z - Time taken for 'total execution time for createProjectGraph()' 24.381700000027195ms
+[NX Daemon Server] - 2025-05-12T08:33:10.465Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:33:10.467Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2025-05-12T08:33:10.577Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T08:33:10.577Z - [REQUEST]: apps/personal-portfolio/public/assets/cv/esDarioMesasCV.pdf
+[NX Daemon Server] - 2025-05-12T08:33:10.577Z - [REQUEST]: apps/personal-portfolio/public/assets/cv/cvESPDarioMesasMarti.pdf
+[NX Daemon Server] - 2025-05-12T08:33:10.582Z - Time taken for 'hash changed files from watcher' 1.0046999999321997ms
+[NX Daemon Server] - 2025-05-12T08:33:10.599Z - Time taken for 'build-project-configs' 13.30420000012964ms
+[NX Daemon Server] - 2025-05-12T08:33:10.645Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T08:33:10.645Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T08:33:10.646Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T08:33:10.646Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T08:33:10.646Z - Time taken for 'total execution time for createProjectGraph()' 34.576399999903515ms
+[NX Daemon Server] - 2025-05-12T08:33:13.199Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:33:13.200Z - [WATCHER]: apps/personal-portfolio/public/assets/cv/caDarioMesasCV.pdf was deleted
+[NX Daemon Server] - 2025-05-12T08:33:13.412Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T08:33:13.412Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T08:33:13.412Z - [REQUEST]: apps/personal-portfolio/public/assets/cv/caDarioMesasCV.pdf
+[NX Daemon Server] - 2025-05-12T08:33:13.414Z - Time taken for 'hash changed files from watcher' 0.21949999989010394ms
+[NX Daemon Server] - 2025-05-12T08:33:13.431Z - Time taken for 'build-project-configs' 11.791300000157207ms
+[NX Daemon Server] - 2025-05-12T08:33:13.463Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T08:33:13.463Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T08:33:13.464Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T08:33:13.464Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T08:33:13.464Z - Time taken for 'total execution time for createProjectGraph()' 25.67839999985881ms
+[NX Daemon Server] - 2025-05-12T08:33:16.688Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2025-05-12T08:33:16.688Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:33:16.793Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T08:33:16.794Z - [REQUEST]: apps/personal-portfolio/public/assets/cv/caDarioMesasCV.pdf
+[NX Daemon Server] - 2025-05-12T08:33:16.794Z - [REQUEST]: apps/personal-portfolio/public/assets/cv/cvCADarioMesasMarti.pdf
+[NX Daemon Server] - 2025-05-12T08:33:16.797Z - Time taken for 'hash changed files from watcher' 0.8730999999679625ms
+[NX Daemon Server] - 2025-05-12T08:33:16.813Z - Time taken for 'build-project-configs' 14.380099999951199ms
+[NX Daemon Server] - 2025-05-12T08:33:16.848Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T08:33:16.848Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T08:33:16.849Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T08:33:16.849Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T08:33:16.849Z - Time taken for 'total execution time for createProjectGraph()' 27.026499999919906ms
+[NX Daemon Server] - 2025-05-12T08:33:27.506Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:33:27.647Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:34:27.570Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:34:27.652Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T08:34:27.843Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:05:51.399Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:05:51.402Z - [WATCHER]: apps/personal-portfolio/pages/index.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:05:51.614Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:05:51.614Z - [REQUEST]: apps/personal-portfolio/pages/index.tsx
+[NX Daemon Server] - 2025-05-12T11:05:51.614Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:05:51.616Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:05:51.616Z - Time taken for 'hash changed files from watcher' 0.5144999995827675ms
+[NX Daemon Server] - 2025-05-12T11:05:51.636Z - Time taken for 'build-project-configs' 14.11600000038743ms
+[NX Daemon Server] - 2025-05-12T11:05:51.686Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:05:51.687Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:05:51.687Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:05:51.687Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:05:51.687Z - Time taken for 'total execution time for createProjectGraph()' 42.99860000051558ms
+[NX Daemon Server] - 2025-05-12T11:05:51.687Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:05:58.828Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:06:23.346Z - [WATCHER]: apps/personal-portfolio/pages/index.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:06:23.346Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:06:23.398Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:06:23.454Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:06:23.748Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:06:23.749Z - [REQUEST]: apps/personal-portfolio/pages/index.tsx
+[NX Daemon Server] - 2025-05-12T11:06:23.749Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:06:23.750Z - Time taken for 'hash changed files from watcher' 0.3321000002324581ms
+[NX Daemon Server] - 2025-05-12T11:06:23.768Z - Time taken for 'build-project-configs' 14.411299999803305ms
+[NX Daemon Server] - 2025-05-12T11:06:23.803Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:06:23.803Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:06:23.804Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:06:23.804Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:06:23.804Z - Time taken for 'total execution time for createProjectGraph()' 29.50620000064373ms
+[NX Daemon Server] - 2025-05-12T11:07:23.479Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:07:23.550Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:08:05.559Z - [WATCHER]: apps/personal-portfolio/pages/index.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:08:05.559Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:08:05.658Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:08:05.724Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:08:06.368Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:08:06.368Z - [REQUEST]: apps/personal-portfolio/pages/index.tsx
+[NX Daemon Server] - 2025-05-12T11:08:06.368Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:08:06.369Z - Time taken for 'hash changed files from watcher' 0.3235999997705221ms
+[NX Daemon Server] - 2025-05-12T11:08:06.388Z - Time taken for 'build-project-configs' 14.461399998515844ms
+[NX Daemon Server] - 2025-05-12T11:08:06.426Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:08:06.426Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:08:06.426Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:08:06.426Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:08:06.426Z - Time taken for 'total execution time for createProjectGraph()' 31.746199999004602ms
+[NX Daemon Server] - 2025-05-12T11:08:21.937Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:08:21.939Z - [WATCHER]: apps/personal-portfolio/pages/index.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:08:22.005Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:08:22.062Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:08:23.554Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:08:23.554Z - [REQUEST]: apps/personal-portfolio/pages/index.tsx
+[NX Daemon Server] - 2025-05-12T11:08:23.554Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:08:23.555Z - Time taken for 'hash changed files from watcher' 0.5608999989926815ms
+[NX Daemon Server] - 2025-05-12T11:08:23.572Z - Time taken for 'build-project-configs' 13.001900000497699ms
+[NX Daemon Server] - 2025-05-12T11:08:23.607Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:08:23.607Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:08:23.608Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:08:23.608Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:08:23.608Z - Time taken for 'total execution time for createProjectGraph()' 29.0605999995023ms
+[NX Daemon Server] - 2025-05-12T11:08:24.916Z - [WATCHER]: apps/personal-portfolio/pages/index.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:08:24.917Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:08:24.979Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:08:25.037Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:08:28.126Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:08:28.126Z - [REQUEST]: apps/personal-portfolio/pages/index.tsx
+[NX Daemon Server] - 2025-05-12T11:08:28.126Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:08:28.129Z - Time taken for 'hash changed files from watcher' 0.5119000002741814ms
+[NX Daemon Server] - 2025-05-12T11:08:28.147Z - Time taken for 'build-project-configs' 15.020199999213219ms
+[NX Daemon Server] - 2025-05-12T11:08:28.182Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:08:28.182Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:08:28.182Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:08:28.182Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:08:28.182Z - Time taken for 'total execution time for createProjectGraph()' 27.956900000572205ms
+[NX Daemon Server] - 2025-05-12T11:09:25.039Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:09:25.096Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:09:39.700Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:09:39.702Z - [WATCHER]: apps/personal-portfolio/pages/styles.scss was modified
+[NX Daemon Server] - 2025-05-12T11:09:40.020Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:09:46.111Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:09:46.111Z - [REQUEST]: apps/personal-portfolio/pages/styles.scss
+[NX Daemon Server] - 2025-05-12T11:09:46.111Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:09:46.113Z - Time taken for 'hash changed files from watcher' 0.796900000423193ms
+[NX Daemon Server] - 2025-05-12T11:09:46.129Z - Time taken for 'build-project-configs' 13.318199999630451ms
+[NX Daemon Server] - 2025-05-12T11:09:46.163Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:09:46.163Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:09:46.164Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:09:46.164Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:09:46.164Z - Time taken for 'total execution time for createProjectGraph()' 28.08420000039041ms
+[NX Daemon Server] - 2025-05-12T11:10:12.078Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:10:12.079Z - [WATCHER]: apps/personal-portfolio/pages/index.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:10:12.155Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:10:18.494Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:10:18.495Z - [REQUEST]: apps/personal-portfolio/pages/index.tsx
+[NX Daemon Server] - 2025-05-12T11:10:18.495Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:10:18.498Z - Time taken for 'hash changed files from watcher' 0.6003000009804964ms
+[NX Daemon Server] - 2025-05-12T11:10:18.513Z - Time taken for 'build-project-configs' 12.940899999812245ms
+[NX Daemon Server] - 2025-05-12T11:10:18.548Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:10:18.549Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:10:18.549Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:10:18.549Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:10:18.549Z - Time taken for 'total execution time for createProjectGraph()' 27.304100001230836ms
+[NX Daemon Server] - 2025-05-12T11:10:24.725Z - [WATCHER]: apps/personal-portfolio/pages/styles.scss was modified
+[NX Daemon Server] - 2025-05-12T11:10:24.725Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:10:25.004Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:10:25.059Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:10:31.136Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:10:31.136Z - [REQUEST]: apps/personal-portfolio/pages/styles.scss
+[NX Daemon Server] - 2025-05-12T11:10:31.136Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:10:31.140Z - Time taken for 'hash changed files from watcher' 0.5870999991893768ms
+[NX Daemon Server] - 2025-05-12T11:10:31.157Z - Time taken for 'build-project-configs' 15.26769999973476ms
+[NX Daemon Server] - 2025-05-12T11:10:31.188Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:10:31.188Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:10:31.189Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:10:31.189Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:10:31.189Z - Time taken for 'total execution time for createProjectGraph()' 25.69759999960661ms
+[NX Daemon Server] - 2025-05-12T11:10:39.866Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:10:39.867Z - [WATCHER]: apps/personal-portfolio/pages/index.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:10:39.969Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:10:46.270Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:10:46.270Z - [REQUEST]: apps/personal-portfolio/pages/index.tsx
+[NX Daemon Server] - 2025-05-12T11:10:46.270Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:10:46.272Z - Time taken for 'hash changed files from watcher' 0.32820000126957893ms
+[NX Daemon Server] - 2025-05-12T11:10:46.292Z - Time taken for 'build-project-configs' 15.940799999982119ms
+[NX Daemon Server] - 2025-05-12T11:10:46.330Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:10:46.330Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:10:46.331Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:10:46.331Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:10:46.331Z - Time taken for 'total execution time for createProjectGraph()' 32.75129999965429ms
+[NX Daemon Server] - 2025-05-12T11:10:55.406Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:10:55.407Z - [WATCHER]: apps/personal-portfolio/pages/styles.scss was modified
+[NX Daemon Server] - 2025-05-12T11:10:55.651Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:10:57.649Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:10:57.651Z - [WATCHER]: apps/personal-portfolio/pages/index.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:10:57.734Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:10:57.789Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:11:01.812Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:11:01.812Z - [REQUEST]: apps/personal-portfolio/pages/styles.scss,apps/personal-portfolio/pages/index.tsx
+[NX Daemon Server] - 2025-05-12T11:11:01.812Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:11:01.815Z - Time taken for 'hash changed files from watcher' 0.8217999991029501ms
+[NX Daemon Server] - 2025-05-12T11:11:01.833Z - Time taken for 'build-project-configs' 15.2179000005126ms
+[NX Daemon Server] - 2025-05-12T11:11:01.869Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:11:01.869Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:11:01.869Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:11:01.869Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:11:01.870Z - Time taken for 'total execution time for createProjectGraph()' 30.545500000938773ms
+[NX Daemon Server] - 2025-05-12T11:11:54.560Z - [WATCHER]: apps/personal-portfolio/pages/styles.scss was modified
+[NX Daemon Server] - 2025-05-12T11:11:54.560Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:11:54.723Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:11:54.779Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:11:59.427Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:11:59.429Z - [WATCHER]: apps/personal-portfolio/pages/styles-light.scss was modified
+[NX Daemon Server] - 2025-05-12T11:11:59.600Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:12:00.966Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:12:00.967Z - [REQUEST]: apps/personal-portfolio/pages/styles.scss,apps/personal-portfolio/pages/styles-light.scss
+[NX Daemon Server] - 2025-05-12T11:12:00.967Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:12:00.969Z - Time taken for 'hash changed files from watcher' 0.45160000026226044ms
+[NX Daemon Server] - 2025-05-12T11:12:00.987Z - Time taken for 'build-project-configs' 14.524600001052022ms
+[NX Daemon Server] - 2025-05-12T11:12:01.026Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:12:01.027Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:12:01.027Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:12:01.027Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:12:01.027Z - Time taken for 'total execution time for createProjectGraph()' 32.78539999946952ms
+[NX Daemon Server] - 2025-05-12T11:12:05.886Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:12:05.887Z - [WATCHER]: apps/personal-portfolio/pages/index.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:12:05.943Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:12:12.296Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:12:12.296Z - [REQUEST]: apps/personal-portfolio/pages/index.tsx
+[NX Daemon Server] - 2025-05-12T11:12:12.296Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:12:12.300Z - Time taken for 'hash changed files from watcher' 0.7964999992400408ms
+[NX Daemon Server] - 2025-05-12T11:12:12.319Z - Time taken for 'build-project-configs' 17.522199999541044ms
+[NX Daemon Server] - 2025-05-12T11:12:12.355Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:12:12.356Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:12:12.356Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:12:12.356Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:12:12.356Z - Time taken for 'total execution time for createProjectGraph()' 30.468399999663234ms
+[NX Daemon Server] - 2025-05-12T11:13:06.051Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:13:06.121Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:13:06.403Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:13:42.843Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:13:42.844Z - [WATCHER]: apps/personal-portfolio/pages/index.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:13:42.920Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:13:42.974Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:13:45.787Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:13:49.256Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:13:49.257Z - [REQUEST]: apps/personal-portfolio/pages/index.tsx
+[NX Daemon Server] - 2025-05-12T11:13:49.257Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:13:49.260Z - Time taken for 'hash changed files from watcher' 0.5867999996989965ms
+[NX Daemon Server] - 2025-05-12T11:13:49.279Z - Time taken for 'build-project-configs' 15.487700000405312ms
+[NX Daemon Server] - 2025-05-12T11:13:49.317Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:13:49.318Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:13:49.318Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:13:49.318Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:13:49.318Z - Time taken for 'total execution time for createProjectGraph()' 30.279100000858307ms
+[NX Daemon Server] - 2025-05-12T11:14:45.830Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:14:45.903Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:14:45.963Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:14:46.134Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:15:34.124Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:15:34.125Z - [WATCHER]: apps/personal-portfolio/pages/index.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:15:34.202Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:15:34.260Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:15:40.533Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:15:40.533Z - [REQUEST]: apps/personal-portfolio/pages/index.tsx
+[NX Daemon Server] - 2025-05-12T11:15:40.533Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:15:40.535Z - Time taken for 'hash changed files from watcher' 0.3717000000178814ms
+[NX Daemon Server] - 2025-05-12T11:15:40.553Z - Time taken for 'build-project-configs' 14.734699999913573ms
+[NX Daemon Server] - 2025-05-12T11:15:40.589Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:15:40.589Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:15:40.589Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:15:40.589Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:15:40.589Z - Time taken for 'total execution time for createProjectGraph()' 29.95689999870956ms
+[NX Daemon Server] - 2025-05-12T11:15:43.994Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:15:43.996Z - [WATCHER]: apps/personal-portfolio/pages/styles.scss was modified
+[NX Daemon Server] - 2025-05-12T11:15:44.318Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:15:49.863Z - [WATCHER]: apps/personal-portfolio/pages/styles-light.scss was modified
+[NX Daemon Server] - 2025-05-12T11:15:49.863Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:15:50.085Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:15:50.406Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:15:50.406Z - [REQUEST]: apps/personal-portfolio/pages/styles.scss,apps/personal-portfolio/pages/styles-light.scss
+[NX Daemon Server] - 2025-05-12T11:15:50.406Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:15:50.408Z - Time taken for 'hash changed files from watcher' 0.4147000014781952ms
+[NX Daemon Server] - 2025-05-12T11:15:50.425Z - Time taken for 'build-project-configs' 13.94480000063777ms
+[NX Daemon Server] - 2025-05-12T11:15:50.465Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:15:50.465Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:15:50.465Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:15:50.465Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:15:50.465Z - Time taken for 'total execution time for createProjectGraph()' 32.06709999963641ms
+[NX Daemon Server] - 2025-05-12T11:16:49.961Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:16:50.150Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:16:50.397Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:16:50.456Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:18:23.553Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:18:23.554Z - [WATCHER]: apps/personal-portfolio/pages/styles.scss was modified
+[NX Daemon Server] - 2025-05-12T11:18:23.832Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:18:23.903Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:18:29.135Z - [WATCHER]: apps/personal-portfolio/pages/styles-light.scss was modified
+[NX Daemon Server] - 2025-05-12T11:18:29.135Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:18:29.345Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:18:29.965Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:18:29.965Z - [REQUEST]: apps/personal-portfolio/pages/styles.scss,apps/personal-portfolio/pages/styles-light.scss
+[NX Daemon Server] - 2025-05-12T11:18:29.965Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:18:29.967Z - Time taken for 'hash changed files from watcher' 0.44969999976456165ms
+[NX Daemon Server] - 2025-05-12T11:18:29.992Z - Time taken for 'build-project-configs' 20.42559999972582ms
+[NX Daemon Server] - 2025-05-12T11:18:30.029Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:18:30.030Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:18:30.030Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:18:30.030Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:18:30.030Z - Time taken for 'total execution time for createProjectGraph()' 30.82289999909699ms
+[NX Daemon Server] - 2025-05-12T11:19:29.485Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:19:29.543Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:19:29.687Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:19:29.905Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:20:12.237Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:20:12.239Z - [WATCHER]: apps/personal-portfolio/pages/styles-light.scss was modified
+[NX Daemon Server] - 2025-05-12T11:20:12.467Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:20:12.529Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:20:18.645Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:20:18.645Z - [REQUEST]: apps/personal-portfolio/pages/styles-light.scss
+[NX Daemon Server] - 2025-05-12T11:20:18.645Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:20:18.647Z - Time taken for 'hash changed files from watcher' 0.3903999999165535ms
+[NX Daemon Server] - 2025-05-12T11:20:18.670Z - Time taken for 'build-project-configs' 19.70839999988675ms
+[NX Daemon Server] - 2025-05-12T11:20:18.704Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:20:18.704Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:20:18.704Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:20:18.704Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:20:18.705Z - Time taken for 'total execution time for createProjectGraph()' 28.125499999150634ms
+[NX Daemon Server] - 2025-05-12T11:20:19.473Z - [WATCHER]: apps/personal-portfolio/pages/styles.scss was modified
+[NX Daemon Server] - 2025-05-12T11:20:19.473Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:20:19.649Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:20:25.887Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:20:25.887Z - [REQUEST]: apps/personal-portfolio/pages/styles.scss
+[NX Daemon Server] - 2025-05-12T11:20:25.887Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:20:25.889Z - Time taken for 'hash changed files from watcher' 0.8358999993652105ms
+[NX Daemon Server] - 2025-05-12T11:20:25.907Z - Time taken for 'build-project-configs' 14.01240000128746ms
+[NX Daemon Server] - 2025-05-12T11:20:25.940Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:20:25.940Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:20:25.940Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:20:25.940Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:20:25.940Z - Time taken for 'total execution time for createProjectGraph()' 26.964599998667836ms
+[NX Daemon Server] - 2025-05-12T11:20:55.581Z - [WATCHER]: apps/personal-portfolio/pages/styles.scss was modified
+[NX Daemon Server] - 2025-05-12T11:20:55.581Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:20:55.786Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:21:00.233Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:21:00.234Z - [WATCHER]: apps/personal-portfolio/pages/styles.scss was modified
+[NX Daemon Server] - 2025-05-12T11:21:00.402Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:21:01.991Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:21:01.991Z - [REQUEST]: apps/personal-portfolio/pages/styles.scss
+[NX Daemon Server] - 2025-05-12T11:21:01.991Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:21:01.994Z - Time taken for 'hash changed files from watcher' 0.5965999998152256ms
+[NX Daemon Server] - 2025-05-12T11:21:02.011Z - Time taken for 'build-project-configs' 13.352300001308322ms
+[NX Daemon Server] - 2025-05-12T11:21:02.038Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:21:02.038Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:21:02.038Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:21:02.038Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:21:02.038Z - Time taken for 'total execution time for createProjectGraph()' 20.645999999716878ms
+[NX Daemon Server] - 2025-05-12T11:21:28.229Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:21:28.231Z - [WATCHER]: apps/personal-portfolio/pages/styles.scss was modified
+[NX Daemon Server] - 2025-05-12T11:21:28.386Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:21:33.362Z - [WATCHER]: apps/personal-portfolio/pages/styles-light.scss was modified
+[NX Daemon Server] - 2025-05-12T11:21:33.362Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:21:33.534Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:21:34.640Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:21:34.640Z - [REQUEST]: apps/personal-portfolio/pages/styles.scss,apps/personal-portfolio/pages/styles-light.scss
+[NX Daemon Server] - 2025-05-12T11:21:34.640Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:21:34.642Z - Time taken for 'hash changed files from watcher' 0.8059000000357628ms
+[NX Daemon Server] - 2025-05-12T11:21:34.660Z - Time taken for 'build-project-configs' 13.909600000828505ms
+[NX Daemon Server] - 2025-05-12T11:21:34.699Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:21:34.700Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:21:34.700Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:21:34.700Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:21:34.700Z - Time taken for 'total execution time for createProjectGraph()' 33.620799999684095ms
+[NX Daemon Server] - 2025-05-12T11:22:30.824Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:22:30.826Z - [WATCHER]: apps/personal-portfolio/pages/index.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:22:30.944Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:22:31.070Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:22:37.240Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:22:37.240Z - [REQUEST]: apps/personal-portfolio/pages/index.tsx
+[NX Daemon Server] - 2025-05-12T11:22:37.240Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:22:37.242Z - Time taken for 'hash changed files from watcher' 0.34500000067055225ms
+[NX Daemon Server] - 2025-05-12T11:22:37.260Z - Time taken for 'build-project-configs' 14.886399999260902ms
+[NX Daemon Server] - 2025-05-12T11:22:37.296Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:22:37.296Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:22:37.296Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:22:37.296Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:22:37.296Z - Time taken for 'total execution time for createProjectGraph()' 29.08479999937117ms
+[NX Daemon Server] - 2025-05-12T11:23:31.023Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:23:31.147Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:23:31.449Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:20.109Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:45:20.109Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:20.208Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:20.263Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:26.520Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:45:26.520Z - [REQUEST]: apps/personal-portfolio/pages/bio.tsx
+[NX Daemon Server] - 2025-05-12T11:45:26.521Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:45:26.522Z - Time taken for 'hash changed files from watcher' 0.3546999990940094ms
+[NX Daemon Server] - 2025-05-12T11:45:26.540Z - Time taken for 'build-project-configs' 14.473899999633431ms
+[NX Daemon Server] - 2025-05-12T11:45:26.577Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:45:26.577Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:45:26.577Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:45:26.577Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:45:26.578Z - Time taken for 'total execution time for createProjectGraph()' 30.803000001236796ms
+[NX Daemon Server] - 2025-05-12T11:45:26.647Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:45:26.647Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:26.719Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:26.786Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:33.060Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:45:33.061Z - [REQUEST]: apps/personal-portfolio/pages/bio.tsx
+[NX Daemon Server] - 2025-05-12T11:45:33.061Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:45:33.063Z - Time taken for 'hash changed files from watcher' 0.9526000004261732ms
+[NX Daemon Server] - 2025-05-12T11:45:33.080Z - Time taken for 'build-project-configs' 13.730200000107288ms
+[NX Daemon Server] - 2025-05-12T11:45:33.114Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:45:33.114Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:45:33.114Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:45:33.114Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:45:33.114Z - Time taken for 'total execution time for createProjectGraph()' 28.446599999442697ms
+[NX Daemon Server] - 2025-05-12T11:45:35.940Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:35.941Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:45:36.020Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:37.473Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:45:37.473Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:37.531Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:37.593Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:38.651Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:45:38.651Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:38.728Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:41.915Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:45:41.916Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:41.977Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:42.354Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:45:42.354Z - [REQUEST]: apps/personal-portfolio/pages/bio.tsx
+[NX Daemon Server] - 2025-05-12T11:45:42.354Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:45:42.357Z - Time taken for 'hash changed files from watcher' 2.3707999996840954ms
+[NX Daemon Server] - 2025-05-12T11:45:42.374Z - Time taken for 'build-project-configs' 15.781899999827147ms
+[NX Daemon Server] - 2025-05-12T11:45:42.405Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:45:42.405Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:45:42.405Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:45:42.405Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:45:42.405Z - Time taken for 'total execution time for createProjectGraph()' 24.698200000450015ms
+[NX Daemon Server] - 2025-05-12T11:45:43.080Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:45:43.080Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:43.158Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:48.104Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:48.106Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:45:48.166Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:49.486Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:45:49.486Z - [REQUEST]: apps/personal-portfolio/pages/bio.tsx
+[NX Daemon Server] - 2025-05-12T11:45:49.486Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:45:49.489Z - Time taken for 'hash changed files from watcher' 0.4540999997407198ms
+[NX Daemon Server] - 2025-05-12T11:45:49.504Z - Time taken for 'build-project-configs' 12.988599998876452ms
+[NX Daemon Server] - 2025-05-12T11:45:49.541Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:45:49.541Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:45:49.541Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:45:49.541Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:45:49.541Z - Time taken for 'total execution time for createProjectGraph()' 28.987099999561906ms
+[NX Daemon Server] - 2025-05-12T11:45:51.152Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:51.154Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:45:51.229Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:57.397Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:57.398Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:45:57.461Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:45:57.568Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:45:57.568Z - [REQUEST]: apps/personal-portfolio/pages/bio.tsx
+[NX Daemon Server] - 2025-05-12T11:45:57.568Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:45:57.572Z - Time taken for 'hash changed files from watcher' 0.3844999987632036ms
+[NX Daemon Server] - 2025-05-12T11:45:57.590Z - Time taken for 'build-project-configs' 16.39130000025034ms
+[NX Daemon Server] - 2025-05-12T11:45:57.624Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:45:57.625Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:45:57.625Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:45:57.625Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:45:57.625Z - Time taken for 'total execution time for createProjectGraph()' 29.468600001186132ms
+[NX Daemon Server] - 2025-05-12T11:46:00.423Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:46:00.423Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:46:00.472Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:46:00.538Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:46:01.850Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:46:01.851Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:46:01.924Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:46:06.828Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:46:06.828Z - [REQUEST]: apps/personal-portfolio/pages/bio.tsx
+[NX Daemon Server] - 2025-05-12T11:46:06.828Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:46:06.830Z - Time taken for 'hash changed files from watcher' 0.33399999886751175ms
+[NX Daemon Server] - 2025-05-12T11:46:06.846Z - Time taken for 'build-project-configs' 12.585900001227856ms
+[NX Daemon Server] - 2025-05-12T11:46:06.870Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:46:06.870Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:46:06.870Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:46:06.870Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:46:06.870Z - Time taken for 'total execution time for createProjectGraph()' 18.81959999911487ms
+[NX Daemon Server] - 2025-05-12T11:46:14.534Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:46:14.536Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:46:14.615Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:46:15.450Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:46:15.450Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:46:15.521Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:46:16.607Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:46:16.661Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:46:20.944Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:46:20.944Z - [REQUEST]: apps/personal-portfolio/pages/bio.tsx
+[NX Daemon Server] - 2025-05-12T11:46:20.944Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:46:20.945Z - Time taken for 'hash changed files from watcher' 0.35239999927580357ms
+[NX Daemon Server] - 2025-05-12T11:46:20.963Z - Time taken for 'build-project-configs' 13.903599999845028ms
+[NX Daemon Server] - 2025-05-12T11:46:20.992Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:46:20.992Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:46:20.993Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:46:20.993Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:46:20.993Z - Time taken for 'total execution time for createProjectGraph()' 23.546300001442432ms
+[NX Daemon Server] - 2025-05-12T11:47:15.625Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:47:15.712Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:47:15.935Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:48:23.704Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:48:23.706Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:48:23.802Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:48:23.871Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:48:28.154Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:48:28.154Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:48:28.207Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:48:28.280Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:48:30.118Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:48:30.118Z - [REQUEST]: apps/personal-portfolio/pages/bio.tsx
+[NX Daemon Server] - 2025-05-12T11:48:30.118Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:48:30.121Z - Time taken for 'hash changed files from watcher' 0.6271000001579523ms
+[NX Daemon Server] - 2025-05-12T11:48:30.145Z - Time taken for 'build-project-configs' 22.09169999882579ms
+[NX Daemon Server] - 2025-05-12T11:48:30.172Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:48:30.173Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:48:30.173Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:48:30.173Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:48:30.173Z - Time taken for 'total execution time for createProjectGraph()' 22.10410000011325ms
+[NX Daemon Server] - 2025-05-12T11:48:38.533Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:48:38.533Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:48:38.592Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:48:38.645Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:48:44.944Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:48:44.944Z - [REQUEST]: apps/personal-portfolio/pages/bio.tsx
+[NX Daemon Server] - 2025-05-12T11:48:44.944Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:48:44.948Z - Time taken for 'hash changed files from watcher' 1.175899999216199ms
+[NX Daemon Server] - 2025-05-12T11:48:44.965Z - Time taken for 'build-project-configs' 15.259700000286102ms
+[NX Daemon Server] - 2025-05-12T11:48:44.995Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:48:44.995Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:48:44.995Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:48:44.995Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:48:44.995Z - Time taken for 'total execution time for createProjectGraph()' 23.36879999935627ms
+[NX Daemon Server] - 2025-05-12T11:49:38.655Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:49:38.716Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:50:53.815Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:50:53.815Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:50:53.893Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:50:53.962Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:50:59.583Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:50:59.584Z - [WATCHER]: apps/personal-portfolio/pages/styles.scss was modified
+[NX Daemon Server] - 2025-05-12T11:50:59.862Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:51:00.224Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:51:00.224Z - [REQUEST]: apps/personal-portfolio/pages/bio.tsx,apps/personal-portfolio/pages/styles.scss
+[NX Daemon Server] - 2025-05-12T11:51:00.224Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:51:00.232Z - Time taken for 'hash changed files from watcher' 1.1445000004023314ms
+[NX Daemon Server] - 2025-05-12T11:51:00.262Z - Time taken for 'build-project-configs' 32.170599998906255ms
+[NX Daemon Server] - 2025-05-12T11:51:00.299Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:51:00.299Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:51:00.299Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:51:00.299Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:51:00.299Z - Time taken for 'total execution time for createProjectGraph()' 30.49210000038147ms
+[NX Daemon Server] - 2025-05-12T11:51:05.454Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:51:05.456Z - [WATCHER]: apps/personal-portfolio/pages/styles.scss was modified
+[NX Daemon Server] - 2025-05-12T11:51:05.644Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:51:07.003Z - [WATCHER]: apps/personal-portfolio/pages/bio.tsx was modified
+[NX Daemon Server] - 2025-05-12T11:51:07.003Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:51:07.075Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:51:11.862Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T11:51:11.862Z - [REQUEST]: apps/personal-portfolio/pages/styles.scss,apps/personal-portfolio/pages/bio.tsx
+[NX Daemon Server] - 2025-05-12T11:51:11.862Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T11:51:11.864Z - Time taken for 'hash changed files from watcher' 0.6480999998748302ms
+[NX Daemon Server] - 2025-05-12T11:51:11.880Z - Time taken for 'build-project-configs' 13.902599999681115ms
+[NX Daemon Server] - 2025-05-12T11:51:11.917Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T11:51:11.918Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T11:51:11.918Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T11:51:11.918Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T11:51:11.918Z - Time taken for 'total execution time for createProjectGraph()' 30.707100000232458ms
+[NX Daemon Server] - 2025-05-12T11:52:07.178Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:52:07.232Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:52:07.372Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T11:52:07.549Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T13:14:57.164Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T13:14:57.165Z - [WATCHER]: libs/i18n/src/lib/catalan/landing.json was modified
+[NX Daemon Server] - 2025-05-12T13:14:57.232Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T13:14:57.291Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T13:15:03.574Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T13:15:03.574Z - [REQUEST]: libs/i18n/src/lib/catalan/landing.json
+[NX Daemon Server] - 2025-05-12T13:15:03.574Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T13:15:03.578Z - Time taken for 'hash changed files from watcher' 0.9484999999403954ms
+[NX Daemon Server] - 2025-05-12T13:15:03.597Z - Time taken for 'build-project-configs' 17.23020000010729ms
+[NX Daemon Server] - 2025-05-12T13:15:03.635Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T13:15:03.635Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T13:15:03.635Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T13:15:03.635Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T13:15:03.635Z - Time taken for 'total execution time for createProjectGraph()' 31.943500000983477ms
+[NX Daemon Server] - 2025-05-12T13:15:08.273Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T13:15:08.274Z - [WATCHER]: libs/i18n/src/lib/english/landing.json was modified
+[NX Daemon Server] - 2025-05-12T13:15:08.335Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T13:15:14.689Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-12T13:15:14.689Z - [REQUEST]: libs/i18n/src/lib/english/landing.json
+[NX Daemon Server] - 2025-05-12T13:15:14.689Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-12T13:15:14.697Z - Time taken for 'hash changed files from watcher' 1.8931999988853931ms
+[NX Daemon Server] - 2025-05-12T13:15:14.723Z - Time taken for 'build-project-configs' 26.079199999570847ms
+[NX Daemon Server] - 2025-05-12T13:15:14.757Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-12T13:15:14.758Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-12T13:15:14.758Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-12T13:15:14.758Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-12T13:15:14.758Z - Time taken for 'total execution time for createProjectGraph()' 28.929900001734495ms
+[NX Daemon Server] - 2025-05-12T13:15:16.714Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-12T13:15:16.716Z - [WATCHER]: libs/i18n/src/lib/spanish/landing.json was modified
+[NX Daemon Server] - 2025-05-12T13:15:16.787Z - [WATCHER]: Processing file changes in outputs
