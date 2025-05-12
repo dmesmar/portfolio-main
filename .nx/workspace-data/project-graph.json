@@ -17253,11 +17253,6 @@
       },
       {
         "source": "personal-portfolio",
-        "target": "npm:classnames",
-        "type": "static"
-      },
-      {
-        "source": "personal-portfolio",
         "target": "npm:gray-matter",
         "type": "static"
       },

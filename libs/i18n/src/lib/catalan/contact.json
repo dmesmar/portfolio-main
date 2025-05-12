@@ -40,7 +40,7 @@
     "placeholderEmail":"E-mail*",
     "placeholderTopic":"Tema*",
     "placeholderMessage":"Missatge*",
-    "heading": "<span>Parlem.</span>",
+    "heading": "<span>Parlem</span>",
     "onCompletion": "El missatge s'ha enviat!",
     "button": {
       "text": "Enviar missatge"

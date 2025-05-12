@@ -1,9 +1,9 @@
 {
   "bio": {
     "heading": "Darío Mesas Martí",
-    "caption": "Title",
-    "description": "Short description",
-    "descriptionExtended": "Long description",
+    "caption": "Data Scientist & AI Engineer",
+    "description": "",
+    "descriptionExtended": "Currently working as a Fullstack Developer.",
     "location": "📍Valencia",
     "media": "/assets/profilelg.jpg",
     "button": {
@@ -54,25 +54,7 @@
       }
     }
   },
-  "offerings": {
-    "heading": "Offerings",
-    "caption": "Explore offerings",
-    "link": "/offerings",
-    "icons": [
-      "iconoir-pc-firewall",
-      "iconoir-terminal",
-      "iconoir-terminal-tag",
-      "iconoir-code",
-      "iconoir-pc-warning"
-    ],
-    "button": {
-      "link": "/offerings",
-      "icon": {
-        "light": "/assets/icons/icon-2.svg",
-        "dark": "/assets/icons/icon.svg"
-      }
-    }
-  },
+
   "profiles": {
     "heading": "Profiles",
     "caption": "Let's connect!",

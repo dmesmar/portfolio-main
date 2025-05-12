@@ -123,17 +123,6 @@ const CredentialsPage = () => {
                   )}
                 </div>
               </div>
-              <div className="skills-wrap awards-wrap">
-                <h2 data-aos="fade-up">{lang.credentials.expertise.heading}</h2>
-                <div className="d-grid skill-items gap-24 flex-wrap">
-                  {lang.credentials.expertise.expertise.map((item, index) => (
-                    <div className="skill-item" data-aos="zoom-in" key={index}>
-                      <h3 className="name">{item.name}</h3>
-                      <p>{item.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </div>

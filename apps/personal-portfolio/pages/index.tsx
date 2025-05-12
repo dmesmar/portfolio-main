@@ -7,26 +7,11 @@ import ShiningStar from '../../../libs/core-components/src/lib/layout/ShiningSta
 import ShootingStar from '../../../libs/core-components/src/lib/layout/ShootingStar';
 import { getCurrentLanguage } from '../../../libs/core-components/src/lib/language-configurator';
 
-const POPUP_KEY = 'landingPopupDismissed';
+
 
 const LandingPage: React.FC = () => {
-  const [showPopup, setShowPopup] = useState(false);
-  const [dontShowAgain, setDontShowAgain] = useState(false);
   const { theme } = useTheme();
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const dismissed = localStorage.getItem(POPUP_KEY);
-      setShowPopup(!dismissed);
-    }
-  }, []);
-
-  const handleClose = () => {
-    if (dontShowAgain && typeof window !== 'undefined') {
-      localStorage.setItem(POPUP_KEY, 'true');
-    }
-    setShowPopup(false);
-  };
 
   const langCode = getCurrentLanguage();
   const langMap = { en, es, ca };
@@ -34,29 +19,6 @@ const LandingPage: React.FC = () => {
 
   return (
     <Layout>
-      {showPopup && (
-        <div className="landing-popup-backdrop">
-          <div className="landing-popup" role="alert" aria-live="polite">
-            <p>
-              <b>Welcome!</b> Please note that this portfolio is still a work in progress.
-              You're viewing an early preview, and there are things that are not done.
-            </p>
-            <div className="landing-popup-checkbox-row">
-              <input
-                id="landing-popup-dontshow"
-                type="checkbox"
-                checked={dontShowAgain}
-                onChange={e => setDontShowAgain(e.target.checked)}
-              />
-              <label htmlFor="landing-popup-dontshow">Do not show this again</label>
-            </div>
-            <button className="landing-popup-btn" onClick={handleClose}>
-              Dismiss
-            </button>
-          </div>
-        </div>
-      )}
-
       <section className="about-area">
         <div className="container">
           <div className="row">
