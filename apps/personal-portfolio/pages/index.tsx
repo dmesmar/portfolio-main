@@ -1,34 +1,69 @@
+import React, { useState, useEffect, Fragment } from 'react';
 import { Layout, getThemedContent } from '@dmesmar/core-components';
 import { en, es, ca } from '@dmesmar/i18n';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
-import { Fragment } from 'react';
 import ShiningStar from '../../../libs/core-components/src/lib/layout/ShiningStar';
 import ShootingStar from '../../../libs/core-components/src/lib/layout/ShootingStar';
 import { getCurrentLanguage } from '../../../libs/core-components/src/lib/language-configurator';
 
-const LandingPage = () => {
+const POPUP_KEY = 'landingPopupDismissed';
+
+const LandingPage: React.FC = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [dontShowAgain, setDontShowAgain] = useState(false);
   const { theme } = useTheme();
-  
-  // Get the current language code
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const dismissed = localStorage.getItem(POPUP_KEY);
+      setShowPopup(!dismissed);
+    }
+  }, []);
+
+  const handleClose = () => {
+    if (dontShowAgain && typeof window !== 'undefined') {
+      localStorage.setItem(POPUP_KEY, 'true');
+    }
+    setShowPopup(false);
+  };
+
   const langCode = getCurrentLanguage();
-  
-  // Map language code to language data
   const langMap = { en, es, ca };
-  
-  // Get the language data based on current language
   const lang = langMap[langCode];
 
   return (
     <Layout>
+      {showPopup && (
+        <div className="landing-popup-backdrop">
+          <div className="landing-popup" role="alert" aria-live="polite">
+            <p>
+              <b>Welcome!</b> Please note that this portfolio is still a work in progress.
+              You're viewing an early preview, and there are things that are not done.
+            </p>
+            <div className="landing-popup-checkbox-row">
+              <input
+                id="landing-popup-dontshow"
+                type="checkbox"
+                checked={dontShowAgain}
+                onChange={e => setDontShowAgain(e.target.checked)}
+              />
+              <label htmlFor="landing-popup-dontshow">Do not show this again</label>
+            </div>
+            <button className="landing-popup-btn" onClick={handleClose}>
+              Dismiss
+            </button>
+          </div>
+        </div>
+      )}
+
       <section className="about-area">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 " data-aos="zoom-in">
-              
+            <div className="col-md-6" data-aos="zoom-in">
               <div className="about-me-box shadow-box h-100">
-              <ShiningStar />
-              <ShootingStar />
+                <ShiningStar />
+                <ShootingStar />
                 <Link className="overlay-link" href="/bio" />
                 <div className="img-box">
                   <img src={lang.landing.bio.media} alt="profile" />
@@ -42,7 +77,7 @@ const LandingPage = () => {
                     dangerouslySetInnerHTML={{
                       __html: lang.landing.bio.descriptionExtended,
                     }}
-                  ></p>
+                  />
                   <br />
                   <p>{lang.landing.bio.location}</p>
                   <Link href={lang.landing.bio.button.link} className="about-btn">
@@ -61,13 +96,15 @@ const LandingPage = () => {
                     <div className="marquee">
                       <div>
                         <span>
-                          {lang.misc.intro1}<b>{lang.misc.intro2}</b>{' '}
+                          {lang.misc.intro1}
+                          <b>{lang.misc.intro2}</b>{' '}
                           {Array(6)
                             .fill(0)
                             .map((_, index) => (
                               <Fragment key={index}>
                                 <img src="/assets/star1.svg" alt="Star" />{' '}
-                                {lang.misc.intro1}<b>{lang.misc.intro2}</b>{' '}
+                                {lang.misc.intro1}
+                                <b>{lang.misc.intro2}</b>{' '}
                               </Fragment>
                             ))}
                           <img src="/assets/star1.svg" alt="Star" />
@@ -133,10 +170,9 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="row mt-24">
-            <div className="blog-service-profile-wrap d-flex gap-24">     
-              <div data-aos="zoom-in" className='col'>
+            <div className="blog-service-profile-wrap d-flex gap-24">
+              <div data-aos="zoom-in" className="col">
                 <div className="about-profile-box info-box shadow-box h-full ">
-
                   {Array.from(
                     {
                       length: Math.ceil(
@@ -163,7 +199,6 @@ const LandingPage = () => {
                         ))}
                     </div>
                   ))}
-
                   <div className="d-flex align-items-center justify-content-between">
                     <div className="infos">
                       <h4>{lang.landing.profiles.caption}</h4>
@@ -184,49 +219,49 @@ const LandingPage = () => {
                   </div>
                 </div>
               </div>
-              <div data-aos="zoom-in" className='col'>
+              <div data-aos="zoom-in" className="col">
                 <div className="about-client-box info-box shadow-box h-full">
                   <div className="clients d-flex align-items-start gap-24 justify-content-center">
-                  {lang.landing.facts.quickFacts.map((item, index) => (
-                    <div className="client-item" key={index}>
-                      <h1>{item.count}</h1>
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: item.label,
-                        }}
-                    />
-                  </div>
-                  ))}
+                    {lang.landing.facts.quickFacts.map((item, index) => (
+                      <div className="client-item" key={index}>
+                        <h1>{item.count}</h1>
+                        <p
+                          dangerouslySetInnerHTML={{
+                            __html: item.label,
+                          }}
+                        />
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
-              <div data-aos="zoom-in" className='col'>
-            <div className="about-contact-box info-box shadow-box">
-              <Link className="overlay-link" href="/cv" />
-              <img
-                src="/assets/icons/icon2.png"
-                alt="Icon"
-                className="star-icon"
-              />
-              <h1
-                dangerouslySetInnerHTML={{
-                  __html: lang.landing.contact.heading,
-                }}
-              ></h1>
-              <Link
-                href={lang.landing.contact.button.link}
-                className="about-btn"
-              >
-                <img
-                  src={getThemedContent(
-                    theme,
-                    lang.landing.contact.button.icon
-                  )}
-                  alt="button"
-                />
-              </Link>
-            </div>
-          </div>
+              <div data-aos="zoom-in" className="col">
+                <div className="about-contact-box info-box shadow-box">
+                  <Link className="overlay-link" href="/cv" />
+                  <img
+                    src="/assets/icons/icon2.png"
+                    alt="Icon"
+                    className="star-icon"
+                  />
+                  <h1
+                    dangerouslySetInnerHTML={{
+                      __html: lang.landing.contact.heading,
+                    }}
+                  />
+                  <Link
+                    href={lang.landing.contact.button.link}
+                    className="about-btn"
+                  >
+                    <img
+                      src={getThemedContent(
+                        theme,
+                        lang.landing.contact.button.icon
+                      )}
+                      alt="button"
+                    />
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
