@@ -1,8 +1,17 @@
 import { Layout } from '@dmesmar/core-components';
 import { en, es, ca } from '@dmesmar/i18n';
 import { useEffect, useRef, useState } from 'react';
-import { Alert, Button } from 'reactstrap';
+import { Alert, Button, Table, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { getCurrentLanguage } from '../../../libs/core-components/src/lib/language-configurator';
+
+// Interfaz para los elementos del historial
+interface PredictionItem {
+  id: string;
+  image: string; // base64
+  prediction: string;
+  actual: string | null; // Valor corregido
+  isCorrect: boolean | null; // Feedback del usuario
+}
 
 function CanvasRecognition() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -10,7 +19,15 @@ function CanvasRecognition() {
   const [prediction, setPrediction] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [brushColor, setBrushColor] = useState('#000000');
-  const [brushSize, setBrushSize] = useState(10); // Añadí control de tamaño también
+  const [brushSize, setBrushSize] = useState(10);
+  
+  // Estados para modales y feedback
+  const [predictionModalOpen, setPredictionModalOpen] = useState(false);
+  const [showCorrection, setShowCorrection] = useState(false);
+  const [predictionHistory, setPredictionHistory] = useState<PredictionItem[]>([]);
+  const [currentImageBase64, setCurrentImageBase64] = useState<string | null>(null);
+  const [trainingModalOpen, setTrainingModalOpen] = useState(false);
+  const [trainingStatus, setTrainingStatus] = useState<string | null>(null);
 
   // Idioma actual
   const langCode = getCurrentLanguage();
@@ -19,7 +36,18 @@ function CanvasRecognition() {
 
   useEffect(() => {
     initCanvas();
+    
+    // Cargar historial de localStorage
+    const savedHistory = localStorage.getItem('predictionHistory');
+    if (savedHistory) {
+      setPredictionHistory(JSON.parse(savedHistory));
+    }
   }, []);
+
+  // Guardar historial en localStorage cuando cambie
+  useEffect(() => {
+    localStorage.setItem('predictionHistory', JSON.stringify(predictionHistory));
+  }, [predictionHistory]);
 
   // Inicializa el canvas con un fondo blanco
   const initCanvas = () => {
@@ -37,7 +65,7 @@ function CanvasRecognition() {
   const updateBrushStyle = (ctx: CanvasRenderingContext2D) => {
     ctx.lineWidth = brushSize;
     ctx.lineCap = 'round';
-    ctx.lineJoin = 'round'; // Añadido para mejorar las esquinas
+    ctx.lineJoin = 'round'; 
     ctx.strokeStyle = brushColor;
   };
 
@@ -50,13 +78,9 @@ function CanvasRecognition() {
 
     setIsDrawing(true);
     
-    // Aplicar estilo de pincel
     updateBrushStyle(ctx);
-    
-    // Comenzar un nuevo path cada vez que empezamos a dibujar
     ctx.beginPath();
     
-    // Obtener la posición inicial
     const position = getPointerPosition(e, canvas);
     if (position) {
       ctx.moveTo(position.x, position.y);
@@ -72,15 +96,12 @@ function CanvasRecognition() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Siempre actualizar el estilo antes de dibujar
     updateBrushStyle(ctx);
 
-    // Obtener la posición actual
     const position = getPointerPosition(e, canvas);
     if (position) {
       ctx.lineTo(position.x, position.y);
       ctx.stroke();
-      // Iniciar nuevo punto para evitar problemas con la función lineTo
       ctx.beginPath();
       ctx.moveTo(position.x, position.y);
     }
@@ -94,25 +115,22 @@ function CanvasRecognition() {
     if (!ctx) return;
 
     ctx.stroke();
-    ctx.beginPath(); // Comenzar un nuevo path al terminar
+    ctx.beginPath();
     setIsDrawing(false);
   };
 
-  // Función auxiliar para obtener la posición del puntero
   const getPointerPosition = (
     e: React.MouseEvent<HTMLCanvasElement> | React.TouchEvent<HTMLCanvasElement>,
     canvas: HTMLCanvasElement
   ): { x: number; y: number } | null => {
     const rect = canvas.getBoundingClientRect();
     
-    // Evento de mouse
     if ('nativeEvent' in e && 'offsetX' in e.nativeEvent) {
       return {
         x: (e as React.MouseEvent).nativeEvent.offsetX,
         y: (e as React.MouseEvent).nativeEvent.offsetY
       };
     }
-    // Evento táctil
     else if ('touches' in e && e.touches.length > 0) {
       return {
         x: e.touches[0].clientX - rect.left,
@@ -136,6 +154,8 @@ function CanvasRecognition() {
     ctx.beginPath();
     setPrediction(null);
     setErrorMessage(null);
+    setShowCorrection(false);
+    setCurrentImageBase64(null);
   };
 
   const handlePredict = async () => {
@@ -144,6 +164,7 @@ function CanvasRecognition() {
       if (!canvas) return;
 
       const dataURL = canvas.toDataURL('image/png');
+      setCurrentImageBase64(dataURL);
 
       const response = await fetch('https://digitscnn-production.up.railway.app/add-sample', {
         method: 'POST',
@@ -158,17 +179,123 @@ function CanvasRecognition() {
         throw new Error('Error en la respuesta de la API');
       }
       
-      const result = await response.json();
-      setPrediction(result.prediction);
-      setErrorMessage(null);
+      await response.json().then(val => {
+        if (val && val.prediction !== undefined) {
+          console.log(val.prediction)
+          setPrediction(val.prediction);
+          setErrorMessage(null);
+          setShowCorrection(false);
+          // Abrir el modal con la predicción
+          setPredictionModalOpen(true);
+          
+          // Limpiar el canvas después de predecir
+          
+
+          console.log("Tipo:", typeof val.prediction, "Valor:", val.prediction);
+          console.log("Tipo:", typeof prediction, "Valor:", val.prediction);
+        } else {
+          throw new Error('La respuesta no contiene una predicción válida');
+        }
+      });
+      
     } catch (error: unknown) {
       const errorMsg = error instanceof Error ? error.message : 'Error desconocido';
+      console.log(errorMsg)
       setErrorMessage(errorMsg);
       setPrediction(null);
     }
   };
 
-  // Colores predefinidos para elegir rápidamente
+  // Cerrar modal de predicción
+  const closePredictionModal = () => {
+    setPredictionModalOpen(false);
+    setShowCorrection(false);
+  };
+
+  // Función para retroalimentación
+  const sendFeedback = (predictedValue: string, isCorrect: boolean) => {
+    if (!currentImageBase64) return;
+    
+    if (isCorrect) {
+      // Si es correcto, añadir al historial
+      addToHistory(currentImageBase64, predictedValue, predictedValue);
+      closePredictionModal();
+      handleClearCanvas();
+    } else {
+      // Si no es correcto, mostrar interfaz para corrección
+      setShowCorrection(true);
+    }
+    
+  };
+
+  // Función para corrección
+  const sendCorrection = (correctValue: string) => {
+    if (!currentImageBase64 || prediction === null) return;
+    
+    // Añadir al historial con la corrección
+    addToHistory(currentImageBase64, prediction, correctValue);
+    closePredictionModal();
+    handleClearCanvas();
+  };
+
+  // Añadir predicción al historial
+  const addToHistory = (imageBase64: string, predictedValue: string, actualValue: string) => {
+    const newItem: PredictionItem = {
+      id: Date.now().toString(),
+      image: imageBase64,
+      prediction: predictedValue,
+      actual: actualValue,
+      isCorrect: predictedValue === actualValue
+    };
+    
+    setPredictionHistory(prev => [newItem, ...prev]);
+  };
+
+  // Enviar datos de entrenamiento al servidor
+  const sendTrainingData = async () => {
+    try {
+      setTrainingModalOpen(true);
+      setTrainingStatus('Enviando datos de entrenamiento...');
+      
+      // Filtrar solo los elementos con retroalimentación
+      const trainingData = predictionHistory
+        .filter(item => item.actual !== null)
+        .map(item => ({
+          image_base64: item.image,
+          actual: item.actual
+        }));
+      
+      if (trainingData.length === 0) {
+        setTrainingStatus('No hay datos suficientes para entrenar el modelo.');
+        return;
+      }
+      
+      const response = await fetch('https://digitscnn-production.up.railway.app/train', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          // 'x-api-key': 'TU_API_KEY_SECRETA',
+        },
+        body: JSON.stringify({ samples: trainingData }),
+      });
+      
+      if (!response.ok) {
+        throw new Error('Error al entrenar el modelo');
+      }
+      
+      const result = await response.json();
+      setTrainingStatus(`Entrenamiento completado. Estado: ${result.status}`);
+      
+      // Opcional: limpiar historial después del entrenamiento exitoso
+      // setPredictionHistory([]);
+      
+    } catch (error: unknown) {
+      const errorMsg = error instanceof Error ? error.message : 'Error desconocido';
+      setTrainingStatus(`Error: ${errorMsg}`);
+    }
+  };
+
+  // Colores predefinidos
   const predefinedColors = ['#000000', '#FF0000', '#0000FF', '#00FF00', '#FFFF00', '#FF00FF'];
 
   return (
@@ -279,22 +406,153 @@ function CanvasRecognition() {
                   </Button>
                 </div>
 
-                {/* Mostrar resultado o error */}
-                {prediction && (
-                  <Alert color="success" className="mt-3 text-center">
-                    Predicción: <strong>{prediction}</strong>
-                  </Alert>
-                )}
+                {/* Mostrar solo mensajes de error en la interfaz principal */}
                 {errorMessage && (
                   <Alert color="danger" className="mt-3 text-center">
                     {errorMessage}
                   </Alert>
+                )}
+
+                {/* Historial de predicciones */}
+                {predictionHistory.length > 0 && (
+                  <div className="mt-5">
+                    <h4 className="text-center mb-3">Historial de Predicciones</h4>
+                    <div className="table-responsive">
+                      <Table bordered hover>
+                        <thead>
+                          <tr>
+                            <th>Imagen</th>
+                            <th>Predicción</th>
+                            <th>Real</th>
+                            <th>Estado</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {predictionHistory.slice(0, 5).map((item) => (
+                            <tr key={item.id}>
+                              <td style={{ width: '100px' }}>
+                                <img 
+                                  src={item.image} 
+                                  alt="Digit" 
+                                  style={{ width: '50px', height: '50px' }} 
+                                />
+                              </td>
+                              <td>{item.prediction}</td>
+                              <td>{item.actual}</td>
+                              <td>
+                                {item.isCorrect ? (
+                                  <span className="text-success">✓</span>
+                                ) : (
+                                  <span className="text-danger">✗</span>
+                                )}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </Table>
+                    </div>
+                    
+                    {/* Botón para entrenar */}
+                    <div className="text-center mt-3">
+                      <p className="text-muted mb-2">
+                        Has contribuido con {predictionHistory.length} imágenes
+                      </p>
+                      <Button 
+                        color="primary"
+                        onClick={sendTrainingData}
+                        disabled={predictionHistory.filter(i => i.actual !== null).length === 0}
+                      >
+                        Entrenar Modelo
+                      </Button>
+                    </div>
+                  </div>
                 )}
               </div>
             </div>
           </div>
         </div>
       </section>
+      
+      {/* Modal de predicción y retroalimentación */}
+      <Modal isOpen={predictionModalOpen} toggle={closePredictionModal}>
+        <ModalHeader toggle={closePredictionModal}>
+          Resultado de la Predicción
+        </ModalHeader>
+        <ModalBody>
+          {prediction && (
+            <div className="text-center">
+              {/* Mostrar la imagen procesada */}
+              {currentImageBase64 && (
+                <div className="mb-3">
+                  <img 
+                    src={currentImageBase64} 
+                    alt="Digit" 
+                    style={{ width: '150px', height: '150px', objectFit: 'contain' }} 
+                  />
+                </div>
+              )}
+              
+              <h4>Predicción: <strong>{prediction}</strong></h4>
+              
+              {/* Sistema de retroalimentación */}
+              <div className="mt-3">
+                <p>¿Es correcto el resultado?</p>
+                <Button 
+                  color="success" 
+                  className="me-2"
+                  onClick={() => sendFeedback(prediction, true)}
+                >
+                  ✓ Sí
+                </Button>
+                <Button 
+                  color="danger"
+                  onClick={() => sendFeedback(prediction, false)}
+                >
+                  ✗ No
+                </Button>
+              </div>
+              
+              {/* Interfaz de corrección */}
+              {showCorrection && (
+                <div className="mt-4">
+                  <label>Número correcto:</label>
+                  <select 
+                    className="form-select mx-auto mt-2" 
+                    style={{ maxWidth: '100px' }}
+                    onChange={(e) => sendCorrection(e.target.value)}
+                    defaultValue=""
+                  >
+                    <option value="" disabled>Elige</option>
+                    {[0,1,2,3,4,5,6,7,8,9].map(n => (
+                      <option key={n} value={n}>{n}</option>
+                    ))}
+                  </select>
+                </div>
+              )}
+            </div>
+          )}
+        </ModalBody>
+        <ModalFooter>
+          <Button color="secondary" onClick={closePredictionModal}>
+            Cerrar
+          </Button>
+        </ModalFooter>
+      </Modal>
+      
+      {/* Modal de estado de entrenamiento */}
+      <Modal isOpen={trainingModalOpen} toggle={() => setTrainingModalOpen(false)}>
+        <ModalHeader toggle={() => setTrainingModalOpen(false)}>
+          Estado del Entrenamiento
+        </ModalHeader>
+        <ModalBody>
+          <p>{trainingStatus}</p>
+        </ModalBody>
+        <ModalFooter>
+          <Button color="secondary" onClick={() => setTrainingModalOpen(false)}>
+            Cerrar
+          </Button>
+        </ModalFooter>
+      </Modal>
     </Layout>
   );
 }
