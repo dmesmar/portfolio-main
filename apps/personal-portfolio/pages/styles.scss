@@ -584,7 +584,7 @@ ol {
 /* # Header */
 
 .header-area {
-  margin-top: 0px;
+  margin-top: 10px;
 
   .logo {
     display: inline-block;
@@ -2337,3 +2337,133 @@ ol {
   to   { transform: scale(1); opacity: 1; }
 }
 
+
+[data-theme='dark'] {
+  .langc {
+  position: relative;
+  display: inline-block;
+}
+
+/* Botón circular principal */
+.langc__button {
+  border: 2px solid #3c4656;
+  background: #171d26;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
+  box-shadow: 0 1px 8px #111822b3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.15s, border-color 0.15s, background 0.15s;
+  outline: none;
+  padding: 0;
+}
+.langc__button:hover,
+.langc__button--active,
+.langc__button:focus-visible {
+  border-color: #53a6f8;
+  background: #232d3c;
+  box-shadow: 0 6px 22px #5bb1fd20;
+}
+
+.langc__globe {
+  display: block;
+  margin: 0 auto;
+  transition: filter 0.15s;
+}
+
+.langc__sticker {
+  position: absolute;
+  bottom: 7px;
+  right: 4px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  font-family: monospace;
+  letter-spacing: .5px;
+  border-radius: 7px;
+  padding: 1.5px 7px;
+  box-shadow: 0 2px 7px #000a1822;
+  transform: scale(0.98);
+  transition: background 0.18s, transform 0.13s;
+  pointer-events: none;
+}
+.langc__button:hover .langc__sticker,
+.langc__button--active .langc__sticker {
+  transform: scale(1.03);
+}
+
+.langc__menu {
+  position: absolute;
+  left: 50%;
+  top: 59px;
+  transform: translateX(-50%);
+  min-width: 140px;
+  background: #222b36;
+  border-radius: 14px;
+  border: 2px solid #414d68;
+  padding: 4px 0;
+  margin: 0;
+  z-index: 1200;
+  box-shadow: 0px 8px 40px #000e1d60;
+  list-style: none;
+  animation: langc__fade-in 0.15s;
+}
+@keyframes langc__fade-in {
+  from { opacity: 0; margin-top: -5px; }
+  to   { opacity: 1; margin-top: 0; }
+}
+
+.langc__item {
+  display: flex;
+  align-items: center;
+  padding: 10px 18px 10px 14px;
+  color: #e2ecfc;
+  background: none;
+  font-weight: 500;
+  font-size: 16px;
+  border-left: 4px solid transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 0 8px 1px 6px;
+  user-select: none;
+  transition: background 0.15s, border-color 0.15s;
+  outline: none;
+}
+.langc__item:focus,
+.langc__item:hover {
+  background: #283654;
+}
+.langc__item--active,
+.langc__item[aria-current="true"] {
+  background: #244481;
+  font-weight: 700;
+  border-left: 4px solid #53a6f8;
+  cursor: default;
+}
+.langc__item-sticker {
+  background: #283c59;
+  font-weight: 700;
+  letter-spacing: .1em;
+  font-family: monospace;
+  font-size: 14px;
+  padding: 2px 8px;
+  border-radius: 7px;
+  margin-right: 13px;
+  border: 1.1px solid #5199dc;
+  display: inline-block;
+  min-width: 30px;
+  text-align: center;
+  transition: color 0.12s, border-color 0.12s;
+}
+.langc__item-tick {
+  margin-left: auto;
+  margin-right: 5px;
+  color: #39a77d;
+  font-weight: 800;
+  font-size: 16px;
+}
+}
