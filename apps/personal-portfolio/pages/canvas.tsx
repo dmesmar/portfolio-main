@@ -16,10 +16,18 @@ interface PredictionItem {
 function CanvasRecognition() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [isDrawing, setIsDrawing] = useState(false);
-  const [prediction, setPrediction] = useState<string | null>(null);
+  const [listPrediction, setListPrediction] = useState([]);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [brushColor, setBrushColor] = useState('#000000');
   const [brushSize, setBrushSize] = useState(10);
+
+  type PredictionInfo = {
+  digit: number;                       // ganador
+  prob:  number;                       // prob. ganadora
+  distribution: Array<[number, number]>; // [[dígito, prob], …] ordenado
+};
+
+const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
   
   // Estados para modales y feedback
   const [predictionModalOpen, setPredictionModalOpen] = useState(false);
@@ -158,53 +166,51 @@ function CanvasRecognition() {
     setCurrentImageBase64(null);
   };
 
-  const handlePredict = async () => {
-    try {
-      const canvas = canvasRef.current;
-      if (!canvas) return;
+  const handlePredict = async (): Promise<void> => {
+  try {
+    const canvas = canvasRef.current;
+    if (!canvas) throw new Error('Canvas no disponible');
 
-      const dataURL = canvas.toDataURL('image/png');
-      setCurrentImageBase64(dataURL);
+    const b64 = canvas.toDataURL('image/png').split(',')[1];
 
-      const response = await fetch('https://digitscnn-production.up.railway.app/add-sample', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          // 'x-api-key': 'TU_API_KEY',
-        },
-        body: JSON.stringify({ image_base64: dataURL }),
-      });
+    // -------- llamada al backend (query-param escapado) ---------------
+    const url = `https://digitscnn-production.up.railway.app/predict?b64=${encodeURIComponent(b64)}`;
+    const response = await fetch(url, { method: 'POST' });
 
-      if (!response.ok) {
-        throw new Error('Error en la respuesta de la API');
-      }
-      
-      await response.json().then(val => {
-        if (val && val.prediction !== undefined) {
-          console.log(val.prediction)
-          setPrediction(val.prediction);
-          setErrorMessage(null);
-          setShowCorrection(false);
-          // Abrir el modal con la predicción
-          setPredictionModalOpen(true);
-          
-          // Limpiar el canvas después de predecir
-          
-
-          console.log("Tipo:", typeof val.prediction, "Valor:", val.prediction);
-          console.log("Tipo:", typeof prediction, "Valor:", val.prediction);
-        } else {
-          throw new Error('La respuesta no contiene una predicción válida');
-        }
-      });
-      
-    } catch (error: unknown) {
-      const errorMsg = error instanceof Error ? error.message : 'Error desconocido';
-      console.log(errorMsg)
-      setErrorMessage(errorMsg);
-      setPrediction(null);
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      throw new Error(err.detail ?? `HTTP ${response.status}`);
     }
-  };
+
+    // ---- probs = objeto { "0": 0.00…, … } ----------------------------
+    const probs: Record<string, number> = await response.json();
+
+    const entries: [number, number][] = Object
+    .entries(probs)
+    .map(([d, p]) => [Number(d), Number(p)] as [number, number])
+    .sort((a, b) => b[1] - a[1]);
+
+    const [bestDigit, bestProb] = entries[0];
+
+    /* -------- guardar en el estado -------- */
+    setPrediction({
+      digit       : bestDigit,
+      prob        : bestProb,
+      distribution: entries
+    });
+
+    setCurrentImageBase64(b64);
+    setErrorMessage(null);
+    setShowCorrection(false);
+    setPredictionModalOpen(true);
+
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : 'Error desconocido';
+    console.error(msg);
+    setErrorMessage(msg);
+    setPrediction(null);
+  }
+};
 
   // Cerrar modal de predicción
   const closePredictionModal = () => {
@@ -233,7 +239,7 @@ function CanvasRecognition() {
     if (!currentImageBase64 || prediction === null) return;
     
     // Añadir al historial con la corrección
-    addToHistory(currentImageBase64, prediction, correctValue);
+    addToHistory(currentImageBase64, prediction.digit.toString(), correctValue);
     closePredictionModal();
     handleClearCanvas();
   };
@@ -475,56 +481,82 @@ function CanvasRecognition() {
       
       {/* Modal de predicción y retroalimentación */}
       <Modal isOpen={predictionModalOpen} toggle={closePredictionModal}>
-        <ModalHeader toggle={closePredictionModal}>
-          Resultado de la Predicción
-        </ModalHeader>
-        <ModalBody>
-          {prediction && (
-            <div className="text-center">
-              {/* Mostrar la imagen procesada */}
-              {currentImageBase64 && (
-                <div className="mb-3">
-                  <img 
-                    src={currentImageBase64} 
-                    alt="Digit" 
-                    style={{ width: '150px', height: '150px', objectFit: 'contain' }} 
-                  />
-                </div>
-              )}
-              
-              <h4>Predicción: <strong>{prediction}</strong></h4>
-              
-              {/* Sistema de retroalimentación */}
-              <div className="mt-3">
-                <p>¿Es correcto el resultado?</p>
-                <Button 
-                  color="success" 
-                  className="me-2"
-                  onClick={() => sendFeedback(prediction, true)}
-                >
-                  ✓ Sí
-                </Button>
-                <Button 
-                  color="danger"
-                  onClick={() => sendFeedback(prediction, false)}
-                >
-                  ✗ No
-                </Button>
-              </div>
-              
-              {/* Interfaz de corrección */}
+  <ModalHeader toggle={closePredictionModal}>
+    Resultado de la Predicción
+  </ModalHeader>
+
+  <ModalBody>
+    {prediction && (
+      <div className="text-center">
+
+        {/* Imagen */}
+        {currentImageBase64 && (
+          <div className="mb-3">
+            <img
+              src={`data:image/png;base64,${currentImageBase64}`}
+              alt="Digit"
+              style={{ width: 150, height: 150, objectFit: 'contain' }}
+            />
+          </div>
+        )}
+
+        {/* Dígito ganador */}
+        <h4>
+          Predicción:&nbsp;
+          <strong>{prediction.digit}</strong>
+          &nbsp;({(prediction.prob * 100).toFixed(1)}%)
+        </h4>
+
+        {/* Lista de probabilidades */}
+        <ul className="list-group mt-3">
+          {prediction.distribution.map(([d, p]) => (
+            <li
+              key={d}
+              className="list-group-item d-flex justify-content-between align-items-center"
+            >
+              {d}
+              <span className="badge bg-primary rounded-pill">
+                {(p * 100).toFixed(1)}%
+              </span>
+            </li>
+          ))}
+        </ul>
+
+        {/* Retroalimentación */}
+        <div className="mt-4">
+          <p>¿Es correcto el resultado?</p>
+          <Button
+            color="success"
+            className="me-2"
+            onClick={() => sendFeedback(prediction.digit.toString(), true)}
+          >
+            ✓ Sí
+          </Button>
+          <Button
+            color="danger"
+            onClick={() => sendFeedback(prediction.digit.toString(), false)}
+          >
+            ✗ No
+          </Button>
+        </div>
+
+              {/* Corrección manual */}
               {showCorrection && (
                 <div className="mt-4">
                   <label>Número correcto:</label>
-                  <select 
-                    className="form-select mx-auto mt-2" 
-                    style={{ maxWidth: '100px' }}
+                  <select
+                    className="form-select mx-auto mt-2"
+                    style={{ maxWidth: 100 }}
                     onChange={(e) => sendCorrection(e.target.value)}
                     defaultValue=""
                   >
-                    <option value="" disabled>Elige</option>
-                    {[0,1,2,3,4,5,6,7,8,9].map(n => (
-                      <option key={n} value={n}>{n}</option>
+                    <option value="" disabled>
+                      Elige
+                    </option>
+                    {[0,1,2,3,4,5,6,7,8,9].map((n) => (
+                      <option key={n} value={n}>
+                        {n}
+                      </option>
                     ))}
                   </select>
                 </div>
@@ -532,6 +564,7 @@ function CanvasRecognition() {
             </div>
           )}
         </ModalBody>
+
         <ModalFooter>
           <Button color="secondary" onClick={closePredictionModal}>
             Cerrar
