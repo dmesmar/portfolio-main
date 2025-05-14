@@ -1,7 +1,7 @@
 import { Layout } from '@dmesmar/core-components';
 import { en, es, ca } from '@dmesmar/i18n';
 import { useEffect, useRef, useState } from 'react';
-import { Alert, Button, Table, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Alert, Button, Table, Modal, ModalHeader, ModalBody, ModalFooter, Spinner } from 'reactstrap';
 import { getCurrentLanguage } from '../../../libs/core-components/src/lib/language-configurator';
 
 // Interfaz para los elementos del historial
@@ -41,6 +41,21 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
   const langCode = getCurrentLanguage();
   const langMap = { en, es, ca };
   const lang = langMap[langCode];
+  type Status = 'idle' | 'loading' | 'ok' | 'fail';
+
+  const StatusDot: React.FC<{ status: Status }> = ({ status }) => {
+    const color =
+      status === 'ok'    ? 'green'  :
+      status === 'fail'  ? 'red'    :
+      status === 'loading' ? 'orange' : 'gray';
+
+    return (
+      <span
+        className="status-dot"
+        style={{ backgroundColor: color }}
+      />
+    );
+  };
 
   useEffect(() => {
     initCanvas();
@@ -166,6 +181,36 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
     setCurrentImageBase64(null);
   };
 
+  const [apiStatus,    setApiStatus]    = useState<Status>('idle');
+  const [modelStatus,  setModelStatus]  = useState<Status>('idle');
+
+  /* Comprueba /api/ping */
+
+  const checkApi = async () => {
+    setApiStatus('loading');
+    var url = "https://digitscnn-production.up.railway.app/api"
+    try {
+      const r = await fetch(url + '/ping');
+      setApiStatus(r.ok ? 'ok' : 'fail');
+    } catch {
+      setApiStatus('fail');
+    }
+  };
+
+
+  /* Comprueba /api/model */
+  const checkModel = async () => {
+    setModelStatus('loading');
+    var url = "https://digitscnn-production.up.railway.app/api"
+    try {
+      const r = await fetch(url + '/model');
+      const data = await r.json();
+      setModelStatus(r.ok && data.model_exists ? 'ok' : 'fail');
+    } catch {
+      setModelStatus('fail');
+    }
+  };
+
   const handlePredict = async (): Promise<void> => {
   try {
     const canvas = canvasRef.current;
@@ -174,7 +219,7 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
     const b64 = canvas.toDataURL('image/png').split(',')[1];
 
     // -------- llamada al backend (query-param escapado) ---------------
-    const url = `https://digitscnn-production.up.railway.app/predict?b64=${encodeURIComponent(b64)}`;
+    const url = `https://digitscnn-production.up.railway.app/api/predict?b64=${encodeURIComponent(b64)}`;
     const response = await fetch(url, { method: 'POST' });
 
     if (!response.ok) {
@@ -257,233 +302,290 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
 
   // Enviar datos de entrenamiento al servidor
   const sendTrainingData = async () => {
-    try {
-      setTrainingModalOpen(true);
-      setTrainingStatus('Enviando datos de entrenamiento...');
-      
-      // Filtrar solo los elementos con retroalimentación
-      const trainingData = predictionHistory
-        .filter(item => item.actual !== null)
-        .map(item => ({
-          image_base64: item.image,
-          actual: item.actual
-        }));
-      
-      if (trainingData.length === 0) {
-        setTrainingStatus('No hay datos suficientes para entrenar el modelo.');
-        return;
-      }
-      
-      const response = await fetch('https://digitscnn-production.up.railway.app/train', {
+  try {
+    setTrainingModalOpen(true);
+    setTrainingStatus('Enviando datos de entrenamiento...');
+
+    const trainingData = predictionHistory
+      .filter(item => item.actual !== null)
+      .map(item => ({
+        b64: item.image,
+        label: item.actual,
+      }));
+
+    if (trainingData.length === 0) {
+      setTrainingStatus('No hay datos suficientes para entrenar el modelo.');
+      return;
+    }
+
+    // Enviar cada muestra individualmente
+    for (let i = 0; i < trainingData.length; i++) {
+      const sample = trainingData[i];
+      const response = await fetch('https://digitscnn-production.up.railway.app/api/add-sample', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          // 'x-api-key': 'TU_API_KEY_SECRETA',
         },
-        body: JSON.stringify({ samples: trainingData }),
+        body: JSON.stringify(sample),
       });
-      
+
       if (!response.ok) {
-        throw new Error('Error al entrenar el modelo');
+        throw new Error(`Error al enviar muestra ${i + 1}`);
       }
-      
-      const result = await response.json();
-      setTrainingStatus(`Entrenamiento completado. Estado: ${result.status}`);
-      
-      // Opcional: limpiar historial después del entrenamiento exitoso
-      // setPredictionHistory([]);
-      
-    } catch (error: unknown) {
-      const errorMsg = error instanceof Error ? error.message : 'Error desconocido';
-      setTrainingStatus(`Error: ${errorMsg}`);
+
+      setTrainingStatus(`Muestra ${i + 1} enviada correctamente`);
     }
-  };
+
+    setTrainingStatus('Todas las muestras fueron enviadas. Reentrenando modelo...');
+
+    // Llamar al endpoint que hace el entrenamiento completo
+    const trainResponse = await fetch('https://digitscnn-production.up.railway.app/api/train', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (!trainResponse.ok) {
+      throw new Error('Error al entrenar el modelo');
+    }
+
+    const result = await trainResponse.json();
+    setTrainingStatus(`Entrenamiento completado. Estado: ${result.status}`);
+  } catch (error: unknown) {
+    const errorMsg = error instanceof Error ? error.message : 'Error desconocido';
+    setTrainingStatus(`Error: ${errorMsg}`);
+  }
+};
+
 
   // Colores predefinidos
   const predefinedColors = ['#000000', '#FF0000', '#0000FF', '#00FF00', '#FFFF00', '#FF00FF'];
 
   return (
-    <Layout wrapperClass="main-aboutpage" title="Canvas Recognition">
-      <section className="contact-area">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8" data-aos="zoom-in">
-              <div className="shadow-box" style={{ padding: '25px' }}>
-                <h1
-                  className="text-center mb-4"
-                  dangerouslySetInnerHTML={{
-                    __html: 'Reconocimiento de Dígitos',
-                  }}
-                ></h1>
-                
-                <p className="text-center mb-4">
-                  Dibuja un número del 0 al 9 y pulsa "Predecir" para ver el resultado.
-                </p>
+  <Layout wrapperClass="main-aboutpage" title="Reconocimiento de Dígitos">
+    <section className="contact-area">
+      <div className="container">
+        <div className="gx-row d-flex justify-content-between gap-24">
 
-                <div className="canvas-container d-flex justify-content-center">
-                  <canvas
-                    ref={canvasRef}
-                    width={350}
-                    height={350}
-                    style={{ 
-                      border: '2px solid #000', 
-                      cursor: 'crosshair',
-                      touchAction: 'none',
-                      backgroundColor: '#fff',
-                      borderRadius: '4px'
-                    }}
-                    onMouseDown={startDrawing}
-                    onMouseMove={draw}
-                    onMouseUp={stopDrawing}
-                    onMouseOut={stopDrawing}
-                    onTouchStart={startDrawing}
-                    onTouchMove={draw}
-                    onTouchEnd={stopDrawing}
-                  />
-                </div>
+          {/* ════════════════════════════════════ */}
+          {/*          Parte Izquierda           */}
+          {/* ════════════════════════════════════ */}
+          <div className="col-lg-4" data-aos="zoom-in">
+            <div className="shadow-box text-center" style={{ padding: '25px' }}>
+              <h3 className="mb-3">Estado del Sistema</h3>
+              <div className="d-flex align-items-center justify-content-center mb-2">
+                <Button
+                  color="primary"
+                  size="sm"
+                  onClick={checkApi}
+                >
+                  Comprobar API
+                </Button>
+                <StatusDot status={apiStatus} />
+                {apiStatus === 'loading' && <Spinner size="sm" className="ms-2" />}
+              </div>
 
-                {/* Control de herramientas de dibujo */}
-                <div className="d-flex align-items-center justify-content-center mt-4 flex-wrap">
-                  {/* Selector de color personalizado */}
-                  <div className="me-4 mb-2">
-                    <label htmlFor="colorPicker" className="me-2">Color:</label>
-                    <input 
-                      type="color" 
-                      id="colorPicker"
-                      value={brushColor}
-                      onChange={(e) => setBrushColor(e.target.value)}
-                      style={{ 
-                        width: '40px', 
-                        height: '40px',
-                        padding: '0',
-                        border: 'none',
-                        cursor: 'pointer'
-                      }}
-                    />
-                  </div>
-                  
-                  {/* Paleta de colores predefinidos */}
-                  <div className="me-4 mb-2">
-                    <div className="d-flex">
-                      {predefinedColors.map((color, index) => (
-                        <div 
-                          key={index}
-                          onClick={() => setBrushColor(color)}
-                          style={{
-                            backgroundColor: color,
-                            width: '25px',
-                            height: '25px',
-                            margin: '0 3px',
-                            border: brushColor === color ? '2px solid #666' : '1px solid #ccc',
-                            cursor: 'pointer',
-                            borderRadius: '3px'
-                          }}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                  
-                  {/* Control de tamaño */}
-                  <div className="mb-2">
-                    <label htmlFor="brushSize" className="me-2">Tamaño:</label>
-                    <input 
-                      type="range" 
-                      id="brushSize"
-                      min={5}
-                      max={30}
-                      value={brushSize}
-                      onChange={(e) => setBrushSize(parseInt(e.target.value))}
-                      style={{ width: '100px' }}
-                    />
-                  </div>
-                </div>
-
-                <div className="buttons-group d-flex justify-content-center mt-4">
-                  <Button
-                    className="theme-btn submit-btn me-2"
-                    onClick={handlePredict}
-                  >
-                    Predecir
-                  </Button>
-                  <Button className="theme-btn" onClick={handleClearCanvas}>
-                    Limpiar
-                  </Button>
-                </div>
-
-                {/* Mostrar solo mensajes de error en la interfaz principal */}
-                {errorMessage && (
-                  <Alert color="danger" className="mt-3 text-center">
-                    {errorMessage}
-                  </Alert>
-                )}
-
-                {/* Historial de predicciones */}
-                {predictionHistory.length > 0 && (
-                  <div className="mt-5">
-                    <h4 className="text-center mb-3">Historial de Predicciones</h4>
-                    <div className="table-responsive">
-                      <Table bordered hover>
-                        <thead>
-                          <tr>
-                            <th>Imagen</th>
-                            <th>Predicción</th>
-                            <th>Real</th>
-                            <th>Estado</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {predictionHistory.slice(0, 5).map((item) => (
-                            <tr key={item.id}>
-                              <td style={{ width: '100px' }}>
-                                <img 
-                                  src={item.image} 
-                                  alt="Digit" 
-                                  style={{ width: '50px', height: '50px' }} 
-                                />
-                              </td>
-                              <td>{item.prediction}</td>
-                              <td>{item.actual}</td>
-                              <td>
-                                {item.isCorrect ? (
-                                  <span className="text-success">✓</span>
-                                ) : (
-                                  <span className="text-danger">✗</span>
-                                )}
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </Table>
-                    </div>
-                    
-                    {/* Botón para entrenar */}
-                    <div className="text-center mt-3">
-                      <p className="text-muted mb-2">
-                        Has contribuido con {predictionHistory.length} imágenes
-                      </p>
-                      <Button 
-                        color="primary"
-                        onClick={sendTrainingData}
-                        disabled={predictionHistory.filter(i => i.actual !== null).length === 0}
-                      >
-                        Entrenar Modelo
-                      </Button>
-                    </div>
-                  </div>
-                )}
+              <div className="d-flex align-items-center justify-content-center">
+                <Button
+                  color="primary"
+                  size="sm"
+                  onClick={checkModel}
+                >
+                  Comprobar Modelo
+                </Button>
+                <StatusDot status={modelStatus} />
+                {modelStatus === 'loading' && <Spinner size="sm" className="ms-2" />}
               </div>
             </div>
           </div>
+
+          {/* ════════════════════════════════════ */}
+          {/*          Parte Derecha            */}
+          {/* ════════════════════════════════════ */}
+          <div className="col-lg-8" data-aos="zoom-in">
+            <div className="shadow-box" style={{ padding: '25px' }}>
+              <h1
+                className="text-center mb-4"
+                dangerouslySetInnerHTML={{ __html: 'Reconocimiento de Dígitos' }}
+              />
+
+              <p className="text-center mb-4">
+                Dibuja un número del 0 al 9 y pulsa "Predecir" para ver el resultado.
+              </p>
+
+              <canvas
+                ref={canvasRef}
+                width={350}
+                height={350}
+                style={{
+                  display: 'block',
+                  margin: '0 auto',
+                  border: '2px solid #000',
+                  cursor: 'crosshair',
+                  touchAction: 'none',
+                  backgroundColor: '#fff',
+                  borderRadius: '4px',
+                }}
+                onMouseDown={startDrawing}
+                onMouseMove={draw}
+                onMouseUp={stopDrawing}
+                onMouseOut={stopDrawing}
+                onTouchStart={startDrawing}
+                onTouchMove={draw}
+                onTouchEnd={stopDrawing}
+              />
+
+              {/* Herramientas de dibujo */}
+              <div className="d-flex align-items-center justify-content-center mt-4 flex-wrap">
+                {/* Selector de color */}
+                <div className="me-4 mb-2">
+                  <label htmlFor="colorPicker" className="me-2">Color:</label>
+                  <input
+                    type="color"
+                    id="colorPicker"
+                    value={brushColor}
+                    onChange={e => setBrushColor(e.target.value)}
+                    style={{
+                      width: '40px',
+                      height: '40px',
+                      padding: 0,
+                      border: 'none',
+                      cursor: 'pointer',
+                    }}
+                  />
+                </div>
+
+                {/* Paleta rápida */}
+                <div className="me-4 mb-2">
+                  <div className="d-flex">
+                    {predefinedColors.map((color, i) => (
+                      <div
+                        key={i}
+                        onClick={() => setBrushColor(color)}
+                        style={{
+                          backgroundColor: color,
+                          width: '25px',
+                          height: '25px',
+                          margin: '0 3px',
+                          border: brushColor === color ? '2px solid #666' : '1px solid #ccc',
+                          cursor: 'pointer',
+                          borderRadius: '3px',
+                        }}
+                      />
+                    ))}
+                  </div>
+                </div>
+
+                {/* Tamaño del pincel */}
+                <div className="mb-2">
+                  <label htmlFor="brushSize" className="me-2">Tamaño:</label>
+                  <input
+                    type="range"
+                    id="brushSize"
+                    min={5}
+                    max={30}
+                    value={brushSize}
+                    onChange={e => setBrushSize(+e.target.value)}
+                    style={{ width: '100px' }}
+                  />
+                </div>
+              </div>
+
+              {/* Botones de acción */}
+              <div className="buttons-group d-flex justify-content-center mt-4">
+                <Button
+                  className="theme-btn submit-btn me-2"
+                  color="primary"
+                  onClick={handlePredict}
+                >
+                  Predecir
+                </Button>
+                <Button
+                  className="theme-btn"
+                  color="secondary"
+                  onClick={handleClearCanvas}
+                >
+                  Limpiar
+                </Button>
+              </div>
+
+              {/* Error */}
+              {errorMessage && (
+                <Alert color="danger" className="mt-3 text-center">
+                  {errorMessage}
+                </Alert>
+              )}
+
+              {/* Historial */}
+              {predictionHistory.length > 0 && (
+                <div className="mt-5">
+                  <h4 className="text-center mb-3">Historial de Predicciones</h4>
+                  <div className="table-responsive">
+                    <Table bordered hover>
+                      <thead>
+                        <tr>
+                          <th>Imagen</th>
+                          <th>Predicción</th>
+                          <th>Real</th>
+                          <th>Estado</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {predictionHistory.slice(0, 5).map(item => (
+                          <tr key={item.id}>
+                            <td style={{ width: '100px' }}>
+                              <img
+                                src={item.image}
+                                alt="Digit"
+                                style={{ width: '50px', height: '50px' }}
+                              />
+                            </td>
+                            <td>{item.prediction}</td>
+                            <td>{item.actual}</td>
+                            <td>
+                              {item.isCorrect ? (
+                                <span className="text-success">✓</span>
+                              ) : (
+                                <span className="text-danger">✗</span>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </Table>
+                  </div>
+
+                  <div className="text-center mt-3">
+                    <p className="text-muted mb-2">
+                      Has contribuido con {predictionHistory.length} imágenes
+                    </p>
+                    <Button
+                      color="primary"
+                      onClick={sendTrainingData}
+                      disabled={
+                        predictionHistory.filter(i => i.actual !== null).length === 0
+                      }
+                    >
+                      Entrenar Modelo
+                    </Button>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+
         </div>
-      </section>
+      </div>
+    </section>
       
       {/* Modal de predicción y retroalimentación */}
       <Modal isOpen={predictionModalOpen} toggle={closePredictionModal}>
-  <ModalHeader toggle={closePredictionModal}>
-    Resultado de la Predicción
-  </ModalHeader>
+        <ModalHeader toggle={closePredictionModal}>
+          Resultado de la Predicción
+        </ModalHeader>
 
-  <ModalBody>
+        <ModalBody>
     {prediction && (
       <div className="text-center">
 
