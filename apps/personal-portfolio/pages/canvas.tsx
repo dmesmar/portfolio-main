@@ -181,8 +181,6 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
       const err = await response.json().catch(() => ({}));
       throw new Error(err.detail ?? `HTTP ${response.status}`);
     }
-
-    // ---- probs = objeto { "0": 0.00…, … } ----------------------------
     const probs: Record<string, number> = await response.json();
 
     const entries: [number, number][] = Object
@@ -192,7 +190,7 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
 
     const [bestDigit, bestProb] = entries[0];
 
-    /* -------- guardar en el estado -------- */
+
     setPrediction({
       digit       : bestDigit,
       prob        : bestProb,
