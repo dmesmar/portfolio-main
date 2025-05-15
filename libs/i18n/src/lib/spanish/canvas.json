@@ -1,0 +1,31 @@
+{
+    "title" : {
+        "status" : "Estado del Sistema",
+        "digits": "Reconocimiento de dígitos",
+        "modal" : "Resultado de la predicción",
+        "history" : "Historial de predicciones"
+    }, 
+    "subtitles" : {
+        "digits" : "Dibuja un número del 0 al 9 y pulsa \"Predecir\" para ver la predicción del modelo."
+    },
+    "buttons": {
+        "api" : "Comprobar API",
+        "model" : "Comprobar Modelo",
+        "predict" : "Predecir",
+        "clear" : "Limpiar",
+        "yes": "Sí",
+        "no" : "No",
+        "close" : "Cerrar"
+    },
+    "table_predict" : {
+        "image" : "Imagen",
+        "prediction" : "Predicción",
+        "real" : "Real",
+        "status" : "Estado"
+    },
+    "size" : "Tamaño",
+    "prediction" : "Predicción",
+    "isCorrect" : "¿Es correcto el resultado?",
+    "correctNumber" : "Numero correcto",
+    "choose": "Elige"
+}

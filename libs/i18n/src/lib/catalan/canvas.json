@@ -1,0 +1,31 @@
+{
+    "title" : {
+        "status" : "Estat del sistema",
+        "digits": "Reconeiximent de dígits",
+        "modal" : "Resultat de la predicció",
+        "history" : "Historial de prediccions"
+    }, 
+    "subtitles" : {
+        "digits" : "Dibuixa un número del 0 al 9 y pulsa \"Predecir\" per a vore la predicció del model."
+    },
+    "buttons": {
+        "api" : "Comprobar API",
+        "model" : "Comprobar Model",
+        "predict" : "Predecir",
+        "clear" : "Esborrar",
+        "yes": "Sí",
+        "no" : "No",
+        "close" : "Tancar"
+    },
+    "table_predict" : {
+        "image" : "Imatge",
+        "prediction" : "Predicció",
+        "real" : "Real",
+        "status" : "Estat"
+    },
+    "size" : "Mida",
+    "prediction" : "Predicció",
+    "isCorrect" : "¿És correcte el resultat?",
+    "correctNumber" : "Numero correcte",
+    "choose": "Tria'n"
+}

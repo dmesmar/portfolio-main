@@ -1,0 +1,31 @@
+{
+    "title" : {
+        "status" : "Status of the system",
+        "digits": "Digit recognition",
+        "modal" : "Result of the prediction",
+        "history" : "Prediction history"
+    }, 
+    "subtitles" : {
+        "digits" : "Draw a number between 0 and 9 and click \"Predict\" to see the prediction."
+    },
+    "buttons": {
+        "api" : "Check API",
+        "model" : "Check Model",
+        "predict" : "Predict",
+        "clear" : "Clear",
+        "yes": "Yes",
+        "no" : "No",
+        "close" : "Close"
+    },
+    "table_predict" : {
+        "image" : "Image",
+        "prediction" : "Prediction",
+        "real" : "Correct",
+        "status" : "Status"
+    },
+    "size" : "Size",
+    "prediction" : "Prediction",
+    "isCorrect" : "Is it correct?",
+    "correctNumber" : "Correct number",
+    "choose": "Choose"
+}

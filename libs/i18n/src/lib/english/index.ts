@@ -5,6 +5,7 @@ import * as landing from './landing.json';
 import * as portfolio from './portfolio.json';
 import * as misc from './misc.json';
 import * as certifications from './certifications.json'
+import * as canvas from './canvas.json'
 
 export const en = {
   bio,
@@ -13,5 +14,6 @@ export const en = {
   landing,
   portfolio,
   misc,
-  certifications
+  certifications,
+  canvas
 };
