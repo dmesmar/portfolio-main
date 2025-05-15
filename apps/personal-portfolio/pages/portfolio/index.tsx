@@ -66,25 +66,29 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
     thesis: lang.portfolio.categories.thesis
   };
   
+  const languages = ['es', 'en', 'ca'];
+
   const projectsData = [
-    {
-      file: 'esTFG.mdx',
-      categories: [categoriesList.thesis, categoriesList.frontend]
-    },
-    {
-      file: 'caTFG.mdx',
-      categories: [categoriesList.thesis, categoriesList.frontend]
-    },
-    {
-      file: 'enTFG.mdx',
-      categories: [categoriesList.thesis, categoriesList.frontend]
-    },
+    ...languages.map(lang => ({
+      file: `${lang}TFG.mdx`,
+      categories: [categoriesList.thesis, categoriesList.frontend],
+    })),
+    ...languages.map(lang => ({
+      file: `${lang}Digits.mdx`,
+      categories: [categoriesList.ML, categoriesList.AI],
+    }))
   ];
+
+
 
   // Get all case studies for the current language
   const langFilteredCaseStudies = caseStudies.filter(
-    study => study.filePath.replace(/\.mdx?$/, '').startsWith(langCode)
-  );
+  study => {
+    const basePath = study.filePath.replace(/\.mdx?$/, '');
+    return basePath.startsWith(langCode);
+  }
+);
+
 
   const projectsWithCategories = langFilteredCaseStudies.map(study => {
     const projectData = projectsData.find(p => p.file === study.filePath);

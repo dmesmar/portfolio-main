@@ -16,5 +16,25 @@
     "backend": "Backend",
     "frontend": "Frontend",
     "thesis": "Treball Final"
+  },
+  "projects": {
+    "digits": {
+      "title": "Reconeixement de dígits",
+      "b1text": "Model de Machine Learning capaç de detectar i reconèixer dígits del 0 al 9 en imatges dibuixades per tu",
+      "b2title1": "Tecnologies",
+      "b2text1": {
+        "py": "Python",
+        "tf": "Tensorflow: Per entrenar el model",
+        "api": "FastAPI: per muntar els endpoints i accedir al model des d’aquí",
+        "git": "Github: per al control de versions"
+      },
+      "b2title2": "Característiques",
+      "b2text2": {
+        "c1": "El model intenta detectar quin dígit has dibuixat",
+        "c2": "Demostració inclosa aquí sota"
+      },
+      "git": "Tot el codi el podràs trobar al repositori públic: https://github.com/dmesmar/digitsCNN"
+    }
   }
+
 }

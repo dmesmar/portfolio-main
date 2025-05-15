@@ -7971,6 +7971,15 @@
         "hash": "sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w=="
       }
     },
+    "npm:cookie@1.0.2": {
+      "type": "npm",
+      "name": "npm:cookie@1.0.2",
+      "data": {
+        "version": "1.0.2",
+        "packageName": "cookie",
+        "hash": "sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA=="
+      }
+    },
     "npm:cookie-signature": {
       "type": "npm",
       "name": "npm:cookie-signature",
@@ -14874,6 +14883,24 @@
         "hash": "sha512-ROY9fvHhwOD9ySfrF0wmvu//bKCQ6AeZZq1nJNtbDC+kk5DuSuNX/n6YWYF/SYy7bSba4D4FSz8DJeKY/S/r+g=="
       }
     },
+    "npm:react-router": {
+      "type": "npm",
+      "name": "npm:react-router",
+      "data": {
+        "version": "7.6.0",
+        "packageName": "react-router",
+        "hash": "sha512-GGufuHIVCJDbnIAXP3P9Sxzq3UUsddG3rrI3ut1q6m0FI6vxVBF3JoPQ38+W/blslLH4a5Yutp8drkEpXoddGQ=="
+      }
+    },
+    "npm:react-router-dom": {
+      "type": "npm",
+      "name": "npm:react-router-dom",
+      "data": {
+        "version": "7.6.0",
+        "packageName": "react-router-dom",
+        "hash": "sha512-DYgm6RDEuKdopSyGOWZGtDfSm7Aofb8CCzgkliTjtu/eDuB0gcsv6qdFhhi8HdtmA+KHkt5MfZ5K2PdzjugYsA=="
+      }
+    },
     "npm:react-transition-group": {
       "type": "npm",
       "name": "npm:react-transition-group",
@@ -15637,6 +15664,15 @@
         "version": "1.16.2",
         "packageName": "serve-static",
         "hash": "sha512-VqpjJZKadQB/PEbEwvFdO43Ax5dFBZ2UECszz8bQ7pi7wt//PWe1P6MN7eCnjsatYtBT6EuiClbjSWP2WrIoTw=="
+      }
+    },
+    "npm:set-cookie-parser": {
+      "type": "npm",
+      "name": "npm:set-cookie-parser",
+      "data": {
+        "version": "2.7.1",
+        "packageName": "set-cookie-parser",
+        "hash": "sha512-IOc8uWeOZgnb3ptbCURJWNjWUPcO3ZnTTdzsurqERrP6nPyv+paC55vJM0LpOlT2ne+Ix+9+CRG1MNLlyZ4GjQ=="
       }
     },
     "npm:set-function-length": {
@@ -17243,6 +17279,11 @@
       },
       {
         "source": "personal-portfolio",
+        "target": "npm:react-router-dom",
+        "type": "static"
+      },
+      {
+        "source": "personal-portfolio",
         "target": "npm:reactstrap",
         "type": "static"
       },
@@ -17327,6 +17368,11 @@
         "source": "core-components",
         "target": "npm:react-calendly",
         "type": "dynamic"
+      },
+      {
+        "source": "core-components",
+        "target": "personal-portfolio",
+        "type": "static"
       },
       {
         "source": "core-components",
@@ -38826,6 +38872,45 @@
       {
         "source": "npm:react-redux",
         "target": "npm:use-sync-external-store",
+        "type": "static"
+      }
+    ],
+    "npm:react-router": [
+      {
+        "source": "npm:react-router",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-router",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-router",
+        "target": "npm:cookie@1.0.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-router",
+        "target": "npm:set-cookie-parser",
+        "type": "static"
+      }
+    ],
+    "npm:react-router-dom": [
+      {
+        "source": "npm:react-router-dom",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-router-dom",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-router-dom",
+        "target": "npm:react-router",
         "type": "static"
       }
     ],

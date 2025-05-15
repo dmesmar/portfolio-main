@@ -16,5 +16,25 @@
     "backend": "Backend",
     "frontend": "Frontend",
     "thesis": "Thesis"
+  },
+  "projects": {
+    "digits": {
+      "title": "Digit Recognition",
+      "b1text": "Machine Learning model capable of detecting and recognizing digits from 0 to 9 in images drawn by you",
+      "b2title1": "Technologies",
+      "b2text1": {
+        "py": "Python",
+        "tf": "Tensorflow: For training the model",
+        "api": "FastAPI: To set up endpoints and access the model from here",
+        "git": "Github: For version control"
+      },
+      "b2title2": "Features",
+      "b2text2": {
+        "c1": "The model tries to detect which digit you have drawn",
+        "c2": "Demo included below"
+      },
+      "git": "You can find all the code in the public repository: https://github.com/dmesmar/digitsCNN"
+    }
   }
+
 }

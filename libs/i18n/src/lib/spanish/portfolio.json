@@ -16,5 +16,24 @@
     "backend": "Backend",
     "frontend": "Frontend",
     "thesis": "Trabajo final"
+  },
+  "projects" : {
+    "digits":{
+      "title":"Reconocimiento de dígitos",
+      "b1text": "Modelo de Machine Learning capaz de detectar y reconocer dígitos del 0 al 9 en imágenes dibujadas por ti",
+      "b2title1":"Tecnologías",
+      "b2text1": {
+        "py": "Python",
+        "tf": "Tensorflow: Para entrenar el modelo",
+        "api": "FastAPI: para montar los endpoints y acceder al modelo desde aquí",
+        "git": "Github: para el control de versiones"
+      },
+      "b2title2": "Características",
+      "b2text2": {
+        "c1":"El modelo intenta detectar qué dígito has dibujado",
+        "c2":"Demo incluída aquí abajo"
+      },
+      "git":"Todo el código lo podrás encontrar en el repositorio público: https://github.com/dmesmar/digitsCNN"
+    }
   }
 }

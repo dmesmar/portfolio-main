@@ -2,6 +2,7 @@ import {
   Layout,
   PortfolioFooter,
   PortfolioHeader,
+  Canvas
 } from '@dmesmar/core-components';
 import fs from 'fs';
 import matter from 'gray-matter';
@@ -68,6 +69,7 @@ type PortfolioEntryPageProps = {
 const components = {
   PortfolioHeader: PortfolioHeader,
   PortfolioFooter: PortfolioFooter,
+  Canvas: Canvas,
 };
 
 const PortfolioEntryPage = ({

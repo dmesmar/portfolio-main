@@ -1,5 +1,5 @@
-import styles from './CertificatesPage.module.scss';
-import { Layout } from '@dmesmar/core-components';
+import { useLocation, Navigate, Router } from 'react-router-dom';
+import { LayoutCanvas } from '@dmesmar/core-components';
 import { en, es, ca } from '@dmesmar/i18n';
 import { useEffect, useRef, useState } from 'react';
 import { Alert, Button, Table, Modal, ModalHeader, ModalBody, ModalFooter, Spinner } from 'reactstrap';
@@ -15,6 +15,9 @@ interface PredictionItem {
 }
 
 function CanvasRecognition() {
+  if (window.location.href.includes("/canvas/")) {
+    window.location.replace("https://www.dariomesasmarti.com/portfolio");
+  }
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [isDrawing, setIsDrawing] = useState(false);
   const [listPrediction, setListPrediction] = useState([]);
@@ -366,9 +369,59 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
   const predefinedColors = ['#000000', '#FFFFFF'];
 
   return (
-  <Layout wrapperClass="main-aboutpage" title={lang.canvas.title.digits}>
+  <LayoutCanvas wrapperClass="main-aboutpage" title={lang.canvas.title.digits}>
     <section className="contact-area">
       <div className="container">
+        {/* Aquí va la introducción al reconocimiento de dígitos*/}
+        <div data-aos="zoom-in">
+          <h1 className="section-heading" data-aos="fade-up">
+          {lang.portfolio.projects.digits.title}
+        </h1>
+      <div className="d-flex project-infos-wrap shadow-box mb-24">
+        <img src="/assets/bg1.png" alt="BG" className="bg-img" />
+        <div className="project-details-info flex-1">
+          <h3 className="text-xl font-bold mb-3">{lang.portfolio.projects.digits.title}</h3>
+          <p>
+            <b>
+              {lang.portfolio.projects.digits.b1text}
+            </b>
+          </p>
+        </div>
+      </div>
+      <div className="d-flex project-infos-wrap shadow-box mb-24">
+        <img src="/assets/bg1.png" alt="BG" className="bg-img" />        
+        <div className="project-details-info flex-1">
+          <h3 className="text-xl font-bold mb-3">{lang.portfolio.projects.digits.b2title1}</h3>
+          <ul className="technology-list">
+            <li>
+              {lang.portfolio.projects.digits.b2text1.py}
+            </li>
+            <li>
+              {lang.portfolio.projects.digits.b2text1.tf}
+            </li>
+            <li>
+              {lang.portfolio.projects.digits.b2text1.api}
+            </li>
+            <li>
+              {lang.portfolio.projects.digits.b2text1.git}
+            </li>
+          </ul>
+        </div>
+
+        <div className="project-details-info flex-1">
+          <h3 className="text-xl font-bold mb-3">{lang.portfolio.projects.digits.b2title2}</h3>
+          <ul className="feature-list">
+            <li>{lang.portfolio.projects.digits.b2text2.c1}</li>
+            <li>{lang.portfolio.projects.digits.b2text2.c2}</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  </div >
+  <div className="separador-proyectos-medio"></div>
+  <hr></hr>
+  <div className="separador-proyectos-medio"></div>
+  <div className="container">
         <div className="gx-row d-flex justify-content-between gap-24">
 
           <div className="col-lg-4" data-aos="zoom-in">
@@ -627,7 +680,8 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
           </Button>
         </ModalFooter>
       </Modal>
-    </Layout>
+      <div className="separador-proyectos"></div>
+    </LayoutCanvas>
   );
 }
 
