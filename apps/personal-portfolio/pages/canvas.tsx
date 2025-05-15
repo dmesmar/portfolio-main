@@ -1,3 +1,4 @@
+import styles from './CertificatesPage.module.scss';
 import { Layout } from '@dmesmar/core-components';
 import { en, es, ca } from '@dmesmar/i18n';
 import { useEffect, useRef, useState } from 'react';
@@ -352,6 +353,8 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
 
     const result = await trainResponse.json();
     setTrainingStatus(`Entrenamiento completado. Estado: ${result.status}`);
+
+    setPredictionHistory([])
   } catch (error: unknown) {
     const errorMsg = error instanceof Error ? error.message : 'Error desconocido';
     setTrainingStatus(`Error: ${errorMsg}`);
@@ -360,73 +363,57 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
 
 
   // Colores predefinidos
-  const predefinedColors = ['#000000', '#FF0000', '#0000FF', '#00FF00', '#FFFF00', '#FF00FF'];
+  const predefinedColors = ['#000000', '#FFFFFF'];
 
   return (
-  <Layout wrapperClass="main-aboutpage" title="Reconocimiento de Dígitos">
+  <Layout wrapperClass="main-aboutpage" title={lang.canvas.title.digits}>
     <section className="contact-area">
       <div className="container">
         <div className="gx-row d-flex justify-content-between gap-24">
 
-          {/* ════════════════════════════════════ */}
-          {/*          Parte Izquierda           */}
-          {/* ════════════════════════════════════ */}
           <div className="col-lg-4" data-aos="zoom-in">
-            <div className="shadow-box text-center" style={{ padding: '25px' }}>
-              <h3 className="mb-3">Estado del Sistema</h3>
-              <div className="d-flex align-items-center justify-content-center mb-2">
-                <Button
-                  color="primary"
-                  size="sm"
-                  onClick={checkApi}
-                >
-                  Comprobar API
-                </Button>
-                <StatusDot status={apiStatus} />
-                {apiStatus === 'loading' && <Spinner size="sm" className="ms-2" />}
-              </div>
-
-              <div className="d-flex align-items-center justify-content-center">
-                <Button
-                  color="primary"
-                  size="sm"
-                  onClick={checkModel}
-                >
-                  Comprobar Modelo
-                </Button>
-                <StatusDot status={modelStatus} />
-                {modelStatus === 'loading' && <Spinner size="sm" className="ms-2" />}
+            <div className="shadow-box text-center extraPadding">
+              <h3 className="mb-3">{lang.canvas.title.status}</h3>
+              <div className="d-flex flex-column align-items-center">
+                <div className="d-flex align-items-center justify-content-center mb-3">
+                  <div style={{width: "120px"}}>
+                    <Button size="sm" className="w-100" onClick={checkApi}>
+                      {lang.canvas.buttons.api}
+                    </Button>
+                  </div>
+                  <StatusDot status={apiStatus} />
+                  {apiStatus === 'loading' && <Spinner size="sm" className="ms-2" />}
+                </div>
+                <div className="d-flex align-items-center justify-content-center">
+                  <div style={{width: "120px"}}>
+                    <Button size="sm" className="w-100" onClick={checkModel}>
+                      {lang.canvas.buttons.model}
+                    </Button>
+                  </div>
+                  <StatusDot status={modelStatus} />
+                  {modelStatus === 'loading' && <Spinner size="sm" className="ms-2" />}
+                </div>
               </div>
             </div>
           </div>
 
-          {/* ════════════════════════════════════ */}
           {/*          Parte Derecha            */}
-          {/* ════════════════════════════════════ */}
+
           <div className="col-lg-8" data-aos="zoom-in">
-            <div className="shadow-box" style={{ padding: '25px' }}>
+            <div className="shadow-box extraPadding">
               <h1
                 className="text-center mb-4"
-                dangerouslySetInnerHTML={{ __html: 'Reconocimiento de Dígitos' }}
-              />
+              > {lang.canvas.title.digits}</h1>
 
               <p className="text-center mb-4">
-                Dibuja un número del 0 al 9 y pulsa "Predecir" para ver el resultado.
+                {lang.canvas.subtitles.digits}
               </p>
 
               <canvas
                 ref={canvasRef}
                 width={350}
                 height={350}
-                style={{
-                  display: 'block',
-                  margin: '0 auto',
-                  border: '2px solid #000',
-                  cursor: 'crosshair',
-                  touchAction: 'none',
-                  backgroundColor: '#fff',
-                  borderRadius: '4px',
-                }}
+                className='canvas'
                 onMouseDown={startDrawing}
                 onMouseMove={draw}
                 onMouseUp={stopDrawing}
@@ -438,23 +425,6 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
 
               {/* Herramientas de dibujo */}
               <div className="d-flex align-items-center justify-content-center mt-4 flex-wrap">
-                {/* Selector de color */}
-                <div className="me-4 mb-2">
-                  <label htmlFor="colorPicker" className="me-2">Color:</label>
-                  <input
-                    type="color"
-                    id="colorPicker"
-                    value={brushColor}
-                    onChange={e => setBrushColor(e.target.value)}
-                    style={{
-                      width: '40px',
-                      height: '40px',
-                      padding: 0,
-                      border: 'none',
-                      cursor: 'pointer',
-                    }}
-                  />
-                </div>
 
                 {/* Paleta rápida */}
                 <div className="me-4 mb-2">
@@ -479,7 +449,7 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
 
                 {/* Tamaño del pincel */}
                 <div className="mb-2">
-                  <label htmlFor="brushSize" className="me-2">Tamaño:</label>
+                  <label htmlFor="brushSize" className="me-2">{lang.canvas.size}:</label>
                   <input
                     type="range"
                     id="brushSize"
@@ -496,17 +466,15 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
               <div className="buttons-group d-flex justify-content-center mt-4">
                 <Button
                   className="theme-btn submit-btn me-2"
-                  color="primary"
                   onClick={handlePredict}
                 >
-                  Predecir
+                  {lang.canvas.buttons.predict}
                 </Button>
                 <Button
                   className="theme-btn"
-                  color="secondary"
                   onClick={handleClearCanvas}
                 >
-                  Limpiar
+                  {lang.canvas.buttons.clear}
                 </Button>
               </div>
 
@@ -520,24 +488,24 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
               {/* Historial */}
               {predictionHistory.length > 0 && (
                 <div className="mt-5">
-                  <h4 className="text-center mb-3">Historial de Predicciones</h4>
+                  <h4 className="text-center mb-3">{lang.canvas.title.history}</h4>
                   <div className="table-responsive">
-                    <Table bordered hover>
-                      <thead>
+                    <Table bordered hover >
+                      <thead >
                         <tr>
-                          <th>Imagen</th>
-                          <th>Predicción</th>
-                          <th>Real</th>
-                          <th>Estado</th>
+                          <th>{lang.canvas.table_predict.image}</th>
+                          <th>{lang.canvas.table_predict.prediction}</th>
+                          <th>{lang.canvas.table_predict.real}</th>
+                          <th>{lang.canvas.table_predict.status}</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody >
                         {predictionHistory.slice(0, 5).map(item => (
-                          <tr key={item.id}>
+                          <tr  key={item.id} >
                             <td style={{ width: '100px' }}>
-                              <img
-                                src={item.image}
-                                alt="Digit"
+                              <img  className='image-table'
+                                src={`data:image/png;base64,${item.image}`}
+                                alt=""
                                 style={{ width: '50px', height: '50px' }}
                               />
                             </td>
@@ -557,18 +525,6 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
                   </div>
 
                   <div className="text-center mt-3">
-                    <p className="text-muted mb-2">
-                      Has contribuido con {predictionHistory.length} imágenes
-                    </p>
-                    <Button
-                      color="primary"
-                      onClick={sendTrainingData}
-                      disabled={
-                        predictionHistory.filter(i => i.actual !== null).length === 0
-                      }
-                    >
-                      Entrenar Modelo
-                    </Button>
                   </div>
                 </div>
               )}
@@ -581,11 +537,11 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
       
       {/* Modal de predicción y retroalimentación */}
       <Modal isOpen={predictionModalOpen} toggle={closePredictionModal}>
-        <ModalHeader toggle={closePredictionModal}>
-          Resultado de la Predicción
+        <ModalHeader toggle={closePredictionModal} className='modalCanvas'>
+          {lang.canvas.title.modal}
         </ModalHeader>
 
-        <ModalBody>
+        <ModalBody className='modalCanvas'>
     {prediction && (
       <div className="text-center">
 
@@ -602,20 +558,20 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
 
         {/* Dígito ganador */}
         <h4>
-          Predicción:&nbsp;
+          {lang.canvas.prediction}:&nbsp;
           <strong>{prediction.digit}</strong>
           &nbsp;({(prediction.prob * 100).toFixed(1)}%)
         </h4>
 
         {/* Lista de probabilidades */}
-        <ul className="list-group mt-3">
+        <ul className="list-group mt-3 uLmodalCanvas">
           {prediction.distribution.map(([d, p]) => (
             <li
               key={d}
               className="list-group-item d-flex justify-content-between align-items-center"
             >
               {d}
-              <span className="badge bg-primary rounded-pill">
+              <span className="canvasPercentage badge bg-secondary rounded-pill ">
                 {(p * 100).toFixed(1)}%
               </span>
             </li>
@@ -624,26 +580,26 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
 
         {/* Retroalimentación */}
         <div className="mt-4">
-          <p>¿Es correcto el resultado?</p>
+          <p>{lang.canvas.isCorrect}</p>
           <Button
             color="success"
             className="me-2"
             onClick={() => sendFeedback(prediction.digit.toString(), true)}
           >
-            ✓ Sí
+            ✓ {lang.canvas.buttons.yes}
           </Button>
           <Button
             color="danger"
             onClick={() => sendFeedback(prediction.digit.toString(), false)}
           >
-            ✗ No
+            ✗ {lang.canvas.buttons.no}
           </Button>
         </div>
 
               {/* Corrección manual */}
               {showCorrection && (
                 <div className="mt-4">
-                  <label>Número correcto:</label>
+                  <label>{lang.canvas.correctNumber}:</label>
                   <select
                     className="form-select mx-auto mt-2"
                     style={{ maxWidth: 100 }}
@@ -651,7 +607,7 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
                     defaultValue=""
                   >
                     <option value="" disabled>
-                      Elige
+                      {lang.canvas.choose}
                     </option>
                     {[0,1,2,3,4,5,6,7,8,9].map((n) => (
                       <option key={n} value={n}>
@@ -665,24 +621,9 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
           )}
         </ModalBody>
 
-        <ModalFooter>
-          <Button color="secondary" onClick={closePredictionModal}>
-            Cerrar
-          </Button>
-        </ModalFooter>
-      </Modal>
-      
-      {/* Modal de estado de entrenamiento */}
-      <Modal isOpen={trainingModalOpen} toggle={() => setTrainingModalOpen(false)}>
-        <ModalHeader toggle={() => setTrainingModalOpen(false)}>
-          Estado del Entrenamiento
-        </ModalHeader>
-        <ModalBody>
-          <p>{trainingStatus}</p>
-        </ModalBody>
-        <ModalFooter>
-          <Button color="secondary" onClick={() => setTrainingModalOpen(false)}>
-            Cerrar
+        <ModalFooter className='modalCanvas'>
+          <Button color="primary" onClick={closePredictionModal} className='canvasButton'>
+            {lang.canvas.buttons.close}
           </Button>
         </ModalFooter>
       </Modal>

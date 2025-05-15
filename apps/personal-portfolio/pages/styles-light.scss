@@ -2689,3 +2689,90 @@
   margin-left: 8px;
   border: 1px solid #333;
 }
+
+
+.shadowBox {
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statusDot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.statusControls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.canvas {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #000;
+  background-color: #fff;
+  border-radius: 4px;
+  touch-action: none;
+}
+
+.toolsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.colorPalette {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.brushSizeControl {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.extraPadding {
+  padding: 25px;
+}
+
+[data-theme='light'] {
+  .table-responsive {
+  th, td {
+  background-color: rgb(255, 255, 255);
+  color: grey;
+  }
+  tr {
+    background-color: black;
+  }
+}
+.image-table {
+  background-color: white;
+}
+.canvasButton {
+    background-color: royalblue;
+    border: #000;
+  }
+  .modalCanvas {
+    background-color: rgb(221, 236, 245);
+    border: #000;
+  }
+  .uLmodalCanvas {
+    li {
+      background-color: rgb(169, 208, 233);
+      
+    }
+  }
+}
