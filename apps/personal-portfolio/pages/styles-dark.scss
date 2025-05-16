@@ -1,0 +1,582 @@
+
+[data-theme='dark'] {
+	body {
+	  color: #9f9f9f;
+	  background: #0f0f0f;
+	}
+	.text-primary-color {
+	  color: #5b78f6;
+	}
+	/* # Preloader */
+
+	.preloader {
+	  background-color: #111;
+	  .black_wall {
+		background-color: #222;
+	  }
+	}
+	.theme-btn {
+	  &:hover {
+		background: #ffffff;
+		color: #323232;
+	  }
+	}
+	.shadow-box {
+	  background: #0f0f0f;
+	  border: black;
+    border-radius: 30px;
+    
+	.section-heading {
+	  color: #ffffff;
+	}
+  }
+	.about-area {
+	  .about-edc-exp .overlay-link,
+	  .about-image-box .overlay-link,
+	  .about-me-box .overlay-link {
+		top: 012;
+	  }
+	}
+	.info-box {
+  .infos {
+    h4 {
+      color: #e0e0e0;
+    }
+    h1 {
+      color: #bbbbbb;
+    }
+  }
+  .inner-profile-icons {
+    background: #121212; 
+    a {
+      background: #2a2a2a; 
+      color: #e0e0e0;
+      &:hover {
+        background: #3a3a3a; 
+        color: #60a5fa; 
+      }
+      &:before {
+        background: linear-gradient(
+          120deg,
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0.05)
+        );
+      }
+    }
+  }
+  &.about-client-box .clients .client-item {
+    background: #1a1a1a; 
+    h1 {
+      color: #d1d1d1; 
+    }
+
+    p {
+      color: #b0b0b0; 
+    }
+  }
+
+  &.about-contact-box {
+    h1 {
+      color: #e0e0e0; 
+
+      span {
+        color: #60a5fa;
+      }
+    }
+  }
+}
+	/* # Breadcrumb */
+
+	.breadcrumb-area {
+	  .breadcrumb-content {
+		p {
+		  opacity: 0.7;
+		}
+	  }
+	}
+	/* # Header */
+
+	.header-area {
+	  .navbar {
+		.menu {
+		  li {
+			a {
+			&.active a,
+			a:hover {
+			  color: #ffffff;
+			}
+		  }
+		}
+	  }
+	  .show-menu {
+		color: #ffffff;
+		span {
+		  background: #ffffff;
+		}
+	  }
+	}
+	/* # About */
+	.about-image-box-bio {
+	  margin-right: 20px;
+	  
+	}
+	.about-area {
+	  .about-me-box {
+		.infos {
+		  h1 {
+			color: #ffffff;
+		  }
+		}
+	  }
+	}
+	.about-area {
+  .about-credentials-wrap {
+    .banner .marquee {
+      b {
+        color: #ffffff;
+      }
+    }
+  }
+  .about-details {
+    flex: 1;
+    .about-details-inner {
+      h1 {
+        color: #ffffff;
+      }
+      p {
+        color: #ffffff;
+        opacity: 0.8;
+      }
+    }
+  }
+  .about-edc-exp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    h3 {
+      color: #ffffff;
+    }
+    ul li {
+      .date {
+        opacity: 0.6;
+      }
+      h2 {
+        color: #ffffff;
+      }
+
+      .type {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+/* # Project */
+
+.projects-area {
+  .project-item {
+    .project-img {
+      img {
+        height: 250px;
+      }
+    }
+    .project-info {
+      p {
+        opacity: 0.5;
+      }
+      h1 {
+        color: #ffffff;
+      }
+    }
+  }
+}
+/* # Project Details */
+
+.project-details-wrap {
+
+  .project-about-2 .left-details:before {
+    opacity: 0.1;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.05)
+    );
+  }
+  .project-infos-wrap .project-details-info {
+    &::before {
+      opacity: 0.1;
+      background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.05)
+      );
+    }
+
+    p {
+      color: #ffffff;
+      opacity: 0.8;
+    }
+
+    h3 {
+      color: #bcbcbc;
+      opacity: 0.5;
+    }
+  }
+  .project-about-2 {
+    .left-details {
+        p {
+          opacity: 0.6;
+        }
+        h4 {
+          color: #ffffff;
+        }
+      }
+    }
+    .right-details {
+      h3 {
+        color: #bcbcbc;
+        opacity: 0.5;
+      }
+      p {
+        color: #ffffff;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .big-btn {
+    color: #ffffff;
+  }
+}
+/* # Credentials */
+
+.credential-area {
+
+  .credential-sidebar {
+    p {
+      opacity: 0.5;
+    }
+    h2 {
+      color: #ffffff;
+    }
+    .social-links {
+      gap: 10px;
+      margin-bottom: 36px;
+
+      li a {
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: linear-gradient(
+          120deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.01)
+        );
+      }
+    }
+  }
+  .credential-edc-exp h2 {
+    color: #ffffff;
+  }
+  .credential-content .credential-about {
+    h2 {
+      color: #ffffff;
+    }
+    p {
+      color: #ffffff;
+      opacity: 0.8;
+    }
+  }
+  .credential-edc-exp {
+    .credential-edc-exp-item {
+      h3 {
+        font-size: 18px;
+        color: #5b78f6;
+      }
+      h5 {
+        opacity: 0.6;
+      }
+      p {
+        color: #ffffff;
+        opacity: 0.8;
+      }
+    }
+  }
+  .skills-wrap {
+    h2 {
+      color: #ffffff;
+    }
+    .skill-item {
+      .percent {
+        opacity: 0.6;
+      }
+      .name {
+        color: #ffffff;
+        opacity: 0.9;
+      }
+      p {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* # Service */
+
+.service-area {
+  .service-sidebar {
+    .service-sidebar-inner {
+      ul {
+        li {
+          color: #ffffff;
+          i {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .service-content-wrap .service-content-inner {
+    .service-item {
+      h3 {
+        color: #bcbcbc;
+        opacity: 0.56;
+      }
+
+      p {
+        color: #ffffff;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+/* # Contact */
+
+.contact-area {
+
+  .contact-form {
+
+
+    h1 {
+      color: #ffffff;
+    }
+
+    form .input-group {
+
+      textarea,
+      input {
+        background: linear-gradient(
+          120deg,
+          rgba(255, 255, 255, 0.05),
+          rgba(255, 255, 255, 0.01)
+        );
+        color: #ffffff;
+      }
+    }
+  }
+  .contact-infos {
+    h3 {
+      color: #ffffff;
+    }
+
+    .contact-details {
+
+      li {
+
+        .icon-box {
+          color: #ffffff;
+
+          &::after,
+          &::before {
+            border-radius: 10px;
+          }
+        }
+
+        .right {
+          span {
+            color: #bcbcbc;
+            opacity: 0.5;
+          }
+
+          h4 {
+            color: #ffffff;
+            opacity: 0.8;
+
+          }
+        }
+      }
+    }
+  }
+
+  .social-links {
+    gap: 20px;
+
+    li a {
+      color: #ffffff;
+    }
+  }
+}
+
+/* # Footer */
+
+
+.footer-area .footer-content {
+
+  .footer-menu {
+    li a {
+      color: #676767;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+
+
+
+  .langc {
+  position: relative;
+  display: inline-block;
+  }
+
+/* Botón circular principal */
+.langc__button {
+  border: 2px solid #3c4656;
+  background: #171d26;
+  box-shadow: 0 1px 8px #111822b3;
+}
+.langc__button:hover,
+.langc__button--active,
+.langc__button:focus-visible {
+  border-color: #53a6f8;
+  background: #232d3c;
+  box-shadow: 0 6px 22px #5bb1fd20;
+}
+
+
+.langc__sticker {
+  box-shadow: 0 2px 7px #000a1822;
+  transform: scale(0.98);
+  transition: background 0.18s, transform 0.13s;
+  pointer-events: none;
+}
+
+.langc__menu {
+  background: #222b36;
+  border: 2px solid #414d68;
+  box-shadow: 0px 8px 40px #000e1d60;
+}
+
+.langc__item {
+  color: #e2ecfc;
+}
+.langc__item:focus,
+.langc__item:hover {
+  background: #283654;
+}
+.langc__item--active,
+.langc__item[aria-current="true"] {
+  background: #244481;
+  border-left: 4px solid #53a6f8;
+}
+.langc__item-sticker {
+  background: #283c59;
+  border: 1.1px solid #5199dc;
+}
+
+
+
+
+  .table-responsive {
+    th, td {
+      background-color: #0F0F0F;
+      color:white;
+    }
+    tr {
+      background-color: grey;
+    }
+  }
+  .canvasButton {
+    background-color: black;
+  }
+  .modalCanvas {
+    background-color: rgb(2, 20, 32);
+    color: rgb(0, 0, 0);
+    border-radius: 0%;
+  }
+  .uLmodalCanvas {
+    li {
+      background-color: rgb(22, 43, 56);
+      color:rgb(255, 255, 255);
+    }
+  }
+
+ul.technology-list,
+ul.feature-list {
+  background: linear-gradient(145deg, #1c1c1c, #0a0a0a);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.02), 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+.technology-list li,
+.feature-list li {
+  border-left: 4px solid #00bcd4;
+  background-color: rgb(138, 134, 129);
+  color: #ffffff;
+}
+
+.technology-list li:hover,
+.feature-list li:hover {
+  background-color: rgba(0, 188, 212, 0.2);
+  color: #ffffff;
+}
+

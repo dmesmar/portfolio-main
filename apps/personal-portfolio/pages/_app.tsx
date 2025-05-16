@@ -19,7 +19,8 @@ import {
   registerMicrosoftClarity,
 } from '../utils/tracking.utils';
 import './styles-light.scss';
-import './styles.scss';
+import './styles-dark.scss';
+import './styles-common.scss';
 
 const font = Lato({
   weight: ['100', '300', '400', '700', '900'],
@@ -78,7 +79,7 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
             <meta property="og:title" content="Darío Mesas" />
             <meta
               property="og:description"
-              content="Hard-working developer with a flair for creating elegant solutions to complex problems."
+              content="."
             />
 
             {/* <!-- Twitter --> */}
@@ -86,11 +87,6 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
             <meta
               property="twitter:url"
               content="https://twitter.com/"
-            />
-            <meta property="twitter:title" content="Darío Mesas" />
-            <meta
-              property="twitter:description"
-              content="Hard-working developer with a flair for creating elegant solutions to complex problems."
             />
             <meta
               property="twitter:image"

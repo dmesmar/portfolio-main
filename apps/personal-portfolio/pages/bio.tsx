@@ -26,7 +26,7 @@ const BioPage = () => {
           <div className="d-flex about-me-wrap align-items-stretch ">
             <div className='col mt-24'>
               <div data-aos="zoom-in" className='row-md-6 about-image-box-bio'>
-                <div className="shadow-box d-flex align-items-center justify-content-center about-image-box ">
+                <div className="shadow-box d-flex align-items-center justify-content-center about-image-box mr-24">
                   <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                   <div className=" d-flex flex-column justify-content-center">
                     <ShootingStar />
@@ -50,7 +50,7 @@ const BioPage = () => {
 
           <div className="row mt-24">
             <div className="col-md-6" data-aos="zoom-in">
-              <div className="about-edc-exp about-experience shadow-box">
+              <div className="about-edc-exp about-experience shadow-box ">
                 <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                 <h3>{lang.bio.experience.heading}</h3>
                 <ul>
@@ -65,7 +65,7 @@ const BioPage = () => {
               </div>
             </div>
             <div className="col-md-6" data-aos="zoom-in">
-              <div className="about-edc-exp about-education shadow-box">
+              <div className="about-edc-exp about-education shadow-box h-100">
                 <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                 <h3>{lang.bio.education.heading}</h3>
                 <ul>

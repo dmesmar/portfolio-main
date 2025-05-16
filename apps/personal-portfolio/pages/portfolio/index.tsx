@@ -203,7 +203,7 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
               {rows.map((row, rowIdx) => (
                 <div className="row mb-4" key={rowIdx}>
                   {row.map((project, colIdx) => (
-                    <div className="col-md-4" key={colIdx}>
+                    <div className="col-md-4 " key={colIdx}>
                       <div data-aos="zoom-in">
                         <div className="project-item shadow-box">
                           <Link
