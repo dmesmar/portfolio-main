@@ -5,9 +5,6 @@ import { useEffect, useRef, useState } from 'react';
 import { Alert, Button, Table, Modal, ModalHeader, ModalBody, ModalFooter, Spinner } from 'reactstrap';
 import { getCurrentLanguage } from '../../../libs/core-components/src/lib/language-configurator';
 
-
- const apiKey = process.env.API_KEY || '';
-
 // Interfaz para los elementos del historial
 interface PredictionItem {
   id: string;
@@ -197,10 +194,7 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
     setApiStatus('loading');
     var url = "https://digitscnn-production.up.railway.app/api"
     try {
-      const r = await fetch(url + '/ping', {
-        headers: {
-          'X-API-Key': apiKey
-        }});
+      const r = await fetch(url + '/ping');
       setApiStatus(r.ok ? 'ok' : 'fail');
     } catch {
       setApiStatus('fail');
@@ -213,10 +207,7 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
     setModelStatus('loading');
     var url = "https://digitscnn-production.up.railway.app/api"
     try {
-      const r = await fetch(url + '/model', {
-        headers: {
-          'X-API-Key': apiKey
-        }});
+      const r = await fetch(url + '/model');
       const data = await r.json();
       setModelStatus(r.ok && data.model_exists ? 'ok' : 'fail');
     } catch {
@@ -233,15 +224,8 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
 
     // -------- llamada al backend (query-param escapado) ---------------
     const url = `https://digitscnn-production.up.railway.app/api/predict?b64=${encodeURIComponent(b64)}`;
-    console.log(apiKey)
-    const response = await fetch(url,
-      { 
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-API-Key': apiKey,
-        }});
-        
+    const response = await fetch(url, { method: 'POST' });
+
     if (!response.ok) {
       const err = await response.json().catch(() => ({}));
       throw new Error(err.detail ?? `HTTP ${response.status}`);
@@ -345,7 +329,6 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-API-Key': apiKey,
         },
         body: JSON.stringify(sample),
       });
@@ -364,10 +347,9 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-API-Key': apiKey
       },
     });
-    
+
     if (!trainResponse.ok) {
       throw new Error('Error al entrenar el modelo');
     }
