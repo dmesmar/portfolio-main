@@ -87,104 +87,96 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "dist/apps/personal-portfolio/public/assets/profilelg.jpg",
-        "hash": "15682769711458814188"
+        "file": "dist/apps/personal-portfolio/public/assets/tbd.jpg",
+        "hash": "12071723981143325809"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/favicon.ico",
-        "hash": "731837863935182138"
-      },
-      {
-        "file": "migrations.json",
-        "hash": "16809287042842644393"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/flags/flagca.png",
-        "hash": "8970244663822692388"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/case-studies/TFG.pdf",
-        "hash": "12471091188053115057"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/case-studies/TFG.png",
-        "hash": "11074246198737786788"
-      },
-      {
-        "file": "apps/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/icon-2.svg",
-        "hash": "18299380306226086637"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/.nx-helpers/with-nx.js",
-        "hash": "17144825985939303373"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/b1.jpg",
-        "hash": "5322084007285025313"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/ms900.pdf",
-        "hash": "2643722958108944984"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/icon2.png",
-        "hash": "10053155060496083269"
+        "file": "dist/apps/personal-portfolio/public/assets/case-studies/abc.png",
+        "hash": "13457653633665441271"
       },
       {
         "file": "dist/apps/personal-portfolio/public/assets/star1.svg",
         "hash": "1892934735499956438"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/flags/flages.png",
-        "hash": "15640223130900891175"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/.nx-helpers/compose-plugins.js",
-        "hash": "530203344399478070"
-      },
-      {
         "file": "jest.preset.js",
         "hash": "7473220183190921152"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/case-studies/lg.png",
-        "hash": "13457653633665441271"
+        "file": "dist/apps/personal-portfolio/public/assets/blog-lg.png",
+        "hash": "888589922242217439"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/favicon.ico",
+        "hash": "731837863935182138"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/next.config.js",
+        "hash": "10469859507099460943"
+      },
+      {
+        "file": ".github/FUNDING.yml",
+        "hash": "8451750085923079472"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/star-2-2.png",
+        "hash": "5502485838430338589"
+      },
+      {
+        "file": "package.json",
+        "hash": "14428811274531339606"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/ms900.pdf",
+        "hash": "2643722958108944984"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/blog.png",
+        "hash": "4319026571540924066"
       },
       {
         "file": ".nginx/nginx.conf",
         "hash": "8453352850825070498"
       },
       {
-        "file": ".dockerignore",
-        "hash": "8371422785544518460"
+        "file": "renovate.json",
+        "hash": "13443992470324556308"
       },
       {
-        "file": ".npmrc",
-        "hash": "1743485301228659824"
+        "file": "dist/apps/personal-portfolio/public/assets/icons/icon.png",
+        "hash": "16578384637710179418"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/cv/esDarioMesas.pdf",
-        "hash": "14861496134528256560"
+        "file": "dist/apps/personal-portfolio/public/assets/404.jpg",
+        "hash": "8099949021035215758"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/ai900.png",
-        "hash": "5840651647602925824"
+        "file": "dist/apps/personal-portfolio/public/assets/b1.jpg",
+        "hash": "5322084007285025313"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/case-studies/lu.png",
-        "hash": "13457653633665441271"
+        "file": "dist/apps/personal-portfolio/public/assets/signature.png",
+        "hash": "16773948087886195937"
       },
       {
-        "file": ".gitignore",
-        "hash": "6143036811668382180"
+        "file": "dist/apps/personal-portfolio/public/assets/md102.png",
+        "hash": "692902763232555962"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/star-2-2.png",
-        "hash": "5502485838430338589"
+        "file": "dist/apps/personal-portfolio/public/assets/md102.pdf",
+        "hash": "4653163348248436895"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "6120393370793295371"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "2687824826588932174"
       },
       {
         "file": "dist/apps/personal-portfolio/public/assets/credentials.png",
@@ -195,216 +187,224 @@
         "hash": "10633787831834659634"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/404.jpg",
-        "hash": "8099949021035215758"
-      },
-      {
-        "file": "assets/open-link.svg",
-        "hash": "9371317109158837357"
-      },
-      {
-        "file": "compose.yaml",
-        "hash": "12900953774628336726"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/profilesm.jpg",
-        "hash": "15361694754115646048"
-      },
-      {
         "file": "dist/apps/personal-portfolio/public/assets/cv/esDarioMesasCV.pdf",
         "hash": "5862602117125454483"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/cv/caDarioMesasCV.pdf",
-        "hash": "4569909481786189858"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "2687824826588932174"
-      },
-      {
-        "file": "renovate.json",
-        "hash": "13443992470324556308"
-      },
-      {
-        "file": "libs/.gitkeep",
+        "file": "apps/.gitkeep",
         "hash": "3244421341483603138"
       },
       {
-        "file": ".eslintrc.json",
-        "hash": "9188201835120897554"
+        "file": "dist/apps/personal-portfolio/.nx-helpers/compose-plugins.js",
+        "hash": "530203344399478070"
       },
       {
-        "file": "dist/apps/personal-portfolio/public/assets/case-studies/sg.png",
-        "hash": "13457653633665441271"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "3904595691099378390"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/blog.png",
-        "hash": "4319026571540924066"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/md102.pdf",
-        "hash": "4653163348248436895"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/bg1.png",
-        "hash": "1988836829220948772"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/blog-lg.png",
-        "hash": "888589922242217439"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/case-studies/abc.png",
-        "hash": "13457653633665441271"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/ai900.pdf",
-        "hash": "9469850677833586664"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "13391140343975966684"
-      },
-      {
-        "file": ".docker/docker-compose.yaml",
-        "hash": "6841547899925939665"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "11532813898455409296"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/icon3.png",
-        "hash": "11854365188062509294"
-      },
-      {
-        "file": ".github/FUNDING.yml",
-        "hash": "8451750085923079472"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/cv/enDarioMesasCV.pdf",
-        "hash": "11239831392173959712"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/icon.png",
-        "hash": "16578384637710179418"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/ms900.png",
-        "hash": "13270010236869916927"
-      },
-      {
-        "file": ".github/dependabot.yml",
-        "hash": "17880178529918778353"
+        "file": "dist/apps/personal-portfolio/public/assets/icons/icon-2.svg",
+        "hash": "18299380306226086637"
       },
       {
         "file": "dist/apps/personal-portfolio/package.json",
         "hash": "4141526362206045398"
       },
       {
-        "file": "nx.json",
-        "hash": "8971965658938709239"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/.nx-helpers/compiled.js",
-        "hash": "10475717735555826831"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "3407785570333453138"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "6120393370793295371"
-      },
-      {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "11810713488198132402"
-      },
-      {
         "file": "dist/apps/personal-portfolio/public/assets/icons/icon2-2.png",
         "hash": "6864321371583874432"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/tbd.jpg",
-        "hash": "12071723981143325809"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/next.config.js",
-        "hash": "10469859507099460943"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/cta-icon.svg",
-        "hash": "12531215345958099932"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/star-2.png",
-        "hash": "1618035679378694751"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/dp900.pdf",
-        "hash": "1418962117508257162"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/signature.png",
-        "hash": "16773948087886195937"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "6820402234827505055"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/md102.png",
-        "hash": "692902763232555962"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/dp900.png",
-        "hash": "1866989488204873951"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/DarioMesasCV.pdf",
-        "hash": "11734279452633517853"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "13404745306227114823"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/cv.jpg",
-        "hash": "14871052631608598018"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/portfolio.png",
-        "hash": "12270564153707153126"
-      },
-      {
-        "file": "README.md",
-        "hash": "8499801038461831089"
-      },
-      {
-        "file": "package.json",
-        "hash": "14428811274531339606"
-      },
-      {
-        "file": "dist/apps/personal-portfolio/public/assets/icons/icon3-2.png",
-        "hash": "405615848309891611"
       },
       {
         "file": "Dockerfile",
         "hash": "13192074523490816689"
       },
       {
+        "file": "dist/apps/personal-portfolio/public/assets/case-studies/TFG.png",
+        "hash": "11074246198737786788"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/cv/caDarioMesasCV.pdf",
+        "hash": "4569909481786189858"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/cv/enDarioMesasCV.pdf",
+        "hash": "11239831392173959712"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/star-2.png",
+        "hash": "1618035679378694751"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "13404745306227114823"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/icons/icon3-2.png",
+        "hash": "405615848309891611"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/flags/flagca.png",
+        "hash": "8970244663822692388"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/cv.jpg",
+        "hash": "14871052631608598018"
+      },
+      {
+        "file": ".dockerignore",
+        "hash": "8371422785544518460"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "9188201835120897554"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/ai900.png",
+        "hash": "5840651647602925824"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/case-studies/lu.png",
+        "hash": "13457653633665441271"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/ms900.png",
+        "hash": "13270010236869916927"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/ai900.pdf",
+        "hash": "9469850677833586664"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/bg1.png",
+        "hash": "1988836829220948772"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/profilelg.jpg",
+        "hash": "15682769711458814188"
+      },
+      {
+        "file": "nx.json",
+        "hash": "8971965658938709239"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/case-studies/sg.png",
+        "hash": "13457653633665441271"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/portfolio.png",
+        "hash": "12270564153707153126"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/case-studies/lg.png",
+        "hash": "13457653633665441271"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "16809287042842644393"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/cv/esDarioMesas.pdf",
+        "hash": "14861496134528256560"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/DarioMesasCV.pdf",
+        "hash": "11734279452633517853"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/icons/cta-icon.svg",
+        "hash": "12531215345958099932"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/.nx-helpers/compiled.js",
+        "hash": "10475717735555826831"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/dp900.png",
+        "hash": "1866989488204873951"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/flags/flages.png",
+        "hash": "15640223130900891175"
+      },
+      {
         "file": "dist/apps/personal-portfolio/public/assets/icons/icon.svg",
         "hash": "12531215345958099932"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/dp900.pdf",
+        "hash": "1418962117508257162"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "11810713488198132402"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "13391140343975966684"
+      },
+      {
+        "file": ".github/dependabot.yml",
+        "hash": "17880178529918778353"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3407785570333453138"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/case-studies/TFG.pdf",
+        "hash": "12471091188053115057"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "11532813898455409296"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "1743485301228659824"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/icons/icon2.png",
+        "hash": "10053155060496083269"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/.nx-helpers/with-nx.js",
+        "hash": "17144825985939303373"
+      },
+      {
+        "file": ".docker/docker-compose.yaml",
+        "hash": "6841547899925939665"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "3904595691099378390"
+      },
+      {
+        "file": "compose.yaml",
+        "hash": "12900953774628336726"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "6820402234827505055"
+      },
+      {
+        "file": "README.md",
+        "hash": "8499801038461831089"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "6143036811668382180"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/profilesm.jpg",
+        "hash": "15361694754115646048"
+      },
+      {
+        "file": "dist/apps/personal-portfolio/public/assets/icons/icon3.png",
+        "hash": "11854365188062509294"
+      },
+      {
+        "file": "assets/open-link.svg",
+        "hash": "9371317109158837357"
       }
     ],
     "projectFileMap": {
