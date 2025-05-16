@@ -22842,3 +22842,121 @@ Error: EPERM: operation not permitted, rename 'C:\Users\Usuario\Desktop\cosas\PR
 [NX Daemon Server] - 2025-05-16T12:45:33.585Z - Done uploading file artifacts
 [NX Daemon Server] - 2025-05-16T12:45:33.585Z - Sending EndRun request
 [NX Daemon Server] - 2025-05-16T12:45:33.739Z - Done sending EndRun request
+[NX Daemon Server] - 2025-05-16T14:41:37.534Z - Started listening on: \\.\pipe\nx\C:\Users\Usuario\AppData\Local\Temp\447b5806aaaf92ceda02\d.sock
+[NX Daemon Server] - 2025-05-16T14:41:37.538Z - [WATCHER]: Subscribed to changes within: C:\Users\Usuario\Desktop\cosas\PROYECTOS\portfolio-main (native)
+[NX Daemon Server] - 2025-05-16T14:41:37.545Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-05-16T14:41:37.547Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-05-16T14:41:37.548Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-05-16T14:41:37.549Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-05-16T14:41:37.753Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-16T14:41:37.754Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-16T14:41:37.754Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-16T14:41:37.759Z - Time taken for 'loadNxPlugins' 202.9967ms
+[NX Daemon Server] - 2025-05-16T14:41:37.792Z - Time taken for 'build-project-configs' 19.128100000000018ms
+[NX Daemon Server] - 2025-05-16T14:41:37.857Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-16T14:41:37.858Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-16T14:41:37.858Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-05-16T14:41:37.859Z - Time taken for 'total for creating and serializing project graph' 308.79260000000005ms
+[NX Daemon Server] - 2025-05-16T14:41:37.860Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-05-16T14:41:37.860Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 309. Response time: 2.
+[NX Daemon Server] - 2025-05-16T14:41:37.963Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-05-16T14:41:37.963Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-05-16T14:41:37.963Z - Handled HASH_TASKS. Handling time: 16. Response time: 0.
+[NX Daemon Server] - 2025-05-16T14:41:40.426Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-05-16T14:41:40.426Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-05-16T14:41:40.427Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-05-16T14:41:40.429Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-05-16T14:41:40.429Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-05-16T14:41:40.430Z - Time taken for 'total for creating and serializing project graph' 0.29140000000006694ms
+[NX Daemon Server] - 2025-05-16T14:41:40.431Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-05-16T14:41:40.431Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2025-05-16T14:41:41.536Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-05-16T14:41:41.537Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-05-16T14:41:41.537Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-05-16T14:41:41.540Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-05-16T14:41:41.541Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-05-16T14:41:41.542Z - Time taken for 'total for creating and serializing project graph' 0.38540000000011787ms
+[NX Daemon Server] - 2025-05-16T14:41:41.543Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-05-16T14:41:41.543Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX Daemon Server] - 2025-05-16T14:41:41.619Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-05-16T14:41:41.620Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-05-16T14:41:41.620Z - Time taken for 'total for creating and serializing project graph' 0.4273000000002867ms
+[NX Daemon Server] - 2025-05-16T14:41:41.621Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-05-16T14:41:41.621Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-05-16T14:41:42.484Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:42.536Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:42.590Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:42.912Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:43.167Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-05-16T14:41:43.168Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-05-16T14:41:43.169Z - Time taken for 'total for creating and serializing project graph' 0.43429999999989377ms
+[NX Daemon Server] - 2025-05-16T14:41:43.169Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:43.172Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-05-16T14:41:43.172Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 4.
+[NX Daemon Server] - 2025-05-16T14:41:43.285Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:48.924Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:48.985Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:49.282Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:50.242Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:50.381Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:50.457Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:50.519Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:50.582Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:41:50.767Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:01.159Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:01.237Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:04.328Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:04.407Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:06.520Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:06.582Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:11.132Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:11.210Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:15.258Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:15.337Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:32.393Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:32.394Z - [WATCHER]: apps/personal-portfolio/pages/canvas.tsx was modified
+[NX Daemon Server] - 2025-05-16T14:42:32.501Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-16T14:42:32.502Z - [REQUEST]: apps/personal-portfolio/pages/canvas.tsx
+[NX Daemon Server] - 2025-05-16T14:42:32.502Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-16T14:42:32.503Z - Time taken for 'hash changed files from watcher' 0.36600000000180444ms
+[NX Daemon Server] - 2025-05-16T14:42:32.523Z - Time taken for 'build-project-configs' 15.627800000002026ms
+[NX Daemon Server] - 2025-05-16T14:42:32.568Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-16T14:42:32.569Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-16T14:42:32.569Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-16T14:42:32.569Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-16T14:42:32.569Z - Time taken for 'total execution time for createProjectGraph()' 37.54509999999573ms
+[NX Daemon Server] - 2025-05-16T14:42:32.610Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:32.720Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:48.439Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:48.440Z - [WATCHER]: apps/personal-portfolio/pages/canvas.tsx was modified
+[NX Daemon Server] - 2025-05-16T14:42:48.518Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:48.626Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:42:48.642Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-16T14:42:48.642Z - [REQUEST]: apps/personal-portfolio/pages/canvas.tsx
+[NX Daemon Server] - 2025-05-16T14:42:48.642Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-16T14:42:48.644Z - Time taken for 'hash changed files from watcher' 0.36370000000169966ms
+[NX Daemon Server] - 2025-05-16T14:42:48.665Z - Time taken for 'build-project-configs' 17.069000000003143ms
+[NX Daemon Server] - 2025-05-16T14:42:48.708Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-16T14:42:48.709Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-16T14:42:48.709Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-16T14:42:48.709Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-16T14:42:48.709Z - Time taken for 'total execution time for createProjectGraph()' 35.98300000000745ms
+[NX Daemon Server] - 2025-05-16T14:43:48.623Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:43:48.730Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:43:48.809Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:43:48.950Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:43:49.121Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:49:23.683Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:49:23.685Z - [WATCHER]: apps/personal-portfolio/pages/canvas.tsx was modified
+[NX Daemon Server] - 2025-05-16T14:49:23.776Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:49:23.868Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:49:24.100Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-16T14:49:24.100Z - [REQUEST]: apps/personal-portfolio/pages/canvas.tsx
+[NX Daemon Server] - 2025-05-16T14:49:24.100Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-16T14:49:24.103Z - Time taken for 'hash changed files from watcher' 0.3941000000340864ms
+[NX Daemon Server] - 2025-05-16T14:49:24.122Z - Time taken for 'build-project-configs' 16.587300000013784ms
+[NX Daemon Server] - 2025-05-16T14:49:24.160Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-16T14:49:24.160Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-16T14:49:24.160Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-16T14:49:24.160Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-16T14:49:24.160Z - Time taken for 'total execution time for createProjectGraph()' 31.675800000026356ms
