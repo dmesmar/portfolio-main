@@ -22960,3 +22960,23 @@ Error: EPERM: operation not permitted, rename 'C:\Users\Usuario\Desktop\cosas\PR
 [NX Daemon Server] - 2025-05-16T14:49:24.160Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
 [NX Daemon Server] - 2025-05-16T14:49:24.160Z - [SYNC]: scheduling: []
 [NX Daemon Server] - 2025-05-16T14:49:24.160Z - Time taken for 'total execution time for createProjectGraph()' 31.675800000026356ms
+[NX Daemon Server] - 2025-05-16T14:50:23.882Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:50:23.991Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:50:24.067Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:50:24.129Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:50:24.223Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:50:24.412Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:51:31.753Z - [WATCHER]: apps/personal-portfolio/pages/canvas.tsx was modified
+[NX Daemon Server] - 2025-05-16T14:51:31.754Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:51:31.876Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:51:31.955Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-05-16T14:51:32.561Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-05-16T14:51:32.561Z - [REQUEST]: apps/personal-portfolio/pages/canvas.tsx
+[NX Daemon Server] - 2025-05-16T14:51:32.561Z - [REQUEST]: 
+[NX Daemon Server] - 2025-05-16T14:51:32.563Z - Time taken for 'hash changed files from watcher' 0.46229999989736825ms
+[NX Daemon Server] - 2025-05-16T14:51:32.581Z - Time taken for 'build-project-configs' 14.764500000048429ms
+[NX Daemon Server] - 2025-05-16T14:51:32.618Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-05-16T14:51:32.619Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-05-16T14:51:32.619Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-05-16T14:51:32.619Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2025-05-16T14:51:32.619Z - Time taken for 'total execution time for createProjectGraph()' 32.01939999999013ms

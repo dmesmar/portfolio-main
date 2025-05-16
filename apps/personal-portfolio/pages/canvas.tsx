@@ -16,7 +16,7 @@ interface PredictionItem {
   actual: string | null; // Valor corregido
   isCorrect: boolean | null; // Feedback del usuario
 }
- 
+
 function CanvasRecognition() {
   if (window.location.href.includes("/canvas/")) {
     window.location.replace("https://www.dariomesasmarti.com/portfolio");
@@ -233,6 +233,7 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
 
     // -------- llamada al backend (query-param escapado) ---------------
     const url = `https://digitscnn-production.up.railway.app/api/predict?b64=${encodeURIComponent(b64)}`;
+    console.log(apiKey)
     const response = await fetch(url,
       { 
         method: 'POST',
@@ -240,7 +241,7 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
           'Content-Type': 'application/json',
           'X-API-Key': apiKey,
         }});
-        console.log(apiKey)
+        
     if (!response.ok) {
       const err = await response.json().catch(() => ({}));
       throw new Error(err.detail ?? `HTTP ${response.status}`);
