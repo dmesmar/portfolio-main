@@ -230,9 +230,7 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
                                 ))}
                               </div>
                               <h1>{project.metadata.title}</h1>
-                              <Moment format="L - h:mm a">
-                                {project.metadata.modified || project.metadata.created}
-                              </Moment>
+
                             </div>
                             <Link
                               as={`/portfolio/${project.filePath.replace(/\.mdx?$/, '')}`}
