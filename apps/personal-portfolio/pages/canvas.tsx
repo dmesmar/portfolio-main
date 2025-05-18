@@ -589,8 +589,8 @@ const [prediction, setPrediction] = useState<PredictionInfo | null>(null);
     </section>
       
       {/* Modal de predicción y retroalimentación */}
-      <Modal isOpen={predictionModalOpen} toggle={closePredictionModal}>
-        <ModalHeader toggle={closePredictionModal} className='modalCanvas'>
+      <Modal className='modal-main' isOpen={predictionModalOpen} toggle={closePredictionModal}>
+        <ModalHeader toggle={closePredictionModal} className='modalCanvas '>
           {lang.canvas.title.modal}
         </ModalHeader>
 

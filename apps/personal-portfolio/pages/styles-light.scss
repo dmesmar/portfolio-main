@@ -411,17 +411,21 @@
   }
   .modalCanvas {
     background-color: rgb(228, 238, 244);
-    border: #000;
-    border-radius: 0%;
+    color: #000;
+    
     h4, h5, p {
       color:black;
     }
   }
+    .modal-main {                     
+      border: 3px solid whitesmoke; 
+    }
   .uLmodalCanvas {
     li {
       background-color: rgb(141, 147, 150);
     }
   }
+  
 
 ul.technology-list,
 ul.feature-list {

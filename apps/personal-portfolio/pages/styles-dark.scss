@@ -549,13 +549,14 @@
   .canvasButton {
     background-color: black;
   }
+  .modal-title {
+    text-align: center;
+  }
   .modalCanvas {
     background-color: rgb(2, 20, 32);
     color: rgb(0, 0, 0);
-    border-radius: 0%;
     h4, h5, p {
       color:white;
-      
     }
   }
   .uLmodalCanvas {
