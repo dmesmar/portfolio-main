@@ -14,7 +14,7 @@
     "@hotjar/browser": "^1.0.9",
     "@netlify/plugin-nextjs": "5.11.1",
     "@nx/next": "20.6.2",
-    "@reduxjs/toolkit": "^2.0.0",
+    "@reduxjs/toolkit": "^2.8.2",
     "@splinetool/react-spline": "^4.0.0",
     "@splinetool/runtime": "^1.9.18",
     "@swc/helpers": "0.5.15",
