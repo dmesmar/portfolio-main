@@ -76,6 +76,10 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
     ...languages.map(lang => ({
       file: `${lang}Digits.mdx`,
       categories: [categoriesList.ML, categoriesList.AI],
+    })),
+    ...languages.map(lang => ({
+      file: `${lang}F1.mdx`,
+      categories: [categoriesList.ML, categoriesList.AI],
     }))
   ];
 

@@ -1464,24 +1464,6 @@
         "hash": "sha512-5n3nTJblwRi8LlXkJ9eBzu+kZR8Yxcc7ubakyQTFzPMtIhFpUBRbsnc2Dv88IZDIbCDlBiWrknhB4Lsz7mg6BA=="
       }
     },
-    "npm:@emotion/is-prop-valid": {
-      "type": "npm",
-      "name": "npm:@emotion/is-prop-valid",
-      "data": {
-        "version": "0.8.8",
-        "packageName": "@emotion/is-prop-valid",
-        "hash": "sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA=="
-      }
-    },
-    "npm:@emotion/memoize": {
-      "type": "npm",
-      "name": "npm:@emotion/memoize",
-      "data": {
-        "version": "0.7.4",
-        "packageName": "@emotion/memoize",
-        "hash": "sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw=="
-      }
-    },
     "npm:@esbuild/android-arm": {
       "type": "npm",
       "name": "npm:@esbuild/android-arm",
@@ -5611,6 +5593,15 @@
         "version": "1.3.11",
         "packageName": "@types/node-forge",
         "hash": "sha512-FQx220y22OKNTqaByeBGqHWYz4cl94tpcxeFdvBo3wjG6XPBuZ0BNgNZRV5J5TFmmcsJ4IzsLkmGRiQbnYsBEQ=="
+      }
+    },
+    "npm:@types/papaparse": {
+      "type": "npm",
+      "name": "npm:@types/papaparse",
+      "data": {
+        "version": "5.3.16",
+        "packageName": "@types/papaparse",
+        "hash": "sha512-T3VuKMC2H0lgsjI9buTB3uuKj3EMD2eap1MOuEQuBQ44EnDx/IkGhU6EwiTf9zG3za4SKlmwKAImdDKdNnCsXg=="
       }
     },
     "npm:@types/parse-json": {
@@ -10378,9 +10369,9 @@
       "type": "npm",
       "name": "npm:framer-motion",
       "data": {
-        "version": "10.18.0",
+        "version": "12.12.1",
         "packageName": "framer-motion",
-        "hash": "sha512-oGlDh1Q1XqYPksuTD/usb0I70hq95OUzmL9+6Zd+Hs4XV0oaISBa/UUMSjYiq6m8EUF32132mOJ8xVZS+I0S6w=="
+        "hash": "sha512-PFw4/GCREHI2suK/NlPSUxd+x6Rkp80uQsfCRFSOQNrm5pZif7eGtmG1VaD/UF1fW9tRBy5AaS77StatB3OJDg=="
       }
     },
     "npm:fresh": {
@@ -13416,6 +13407,24 @@
         "hash": "sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how=="
       }
     },
+    "npm:motion-dom": {
+      "type": "npm",
+      "name": "npm:motion-dom",
+      "data": {
+        "version": "12.12.1",
+        "packageName": "motion-dom",
+        "hash": "sha512-GXq/uUbZBEiFFE+K1Z/sxdPdadMdfJ/jmBALDfIuHGi0NmtealLOfH9FqT+6aNPgVx8ilq0DtYmyQlo6Uj9LKQ=="
+      }
+    },
+    "npm:motion-utils": {
+      "type": "npm",
+      "name": "npm:motion-utils",
+      "data": {
+        "version": "12.12.1",
+        "packageName": "motion-utils",
+        "hash": "sha512-f9qiqUHm7hWSLlNW8gS9pisnsN7CRFRD58vNjptKdsqFLpkVnX00TNeD6Q0d27V9KzT7ySFyK1TZ/DShfVOv6w=="
+      }
+    },
     "npm:mri": {
       "type": "npm",
       "name": "npm:mri",
@@ -14008,6 +14017,15 @@
         "version": "1.0.1",
         "packageName": "package-json-from-dist",
         "hash": "sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw=="
+      }
+    },
+    "npm:papaparse": {
+      "type": "npm",
+      "name": "npm:papaparse",
+      "data": {
+        "version": "5.5.3",
+        "packageName": "papaparse",
+        "hash": "sha512-5QvjGxYVjxO59MGU2lHVYpRWBBtKHnlIAcSe1uNFCkkptUh63NFRj0FJQm7nR67puEruUci/ZkjmEFrjCAyP4A=="
       }
     },
     "npm:parent-module": {
@@ -15310,9 +15328,9 @@
       "type": "npm",
       "name": "npm:sass",
       "data": {
-        "version": "1.86.0",
+        "version": "1.89.0",
         "packageName": "sass",
-        "hash": "sha512-zV8vGUld/+mP4KbMLJMX7TyGCuUp7hnkOScgCMsWuHtns8CWBoz+vmEhoGMXsaJrbUP8gj+F1dLvVe79sK8UdA=="
+        "hash": "sha512-ld+kQU8YTdGNjOLfRWBzewJpU5cwEv/h5yyqlSeJcj6Yh8U4TDA9UA5FPicqDz/xgRPWRSYIQNiFks21TbA9KQ=="
       }
     },
     "npm:sass-embedded": {
@@ -17290,6 +17308,11 @@
       {
         "source": "personal-portfolio",
         "target": "npm:@formspree/react",
+        "type": "static"
+      },
+      {
+        "source": "personal-portfolio",
+        "target": "npm:papaparse",
         "type": "static"
       },
       {
@@ -19796,13 +19819,6 @@
       {
         "source": "npm:@emnapi/wasi-threads",
         "target": "npm:tslib",
-        "type": "static"
-      }
-    ],
-    "npm:@emotion/is-prop-valid": [
-      {
-        "source": "npm:@emotion/is-prop-valid",
-        "target": "npm:@emotion/memoize",
         "type": "static"
       }
     ],
@@ -26307,6 +26323,13 @@
         "type": "static"
       }
     ],
+    "npm:@types/papaparse": [
+      {
+        "source": "npm:@types/papaparse",
+        "target": "npm:@types/node",
+        "type": "static"
+      }
+    ],
     "npm:@types/react": [
       {
         "source": "npm:@types/react",
@@ -32316,12 +32339,17 @@
       },
       {
         "source": "npm:framer-motion",
-        "target": "npm:tslib",
+        "target": "npm:motion-dom",
         "type": "static"
       },
       {
         "source": "npm:framer-motion",
-        "target": "npm:@emotion/is-prop-valid",
+        "target": "npm:motion-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:framer-motion",
+        "target": "npm:tslib",
         "type": "static"
       }
     ],
@@ -36977,6 +37005,13 @@
       {
         "source": "npm:minimatch",
         "target": "npm:brace-expansion",
+        "type": "static"
+      }
+    ],
+    "npm:motion-dom": [
+      {
+        "source": "npm:motion-dom",
+        "target": "npm:motion-utils",
         "type": "static"
       }
     ],

@@ -12,6 +12,7 @@ import { serialize } from 'next-mdx-remote/serialize';
 import path from 'path';
 import remarkGfm from 'remark-gfm';
 import { CASE_STUDIES_PATH, caseStudiesFilePaths } from '../../utils/mdx.utils';
+import F1 from '../f1';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = caseStudiesFilePaths
@@ -70,6 +71,7 @@ const components = {
   PortfolioHeader: PortfolioHeader,
   PortfolioFooter: PortfolioFooter,
   Canvas: Canvas,
+  F1: F1,
 };
 
 const PortfolioEntryPage = ({
