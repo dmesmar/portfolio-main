@@ -6,6 +6,7 @@ import Papa from 'papaparse';
 import { getCurrentLanguage } from '../../../libs/core-components/src/lib/language-configurator';
 import _, { map } from 'underscore';
 
+
 interface Driver {
   driverId: string | number;
   driverRef: string;
@@ -78,6 +79,7 @@ function F1() {
   const [selectedCircuits, setSelectedCircuits] = useState<(Circuit | null)[]>(Array(24).fill(null));
   const [circuitConfirmModalOpen, setCircuitConfirmModalOpen] = useState(false);
 
+  
   const toggleCircuitConfirmModal = () =>
     setCircuitConfirmModalOpen((v) => !v);
 
@@ -113,10 +115,29 @@ function F1() {
     rows.push(row);
   }
 
+
+  const teamsCountSummary = Math.ceil(numPilotos / 2);
+  let rowsSummary: number[][] = [];
+
+  if (teamsCountSummary <= 6) {
+    rowsSummary.push(Array.from({ length: teamsCountSummary }, (_, i) => i));
+  } else {
+    const mitad = Math.ceil(teamsCountSummary / 2);
+    const primeraFila = Array.from({ length: mitad }, (_, i) => i);
+    const segundaFila = Array.from(
+      { length: teamsCountSummary - mitad },
+      (_, i) => mitad + i
+    );
+    rowsSummary = [primeraFila, segundaFila];
+  }
+
+
   const toggleModal = () => setModalOpen((v) => !v);
   const toggleConfirmModal = () => setConfirmModalOpen((v) => !v);
   const toggleCircuitModal = () => setCircuitModalOpen((v) => !v);
+  const sendToAPI = () => {
 
+  }
   const handleCardClick = (index: number) => {
     setselectedDriverIndex(index);
     setSelectedTeamIndex(null);
@@ -303,10 +324,27 @@ function F1() {
     }
   };
   const cambiarFormaPuntuar = (str: string) => {
-    if (str == "") {
-      // TODO
+    setFormaPuntos(str);
+    if (str in puntuacionesPorForma) {
+      setPuntos(puntuacionesPorForma[str]);
+    } else {
+      setPuntos([]);
     }
-  }
+  };
+
+    const puntuacionesPorForma: Record<string, number[]> = {
+    A: [8, 6, 4, 3, 2, 0, 0, 0, 0, 0, 1],
+    B: [8, 6, 4, 3, 2, 1, 0, 0, 0, 0, 0],
+    C: [9, 6, 4, 3, 2, 1, 0, 0, 0, 0, 0],
+    D: [10, 6, 4, 3, 2, 0, 0, 0, 0, 0, 0],
+    E: [10, 8, 6, 5, 4, 3, 2, 1, 0, 0, 0],
+    F: [25, 18, 15, 12, 10, 8, 6, 4, 2, 1, 0],
+    G: [25, 18, 15, 12, 10, 8, 6, 4, 2, 1, 1],
+    H: [25, 18, 15, 12, 10, 8, 6, 4, 2, 1, 0],
+  };
+
+  const [puntos, setPuntos] = useState<number[]>(puntuacionesPorForma['A']);
+
 
   return (
     <LayoutCanvas wrapperClass="main-aboutpage" title={lang.canvas.title.digits}>
@@ -412,20 +450,113 @@ function F1() {
           Cargar plantilla 2024
         </Button>
       </div>
-      {/*IDEA: Poner esto en la izquierda y que a la derecha se vea cómo afectan las diferentes formas de puntuar a una competición. Enseñando sólo top10*/}
+    
       <div className="pilots-dropdown">
-        <label htmlFor="formaPuntos" className="pilots-dropdown-label">Forma de puntuar:</label>
-        <select
-          id="formaPuntos"
-          value={formaPuntos}
-          onChange={(e) => cambiarFormaPuntuar(e.target.value)}
-          className="pilots-dropdown-select"
-        >
-          <option value={"A"}>Opción A</option>
-          <option value={"B"}>Opción B</option>
-          <option value={"C"}>Opción C</option>
-        </select>
+    <label htmlFor="formaPuntos" className="pilots-dropdown-label">Forma de puntuar:</label>
+    <select
+      id="formaPuntos"
+      value={formaPuntos}
+      onChange={(e) => cambiarFormaPuntuar(e.target.value)}
+      className="pilots-dropdown-select"
+    >
+      <option value={"A"}>1950-1959</option>
+      <option value={"B"}>1960</option>
+      <option value={"C"}>1961-1990</option>
+      <option value={"D"}>1991-2002</option>
+      <option value={"E"}>2003-2009</option>
+      <option value={"F"}>2010-2018</option>
+      <option value={"G"}>2019-2024</option>
+      <option value={"H"}>2025</option>
+      </select>
+    </div>
+    <div className="puntos-table-container">
+  <table className="puntos-table horizontal">
+    <thead>
+      <tr>
+        {puntos.slice(0, 10).map((_, index) => (
+          <th key={index}>{index + 1}</th>
+        ))}
+        <th>FL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr className="puntos-fila-valores">
+        {puntos.slice(0, 10).map((p, index) => (
+          <td key={index}>{p}</td>
+        ))}
+        <td>{puntos[10] || 0}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+        
+        
+    <div className="summary-section-resumen">
+      <h2 className="summary-title">Resumen de pilotos</h2>
+      <div className="summary-teams-grid">
+      {rowsSummary.map((row, rowIndex) => (
+        <div key={rowIndex} className="summary-team-row">
+          {row.map((teamIndex) => {
+            const pIndex1 = teamIndex * 2;
+            const pIndex2 = pIndex1 + 1;
+            const pilot1 = pilots[pIndex1];
+            const pilot2 = pilots[pIndex2];
+            const team = teamLeaders[teamIndex];
+
+            return (
+              <div key={teamIndex} className="summary-team-card">
+                <div className="summary-team-border">
+                  {team && (
+                    <>
+                      <img
+                        className="summary-team-logo"
+                        src={`/assets/constructors/${team.constructorId}.WEBP`}
+                        alt={team.name}
+                      />
+                      <div className="summary-team-name">{team.name}</div>
+                    </>
+                  )}
+                  <div className="summary-pilots-row">
+                    {[pilot1, pilot2].map((pilot, idx) =>
+                      pilot ? (
+                        <div key={idx} className="summary-pilot-card active">
+                          <img
+                            src={`/assets/drivers/${pilot.driverId}.WEBP`}
+                            alt={`${pilot.forename} ${pilot.surname}`}
+                          />
+                          <div className="summary-pilot-name">
+                            {pilot.forename} {pilot.surname}
+                          </div>
+                        </div>
+                      ) : (
+                        <div key={idx} className="summary-pilot-card empty">
+                          Piloto {pIndex1 + idx + 1}
+                        </div>
+                      )
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      ))}
       </div>
+      <h2 className="summary-title">Resumen de la temporada (TODO)</h2>
+      <div className="summary-button-container">
+        <Button color="success" onClick={sendToAPI}>Todo bien</Button>
+      </div>
+
+
+    </div>
+
+
+
+
+
+          
+
 
       <Modal isOpen={modalOpen} toggle={toggleModal} size="lg">
         <ModalHeader toggle={toggleModal}>

@@ -449,3 +449,62 @@ ul.feature-list {
 
 
 }
+
+
+.pilot-card {
+  background-color: #ffffff;
+  border: 2px solid #bbb;
+
+  &.active {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #2980b9;
+  }
+}
+
+.team-leader-card {
+  background-color: #f41717;
+  border: 2px solid #bbb;
+
+  &.active {
+    background-color: #f41717;
+    color: #fff;
+    border-color: #f41717;
+  }
+}
+
+.circuit-card {
+  background-color: #ffffff;
+  border: 2px solid #bbb;
+
+  &.active {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #2980b9;
+  }
+}
+
+.driver-info {
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+}
+
+.puntos-table th {
+  background-color: #f4f4f4;
+}
+
+.puntos-table td {
+  color: #404d41;
+}
+.summary-section-resumen {
+  background-color: #d2c7c7;
+}
+
+.summary-team-border {
+  border: 2px solid #7c7d9a ;
+  background-color: #7c7d9a;
+}
+
+.puntos-table.horizontal th {
+  background-color: #371212;
+}
