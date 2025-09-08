@@ -4443,6 +4443,15 @@
         "hash": "sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A=="
       }
     },
+    "npm:@react-leaflet/core": {
+      "type": "npm",
+      "name": "npm:@react-leaflet/core",
+      "data": {
+        "version": "2.1.0",
+        "packageName": "@react-leaflet/core",
+        "hash": "sha512-Qk7Pfu8BSarKGqILj4x7bCSZ1pjuAPZ+qmRwH5S7mDS91VSbVVsJSrW4qA+GPrro8t69gFYVMWb1Zc4yFmPiVg=="
+      }
+    },
     "npm:@reduxjs/toolkit": {
       "type": "npm",
       "name": "npm:@reduxjs/toolkit",
@@ -12453,6 +12462,15 @@
         "hash": "sha512-cc8oEVoctTvsFZ/Oje/kGnHbpWHYBe8IAJe4C0QNc3t8uM/0Y8+erSz/7Y1ALuXTEZTMvxXwO6YbX1ey3ujiZw=="
       }
     },
+    "npm:leaflet": {
+      "type": "npm",
+      "name": "npm:leaflet",
+      "data": {
+        "version": "1.9.4",
+        "packageName": "leaflet",
+        "hash": "sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA=="
+      }
+    },
     "npm:less": {
       "type": "npm",
       "name": "npm:less",
@@ -14847,6 +14865,15 @@
         "hash": "sha512-kTiAODz091bgT7SlWNHab0LSMZAPJtlNWDGKv7pLlLY1krmf7FuG1zxE0wyPpeA8gPdwfr3cu6sPwZRqWsc3Eg=="
       }
     },
+    "npm:react-leaflet": {
+      "type": "npm",
+      "name": "npm:react-leaflet",
+      "data": {
+        "version": "4.2.1",
+        "packageName": "react-leaflet",
+        "hash": "sha512-p9chkvhcKrWn/H/1FFeVSqLdReGwn2qmiobOQGO3BifX+/vV/39qhY8dGqbdcPh1e6jxh/QHriLXr7a4eLFK4Q=="
+      }
+    },
     "npm:react-lifecycles-compat": {
       "type": "npm",
       "name": "npm:react-lifecycles-compat",
@@ -16582,6 +16609,15 @@
         "version": "1.4.3",
         "packageName": "unbzip2-stream",
         "hash": "sha512-mlExGW4w71ebDJviH16lQLtZS32VKqsSfk80GCfUlwT/4/hNRFsoscrF/c++9xinkMzECL1uL9DDwXqFWkruPg=="
+      }
+    },
+    "npm:underscore": {
+      "type": "npm",
+      "name": "npm:underscore",
+      "data": {
+        "version": "1.13.7",
+        "packageName": "underscore",
+        "hash": "sha512-GMXzWtsc57XAtguZgaQViUOzs0KTkk8ojr3/xAxXLITqf/3EMwxC0inyETfDFjH/Krbhuep0HNbbjI9i/q3F3g=="
       }
     },
     "npm:undici-types": {
@@ -25216,6 +25252,23 @@
       {
         "source": "npm:@phenomnomnominal/tsquery",
         "target": "npm:esquery",
+        "type": "static"
+      }
+    ],
+    "npm:@react-leaflet/core": [
+      {
+        "source": "npm:@react-leaflet/core",
+        "target": "npm:leaflet",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-leaflet/core",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-leaflet/core",
+        "target": "npm:react-dom",
         "type": "static"
       }
     ],
@@ -38804,6 +38857,28 @@
       {
         "source": "npm:react-image-lightbox",
         "target": "npm:react-modal",
+        "type": "static"
+      }
+    ],
+    "npm:react-leaflet": [
+      {
+        "source": "npm:react-leaflet",
+        "target": "npm:leaflet",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-leaflet",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-leaflet",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-leaflet",
+        "target": "npm:@react-leaflet/core",
         "type": "static"
       }
     ],
