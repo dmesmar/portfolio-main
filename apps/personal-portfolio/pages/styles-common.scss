@@ -2744,3 +2744,100 @@ ul.feature-list {
   color: green;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .teams-grid {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .team-card {
+    min-width: 100px;
+  }
+
+  .team-pilots {
+    gap: 8px;
+  }
+
+  .pilot-card, .team-leader-card {
+    height: 90px;
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .circuits-grid {
+    justify-content: center;
+    gap: 12px;
+
+    .circuit-card {
+      flex: 0 1 120px;
+      font-size: 14px;
+    }
+  }
+
+  .summary-section-resumen {
+    padding: 10px;
+  }
+
+  .summary-teams-grid {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .summary-team-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .summary-team-card {
+    min-width: 140px;
+  }
+
+  .summary-team-logo {
+    width: 80px;
+    height: 40px;
+  }
+
+  .summary-pilot-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .puntos-table-container {
+    overflow-x: auto;
+  }
+
+  .puntos-table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .drivers-button-span {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .teams-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .team-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .team-card {
+    flex: 0 1 45%;
+    max-width: 200px;
+    margin-bottom: 12px;
+  }
+}

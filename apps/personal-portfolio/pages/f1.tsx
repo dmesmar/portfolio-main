@@ -68,7 +68,7 @@ function F1() {
   const [teamLeaders, setTeamLeaders] = useState<(Constructor | null)[]>(Array(Math.ceil(24 / 2)).fill(null));
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-
+  const [isViewOnly, setIsViewOnly] = useState(false);
   const [numCircuitos, setNumCircuitos] = useState(24);
   const [circuitModalOpen, setCircuitModalOpen] = useState(false);
   const [selectedCircuitIndex, setSelectedCircuitIndex] = useState<number | null>(null);
