@@ -64,11 +64,10 @@ export const Header = () => {
           <div
             className={classNames('show-menu', { active: displayMobileNavbar })}
             onClick={handleToggle}
-          >
-            <span />
-            <span />
-            <span />
+          ><i className="iconoir-menu" />
           </div>
+
+          
         </div>
       </div>
       <hr className='linea'></hr>

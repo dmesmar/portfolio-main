@@ -4,7 +4,6 @@ import { AssetLang } from '@dmesmar/core-components'
 import { en, es, ca } from '@dmesmar/i18n';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
-import ShootingStar from '../../../libs/core-components/src/lib/layout/ShootingStar';
 
 const BioPage = () => {
   const { theme } = useTheme();
@@ -29,7 +28,6 @@ const BioPage = () => {
                 <div className="shadow-box d-flex align-items-center justify-content-center about-image-box mr-24">
                   <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                   <div className=" d-flex flex-column justify-content-center">
-                    <ShootingStar />
                     <img src={lang.bio.bio.media} alt="bio" className="profile-image" />
                   </div>
                 </div>
