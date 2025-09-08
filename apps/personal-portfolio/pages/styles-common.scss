@@ -551,13 +551,10 @@ ol {
     flex-direction: column;
     cursor: pointer;
     z-index: 16;
-    border: 2px solid #3c4656;
-    background: #171d26;
     border-radius: 50%;
     width: 54px;
     height: 54px;
     cursor: pointer;
-    box-shadow: 0 1px 8px #111822b3;
     position: relative;
     display: flex;
     align-items: center;
@@ -568,9 +565,8 @@ ol {
 
     span {
       display: block;
-      width: 4px;        // grosor de la barra
-      height: 100%;      // altura proporcional al contenedor
-      background-color: #333;
+      width: 4px;       
+      height: 100%;     
       transition: 0.4s;
     }
 
