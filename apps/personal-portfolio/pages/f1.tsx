@@ -59,6 +59,7 @@ function F1() {
   const [modalOpen, setModalOpen] = useState(false);
   const [confirmModalOpen, setConfirmModalOpen] = useState(false);
   const [numPilotos, setNumPilotos] = useState(20);
+  const [formaPuntos, setFormaPuntos] = useState("")
   const [selectedDriverIndex, setselectedDriverIndex] = useState<number | null>(null);
   const [selectedTeamIndex, setSelectedTeamIndex] = useState<number | null>(null);
   const [selectedDriver, setselectedDriver] = useState<Driver | Constructor | null>(null);
@@ -301,6 +302,11 @@ function F1() {
       cargarPlantillaCircuitos(circuits)
     }
   };
+  const cambiarFormaPuntuar = (str: string) => {
+    if (str == "") {
+      // TODO
+    }
+  }
 
   return (
     <LayoutCanvas wrapperClass="main-aboutpage" title={lang.canvas.title.digits}>
@@ -398,13 +404,27 @@ function F1() {
           ))}
         </div>
       </div>
-          <div className='drivers-button-span'>
+      <div className='drivers-button-span'>
         <Button color="success" className="cargar-plantilla" onClick={() => selectPlantillaCircuitos(0)}>
-        Cargar plantilla aleatoria
-      </Button>
-      <Button color="success" className="cargar-plantilla" onClick={() => selectPlantillaCircuitos(2024)}>
-        Cargar plantilla 2024
-      </Button>
+          Cargar plantilla aleatoria
+        </Button>
+        <Button color="success" className="cargar-plantilla" onClick={() => selectPlantillaCircuitos(2024)}>
+          Cargar plantilla 2024
+        </Button>
+      </div>
+      {/*IDEA: Poner esto en la izquierda y que a la derecha se vea cómo afectan las diferentes formas de puntuar a una competición. Enseñando sólo top10*/}
+      <div className="pilots-dropdown">
+        <label htmlFor="formaPuntos" className="pilots-dropdown-label">Forma de puntuar:</label>
+        <select
+          id="formaPuntos"
+          value={formaPuntos}
+          onChange={(e) => cambiarFormaPuntuar(e.target.value)}
+          className="pilots-dropdown-select"
+        >
+          <option value={"A"}>Opción A</option>
+          <option value={"B"}>Opción B</option>
+          <option value={"C"}>Opción C</option>
+        </select>
       </div>
 
       <Modal isOpen={modalOpen} toggle={toggleModal} size="lg">
