@@ -54,7 +54,7 @@ function F1() {
   const langCode = getCurrentLanguage();
   const langMap = { en, es, ca };
   const lang = langMap[langCode];
-
+  const [confirmarAPIModalOpen, setConfirmarAPIModalOpen] = useState(false);
   const [drivers, setDrivers] = useState<Driver[]>([]);
   const [constructors, setConstructors] = useState<Constructor[]>([]);
   const [modalOpen, setModalOpen] = useState(false);
@@ -136,8 +136,24 @@ function F1() {
   const toggleConfirmModal = () => setConfirmModalOpen((v) => !v);
   const toggleCircuitModal = () => setCircuitModalOpen((v) => !v);
   const sendToAPI = () => {
-
+    setConfirmarAPIModalOpen(true)
   }
+
+  const handleSummaryPilotClick = (pilotIndex: number) => {
+  setselectedDriverIndex(pilotIndex);  
+  setSelectedTeamIndex(null);
+  setselectedDriver(pilots[pilotIndex]);
+  setModalOpen(true);
+  };
+  const handleSummaryTeamClick = (teamIndex: number) => {
+  setSelectedTeamIndex(teamIndex);
+  setselectedDriverIndex(null);
+  setselectedDriver(teamLeaders[teamIndex]);
+  setModalOpen(true);
+  };
+
+
+
   const handleCardClick = (index: number) => {
     setselectedDriverIndex(index);
     setSelectedTeamIndex(null);
@@ -518,24 +534,30 @@ function F1() {
                     </>
                   )}
                   <div className="summary-pilots-row">
-                    {[pilot1, pilot2].map((pilot, idx) =>
-                      pilot ? (
-                        <div key={idx} className="summary-pilot-card active">
-                          <img
-                            src={`/assets/drivers/${pilot.driverId}.WEBP`}
-                            alt={`${pilot.forename} ${pilot.surname}`}
-                          />
-                          <div className="summary-pilot-name">
-                            {pilot.forename} {pilot.surname}
-                          </div>
+                  {[pilot1, pilot2].map((pilot, idx) =>
+                    pilot ? (
+                      <div
+                        key={idx}
+                        className="summary-pilot-card active"
+                        //onClick={() => handleSummaryPilotClick(pIndex1 + idx)}
+                        //style={{ cursor: 'pointer' }}
+                      >
+                        <img
+                          src={`/assets/drivers/${pilot.driverId}.WEBP`}
+                          alt={`${pilot.forename} ${pilot.surname}`}
+                        />
+                        <div className="summary-pilot-name">
+                          {pilot.forename} {pilot.surname}
                         </div>
-                      ) : (
-                        <div key={idx} className="summary-pilot-card empty">
-                          Piloto {pIndex1 + idx + 1}
-                        </div>
-                      )
-                    )}
-                  </div>
+                      </div>
+                    ) : (
+                      <div key={idx} className="summary-pilot-card empty">
+                        Piloto {pIndex1 + idx + 1}
+                      </div>
+                    )
+                  )}
+                </div>
+
                 </div>
               </div>
             );
@@ -543,13 +565,41 @@ function F1() {
         </div>
       ))}
       </div>
-      <h2 className="summary-title">Resumen de la temporada (TODO)</h2>
-      <div className="summary-button-container">
-        <Button color="success" onClick={sendToAPI}>Todo bien</Button>
+      
+      <div className="summary-circuits-section">
+        <h2 className="summary-circuits-title">Resumen de circuitos</h2>
+        <div className="summary-circuits-grid">
+          {Array.from({ length: numCircuitos }, (_, i) => {
+            const circuit = selectedCircuits[i];
+            return (
+              <div key={i} className="summary-circuit-card">
+                <div className={`summary-circuit-border ${circuit ? 'active' : ''}`}>
+                  <img
+                    className="summary-circuit-img"
+                    src={circuit ? `/assets/circuits/${circuit.circuitId}.WEBP` : ""}
+                    alt={circuit ? circuit.name : `Circuito ${i + 1}`}
+                  />
+                  <div className="summary-circuit-name">
+                    {circuit ? circuit.name : `Circuito ${i + 1}`}
+                  </div>
+                  {circuit && (
+                    <div className="summary-circuit-location">
+                      {circuit.location}, {circuit.country}
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
-
-
+      <div className="summary-button-container">
+        <Button color="success" onClick={sendToAPI}>Confirmar datos</Button>
+      </div>
     </div>
+
+      
+
 
 
 
@@ -698,10 +748,26 @@ function F1() {
                 <p><strong>Urbano:</strong> {selectedCircuit.street === '1' ? 'Sí' : 'No'}</p>
                 <Button color="primary" onClick={confirmAddCircuit}>Añadir</Button>
               </div>
+              <div className="driver-photo">
+                <img
+                  src={`/assets/circuits/${selectedCircuit.circuitId}.WEBP`}
+                  alt={selectedCircuit.name}
+                />
+              </div>
             </div>
           )}
         </ModalBody>
       </Modal>
+      <Modal isOpen={confirmarAPIModalOpen} toggle={() => setConfirmarAPIModalOpen(false)}>
+        <ModalHeader toggle={() => setConfirmarAPIModalOpen(false)}>
+          En construcción
+        </ModalHeader>
+        <ModalBody>
+          Esta funcionalidad está en construcción
+        </ModalBody>
+      </Modal>
+
+
     </LayoutCanvas>
   );
 }

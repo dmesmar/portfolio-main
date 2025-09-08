@@ -2644,6 +2644,7 @@ ul.feature-list {
   margin-top: 40px;
   padding: 20px;
   border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 .summary-title {
@@ -2849,5 +2850,75 @@ ul.feature-list {
     flex: 0 1 45%;
     max-width: 200px;
     margin-bottom: 12px;
+  }
+}
+.summary-circuits-section {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 0px;
+}
+
+.summary-circuits-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary-circuits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.summary-circuit-card {
+  min-width: 140px;
+}
+
+.summary-circuit-border {
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.summary-circuit-border:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.summary-circuit-img {
+  width: 100px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 6px;
+  border-radius: 6px;
+}
+
+.summary-circuit-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.summary-circuit-location {
+  font-size: 12px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .summary-circuits-grid {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .summary-circuit-card {
+    min-width: 120px;
+  }
+
+  .summary-circuit-img {
+    width: 80px;
+    height: 40px;
   }
 }
