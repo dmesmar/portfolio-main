@@ -135,9 +135,40 @@ function F1() {
   const toggleModal = () => setModalOpen((v) => !v);
   const toggleConfirmModal = () => setConfirmModalOpen((v) => !v);
   const toggleCircuitModal = () => setCircuitModalOpen((v) => !v);
-  const sendToAPI = () => {
-    setConfirmarAPIModalOpen(true)
-  }
+  const sendToAPI = async () => {
+    const pilotoIds = pilots
+      .filter((p): p is Driver => p !== null)
+      .map((p) => p.driverId);
+
+    const circuitIds = selectedCircuits
+      .filter((c): c is Circuit => c !== null)
+      .map((c) => c.circuitId);
+
+    const payload = {
+      pilotos: pilotoIds,
+      circuitos: circuitIds,
+      sistemaPuntuacion: formaPuntos || "A",
+  };
+
+  console.log("Datos preparados para enviar a la API:");
+  console.log(JSON.stringify(payload, null, 2)); // JSON válido y formateado
+  const url = `http://127.0.0.1:8000/api/setInitialData`;
+    const response = await fetch(url, { 
+      method: 'POST',
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify(payload, null, 2)
+     });
+
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      console.log(err)
+      throw new Error(err.detail ?? `HTTP ${response.status}`);
+    }
+    console.log(response.statusText)
+  // TODO: Esto se envía en una llamada inicial en la cual se dejan guardados los parámeteros para todo el rato
+  setConfirmarAPIModalOpen(true);
+  };
+
 
   const handleSummaryPilotClick = (pilotIndex: number) => {
   setselectedDriverIndex(pilotIndex);  
@@ -364,6 +395,9 @@ function F1() {
 
   return (
     <LayoutCanvas wrapperClass="main-aboutpage" title={lang.canvas.title.digits}>
+      <div className="pilots-dropdown">
+        TODO: EN CONSTRUCCIÓN: FALTA AÑADIR LA INTRODUCCIÓN + decisiones de diseño
+      </div>
       <div className="pilots-dropdown">
         <label htmlFor="numPilotos" className="pilots-dropdown-label">Número de pilotos:</label>
         <select
@@ -759,6 +793,16 @@ function F1() {
         </ModalBody>
       </Modal>
       <Modal isOpen={confirmarAPIModalOpen} toggle={() => setConfirmarAPIModalOpen(false)}>
+        {/*
+        TODO: La idea de este modal es que tengas botones para simular cada carrera
+          Cada botón de cada carrera enviará un aviso a la API para que simule la siguiente carrera.
+          Sólo se verá el botón de la primera carrera, y cuando se simule ésta, se pasará a deshabilitar ese botón y mostrar el siguiente
+          Ideas: 
+            -que cuando estén los resultados te los abra en un modal y cuando estés fuera de un modal simplemente se vea un resumen para que no ocupe mucho
+            -una clasificación según va la temporada de pilotos y otra de constructores
+            -una barra de porcentaje de lo que queda de la temporada
+            -que mientras cargue te salte un spinner o algo
+        */}
         <ModalHeader toggle={() => setConfirmarAPIModalOpen(false)}>
           En construcción
         </ModalHeader>
